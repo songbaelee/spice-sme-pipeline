@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice Sector · SME Lending Pipeline</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #fafaf8;
+      --bg2:       #f2f1ed;
+      --bg3:       #e8e6e0;
+      --text:      #1a1a18;
+      --text2:     #4a4a46;
+      --text3:     #8a8a84;
+      --border:    #d4d2cc;
+      --border2:   #c0beb8;
+
+      --green-bg:  #eaf3de; --green-text: #3b6d11; --green-border: #c0dd97;
+      --amber-bg:  #faeeda; --amber-text: #854f0b; --amber-border: #fac775;
+      --red-bg:    #fcebeb; --red-text:   #a32d2d; --red-border:   #f7c1c1;
+      --blue-bg:   #e6f1fb; --blue-text:  #185fa5; --blue-border:  #b5d4f4;
+      --purple-bg: #eeedfe; --purple-text:#534ab7; --purple-border:#cecbf6;
+      --gray-bg:   #f1efe8; --gray-text:  #5f5e5a; --gray-border:  #d3d1c7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:     #131311;
+        --bg2:    #1c1c1a;
+        --bg3:    #252522;
+        --text:   #e8e6e0;
+        --text2:  #a8a6a0;
+        --text3:  #68685e;
+        --border: #2e2e2a;
+        --border2:#3a3a34;
+
+        --green-bg:  #173404; --green-text: #c0dd97; --green-border: #27500a;
+        --amber-bg:  #412402; --amber-text: #fac775; --amber-border: #633806;
+        --red-bg:    #501313; --red-text:   #f7c1c1; --red-border:   #791f1f;
+        --blue-bg:   #042c53; --blue-text:  #85b7eb; --blue-border:  #0c447c;
+        --purple-bg: #26215c; --purple-text:#afa9ec; --purple-border:#3c3489;
+        --gray-bg:   #2c2c2a; --gray-text:  #b4b2a9; --gray-border:  #444441;
+      }
+    }
+
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .page { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+    /* ── Header ── */
+    .header {
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text3);
+      margin-bottom: 4px;
+    }
+
+    h1 { font-size: 22px; font-weight: 500; letter-spacing: -0.01em; }
+
+    .header-right {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--text3);
+      text-align: right;
+    }
+
+    /* ── Country switcher ── */
+    .country-switcher {
+      display: flex;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      overflow: hidden;
+      align-self: flex-start;
+      width: fit-content;
+    }
+
+    .country-btn {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      padding: 7px 18px;
+      border: none;
+      background: none;
+      color: var(--text3);
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      border-right: 1px solid var(--border);
+    }
+
+    .country-btn:last-child { border-right: none; }
+
+    .country-btn:hover { background: var(--bg2); color: var(--text2); }
+
+    .country-btn.active {
+      background: var(--text);
+      color: var(--bg);
+    }
+
+    .country-btn.inactive {
+      opacity: 0.45;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .coming-soon {
+      font-size: 9px;
+      letter-spacing: 0.05em;
+      opacity: 0.7;
+      display: block;
+      margin-top: 1px;
+    }
+
+    /* ── Filters ── */
+    .filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .filter-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text3);
+    }
+
+    select {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 12px;
+      padding: 5px 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--text);
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238a8a84' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+      padding-right: 24px;
+    }
+
+    select:focus { outline: none; border-color: var(--text); }
+
+    /* ── Table ── */
+    .table-wrap { overflow-x: auto; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+
+    thead th {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text3);
+      text-align: left;
+      padding: 6px 12px 6px 0;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    thead th:hover { color: var(--text2); }
+    thead th.sorted { color: var(--text); }
+    .sort-icon { margin-left: 3px; opacity: 0.4; }
+    .sorted .sort-icon { opacity: 1; }
+
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      transition: background 0.1s;
+    }
+
+    tbody tr:hover { background: var(--bg2); }
+    tbody tr.active-row { background: var(--bg2); }
+
+    td { padding: 10px 12px 10px 0; vertical-align: top; }
+
+    /* ── Tags ── */
+    .tag {
+      display: inline-block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 4px;
+      border: 1px solid;
+      white-space: nowrap;
+      margin: 1px 2px 1px 0;
+    }
+
+    .tier1  { background: var(--green-bg);  color: var(--green-text);  border-color: var(--green-border); }
+    .tier2  { background: var(--amber-bg);  color: var(--amber-text);  border-color: var(--amber-border); }
+    .tier3  { background: var(--red-bg);    color: var(--red-text);    border-color: var(--red-border); }
+    .c-high { background: var(--green-bg);  color: var(--green-text);  border-color: var(--green-border); }
+    .c-med  { background: var(--amber-bg);  color: var(--amber-text);  border-color: var(--amber-border); }
+    .c-low  { background: var(--gray-bg);   color: var(--gray-text);   border-color: var(--gray-border); }
+    .s-prospect     { background: var(--blue-bg);   color: var(--blue-text);   border-color: var(--blue-border); }
+    .s-conversation { background: var(--purple-bg); color: var(--purple-text); border-color: var(--purple-border); }
+    .s-active       { background: var(--green-bg);  color: var(--green-text);  border-color: var(--green-border); }
+    .product-tag    { background: var(--bg2); color: var(--text2); border-color: var(--border); }
+
+    .est { font-family: 'IBM Plex Mono', monospace; font-size: 11px; }
+    .src { font-size: 10px; margin-top: 1px; }
+    .src-verified  { color: var(--green-text); }
+    .src-reported  { color: var(--amber-text); }
+    .src-estimated { color: var(--text3); }
+    .src-unknown   { color: var(--border2); }
+
+    .crs-active   { color: var(--green-text); font-size: 11px; }
+    .crs-indirect { color: var(--amber-text); font-size: 11px; }
+    .crs-none     { color: var(--text3);      font-size: 11px; }
+
+    .sme-warn { font-size: 10px; color: var(--red-text); display: block; margin-top: 2px; }
+
+    /* ── Loading / error states ── */
+    .state-msg {
+      text-align: center;
+      padding: 3rem 0;
+      color: var(--text3);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+    }
+
+    /* ── Detail panel ── */
+    .detail {
+      display: none;
+      background: var(--bg2);
+      border: 1px solid var(--border2);
+      border-radius: 10px;
+      padding: 1.75rem;
+      margin-top: 1rem;
+    }
+
+    .detail.open { display: block; }
+
+    .detail-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.25rem;
+      gap: 1rem;
+    }
+
+    .detail-name { font-size: 18px; font-weight: 500; margin-bottom: 3px; }
+    .detail-sub {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--text3);
+    }
+
+    .detail-close {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text2);
+      border-radius: 6px;
+      padding: 4px 12px;
+      font-size: 11px;
+      font-family: 'IBM Plex Mono', monospace;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .detail-close:hover { border-color: var(--text); color: var(--text); }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .detail-field label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text3);
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .detail-field .val { font-size: 12px; color: var(--text); line-height: 1.5; }
+
+    .detail-section {
+      padding-top: 1rem;
+      margin-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .detail-section-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text3);
+      margin-bottom: 0.5rem;
+    }
+
+    .detail-section p { font-size: 12px; color: var(--text2); line-height: 1.7; }
+
+    .donor-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .donor-table td { padding: 5px 8px 5px 0; border-bottom: 1px solid var(--border); color: var(--text2); }
+    .donor-table td:first-child { font-weight: 500; color: var(--text); }
+    .donor-table tr:last-child td { border-bottom: none; }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 11px;
+      color: var(--text3);
+    }
+
+    .legend-group { display: flex; flex-direction: column; gap: 4px; }
+
+    .legend-title {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 2px;
+    }
+
+    .legend-item { display: flex; align-items: center; gap: 6px; }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="header-top">
+      <div>
+        <div class="eyebrow">East Africa · Spice Sector · CRS Innovative Finance</div>
+        <h1>SME Lending Pipeline</h1>
+      </div>
+      <div class="header-right" id="count-label"></div>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem">
+      <div class="country-switcher">
+        <button class="country-btn active" onclick="switchCountry('uganda', this)">Uganda</button>
+        <button class="country-btn inactive" onclick="switchCountry('madagascar', this)">
+          Madagascar<span class="coming-soon">coming soon</span>
+        </button>
+        <button class="country-btn inactive" onclick="switchCountry('tanzania', this)">
+          Tanzania<span class="coming-soon">coming soon</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="filters">
+    <span class="filter-label">Filter:</span>
+    <select id="f-tier" onchange="render()">
+      <option value="">Tier: All</option>
+      <option value="1">Tier 1 — Investment Ready</option>
+      <option value="2">Tier 2 — Near Ready</option>
+      <option value="3">Tier 3 — Needs TA First</option>
+    </select>
+    <select id="f-status" onchange="render()">
+      <option value="">Status: All</option>
+      <option value="Prospect">Prospect</option>
+      <option value="In Conversation">In Conversation</option>
+      <option value="Active">Active</option>
+    </select>
+    <select id="f-crs" onchange="render()">
+      <option value="">CRS Link: All</option>
+      <option value="Active">Active partner</option>
+      <option value="Indirect">Indirect</option>
+      <option value="None">None confirmed</option>
+    </select>
+    <select id="f-conf" onchange="render()">
+      <option value="">Confidence: All</option>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:18%" onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
+          <th style="width:12%" onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
+          <th style="width:11%">Products</th>
+          <th style="width:13%" onclick="sortBy('tier')">Tier <span class="sort-icon" id="s-tier">⇅</span></th>
+          <th style="width:12%">Revenue est.</th>
+          <th style="width:12%">Capital need est.</th>
+          <th style="width:9%">CRS link</th>
+          <th style="width:8%" onclick="sortBy('data_confidence')">Confidence <span class="sort-icon" id="s-data_confidence">⇅</span></th>
+          <th style="width:8%" onclick="sortBy('pipeline_status')">Status <span class="sort-icon" id="s-pipeline_status">⇅</span></th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr><td colspan="9" class="state-msg">Loading...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="detail" id="detail"></div>
+
+  <div class="legend">
+    <div class="legend-group">
+      <div class="legend-title">Tier</div>
+      <div class="legend-item"><span class="tag tier1">Tier 1</span> Investment Ready</div>
+      <div class="legend-item"><span class="tag tier2">Tier 2</span> Near Ready</div>
+      <div class="legend-item"><span class="tag tier3">Tier 3</span> Needs TA First</div>
+    </div>
+    <div class="legend-group">
+      <div class="legend-title">Data source</div>
+      <div class="legend-item"><span class="src src-verified">Verified</span> — audited / investor docs</div>
+      <div class="legend-item"><span class="src src-reported">Reported</span> — company stated, unaudited</div>
+      <div class="legend-item"><span class="src src-estimated">Claude estimate</span> — proxy signals</div>
+      <div class="legend-item"><span class="src src-unknown">Unknown</span> — no basis</div>
+    </div>
+    <div class="legend-group">
+      <div class="legend-title">Data confidence</div>
+      <div class="legend-item"><span class="tag c-high">High</span> Multiple independent sources</div>
+      <div class="legend-item"><span class="tag c-med">Medium</span> Single source / partial verification</div>
+      <div class="legend-item"><span class="tag c-low">Low</span> Estimated or single indirect source</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+let DATA = [];
+let sortField = null;
+let sortDir = 1;
+let openId = null;
+let currentCountry = 'uganda';
+
+function switchCountry(country, btn) {
+  if (btn.classList.contains('inactive')) return;
+  currentCountry = country;
+  openId = null;
+  document.getElementById('detail').classList.remove('open');
+  document.querySelectorAll('.country-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  resetFilters();
+  loadCountry(country);
+}
+
+function resetFilters() {
+  ['f-tier','f-status','f-crs','f-conf'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+  sortField = null;
+  sortDir = 1;
+  document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '⇅');
+  document.querySelectorAll('thead th').forEach(th => th.classList.remove('sorted'));
+}
+
+function loadCountry(country) {
+  document.getElementById('count-label').textContent = '';
+  document.getElementById('tbody').innerHTML =
+    `<tr><td colspan="9" class="state-msg">Loading ${country} data...</td></tr>`;
+  fetch(`${country}.json`)
+    .then(r => {
+      if (!r.ok) throw new Error(`${country}.json not found`);
+      return r.json();
+    })
+    .then(data => { DATA = data; render(); })
+    .catch(err => {
+      DATA = [];
+      document.getElementById('count-label').textContent = 'Error';
+      document.getElementById('tbody').innerHTML =
+        `<tr><td colspan="9" class="state-msg">Could not load ${country}.json — make sure the file exists in the same folder.<br><small style="opacity:0.6">${err.message}</small></td></tr>`;
+    });
+}
+
+function tierNum(t) {
+  if (!t) return 9;
+  if (t.includes("1")) return 1;
+  if (t.includes("2")) return 2;
+  if (t.includes("3")) return 3;
+  return 9;
+}
+
+function tierTag(t) {
+  const n = tierNum(t);
+  const cls = n === 1 ? 'tier1' : n === 2 ? 'tier2' : 'tier3';
+  const label = n === 1 ? 'Tier 1 · Ready' : n === 2 ? 'Tier 2 · Near Ready' : 'Tier 3 · Needs TA';
+  return `<span class="tag ${cls}">${label}</span>`;
+}
+
+function confTag(c) {
+  const cls = c === 'High' ? 'c-high' : c === 'Medium' ? 'c-med' : 'c-low';
+  return `<span class="tag ${cls}">${c}</span>`;
+}
+
+function statusTag(s) {
+  const cls = s === 'Prospect' ? 's-prospect' : s === 'In Conversation' ? 's-conversation' : 's-active';
+  return `<span class="tag ${cls}">${s}</span>`;
+}
+
+function srcCls(s) {
+  if (!s) return 'src-unknown';
+  const sl = s.toLowerCase();
+  if (sl.includes('verified')) return 'src-verified';
+  if (sl.includes('reported')) return 'src-reported';
+  if (sl.includes('claude') || sl.includes('estimate')) return 'src-estimated';
+  return 'src-unknown';
+}
+
+function srcLabel(s) {
+  if (!s || s === 'Unknown' || s === 'Insufficient data') return '—';
+  if (s.toLowerCase().includes('claude')) return 'Est.';
+  return s;
+}
+
+function crsTag(r) {
+  if (!r || r === 'None confirmed') return `<span class="crs-none">○ None</span>`;
+  if (r.toLowerCase().includes('indirect')) return `<span class="crs-indirect">◐ Indirect</span>`;
+  return `<span class="crs-active">● Active</span>`;
+}
+
+function getFiltered() {
+  const tier   = document.getElementById('f-tier').value;
+  const status = document.getElementById('f-status').value;
+  const crs    = document.getElementById('f-crs').value;
+  const conf   = document.getElementById('f-conf').value;
+
+  return DATA.filter(d => {
+    if (tier   && tierNum(d.lending_readiness_tier) !== parseInt(tier)) return false;
+    if (status && d.pipeline_status !== status) return false;
+    if (crs === 'Active'   && !d.crs_relationship.includes('Active'))   return false;
+    if (crs === 'Indirect' && !d.crs_relationship.includes('Indirect')) return false;
+    if (crs === 'None'     && d.crs_relationship !== 'None confirmed')   return false;
+    if (conf   && d.data_confidence !== conf) return false;
+    return true;
+  }).sort((a, b) => {
+    if (!sortField) return 0;
+    let va, vb;
+    if (sortField === 'tier') {
+      va = tierNum(a.lending_readiness_tier);
+      vb = tierNum(b.lending_readiness_tier);
+    } else {
+      va = (a[sortField] || '').toString().toLowerCase();
+      vb = (b[sortField] || '').toString().toLowerCase();
+    }
+    return va < vb ? -sortDir : va > vb ? sortDir : 0;
+  });
+}
+
+function sortBy(field) {
+  if (sortField === field) { sortDir *= -1; }
+  else { sortField = field; sortDir = 1; }
+  document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '⇅');
+  document.querySelectorAll('thead th').forEach(th => th.classList.remove('sorted'));
+  const el = document.getElementById('s-' + field);
+  if (el) {
+    el.textContent = sortDir === 1 ? '↑' : '↓';
+    el.closest('th').classList.add('sorted');
+  }
+  render();
+}
+
+function render() {
+  const rows = getFiltered();
+  const countryLabel = currentCountry.charAt(0).toUpperCase() + currentCountry.slice(1);
+  document.getElementById('count-label').textContent =
+    `${countryLabel} · ${DATA.length} companies · ${rows.length} shown`;
+
+  const tbody = document.getElementById('tbody');
+
+  if (rows.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="9" class="state-msg">No results match the current filters.</td></tr>`;
+    if (openId) { openId = null; document.getElementById('detail').classList.remove('open'); }
+    return;
+  }
+
+  tbody.innerHTML = rows.map(d => `
+    <tr onclick="toggleDetail('${d.id}')" class="${openId === d.id ? 'active-row' : ''}">
+      <td>
+        <div style="font-weight:500">${d.name}</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text3);margin-top:2px">Est. ${d.founded}</div>
+        ${d.sme_classification_note ? `<span class="sme-warn">⚠ ${d.sme_classification_note}</span>` : ''}
+      </td>
+      <td style="color:var(--text2);font-size:11px">${d.hq_location}</td>
+      <td>${(d.primary_products || []).slice(0,3).map(p => `<span class="tag product-tag">${p}</span>`).join('')}</td>
+      <td>${tierTag(d.lending_readiness_tier)}</td>
+      <td>
+        <div class="est">${d.revenue_usd_est || '—'}</div>
+        <div class="src ${srcCls(d.revenue_source)}">${srcLabel(d.revenue_source)}</div>
+      </td>
+      <td>
+        <div class="est">${d.capital_need_est_usd || '—'}</div>
+        <div class="src ${srcCls(d.capital_need_source)}">${srcLabel(d.capital_need_source)}</div>
+      </td>
+      <td>${crsTag(d.crs_relationship)}</td>
+      <td>${confTag(d.data_confidence)}</td>
+      <td>${statusTag(d.pipeline_status)}</td>
+    </tr>
+  `).join('');
+
+  if (openId) renderDetail(openId);
+}
+
+function toggleDetail(id) {
+  if (openId === id) {
+    openId = null;
+    document.getElementById('detail').classList.remove('open');
+  } else {
+    openId = id;
+    renderDetail(id);
+  }
+  render();
+}
+
+function renderDetail(id) {
+  const d = DATA.find(x => x.id === id);
+  if (!d) return;
+  const panel = document.getElementById('detail');
+  panel.classList.add('open');
+
+  const donorRows = (d.donor_history || []).map(h =>
+    `<tr>
+      <td>${h.donor}</td>
+      <td>${h.amount}</td>
+      <td>${h.year}</td>
+      <td style="color:var(--text3)">${h.source || ''}</td>
+    </tr>`
+  ).join('');
+
+  panel.innerHTML = `
+    <div class="detail-header">
+      <div>
+        <div class="detail-name">${d.name}</div>
+        <div class="detail-sub">${d.id} · ${d.hq_location} · Est. ${d.founded}</div>
+      </div>
+      <button class="detail-close" onclick="toggleDetail('${d.id}')">Close ×</button>
+    </div>
+
+    <div class="detail-grid">
+      <div class="detail-field"><label>Org type</label><div class="val">${d.org_type}</div></div>
+      <div class="detail-field"><label>Value chain role</label><div class="val">${d.value_chain_role}</div></div>
+      <div class="detail-field"><label>Farmer network</label><div class="val">${d.farmer_network_size}</div></div>
+      <div class="detail-field">
+        <label>Staff (est.)</label>
+        <div class="val">${d.staff_count_est}
+          <span class="src ${srcCls(d.staff_source)}" style="font-size:10px"> ${d.staff_source} · ${d.staff_confidence} conf.</span>
+        </div>
+      </div>
+      <div class="detail-field">
+        <label>Revenue est.</label>
+        <div class="val">${d.revenue_usd_est}
+          <span class="src ${srcCls(d.revenue_source)}" style="font-size:10px"> ${d.revenue_source} · ${d.revenue_confidence} conf.</span>
+        </div>
+      </div>
+      <div class="detail-field">
+        <label>Capital need est.</label>
+        <div class="val">${d.capital_need_est_usd}
+          <span class="src ${srcCls(d.capital_need_source)}" style="font-size:10px"> ${d.capital_need_confidence} conf.</span>
+        </div>
+      </div>
+      <div class="detail-field"><label>Use of funds</label><div class="val">${d.capital_use_of_funds}</div></div>
+      <div class="detail-field"><label>Existing debt / investors</label><div class="val">${d.existing_debt || '—'}</div></div>
+      <div class="detail-field"><label>Audited accounts</label><div class="val">${d.has_audited_accounts}</div></div>
+      <div class="detail-field"><label>Certifications</label><div class="val">${(d.certifications || []).join(', ')}</div></div>
+      <div class="detail-field"><label>Export markets</label><div class="val">${(d.export_markets || []).join(', ')}</div></div>
+      <div class="detail-field"><label>Livelihoods / Env / Women</label><div class="val">${d.livelihood_score}/5 · Env: ${d.environment_focus} · Women: ${d.women_focus}</div></div>
+      <div class="detail-field"><label>Primary contact</label><div class="val">${d.primary_contact}</div></div>
+      <div class="detail-field"><label>Website</label>
+        <div class="val"><a href="${d.website}" target="_blank" rel="noopener" style="color:var(--blue-text)">${d.website}</a></div>
+      </div>
+      <div class="detail-field"><label>Last updated</label><div class="val">${d.last_updated}</div></div>
+    </div>
+
+    ${donorRows ? `
+    <div class="detail-section">
+      <div class="detail-section-label">Donor / Investor History</div>
+      <table class="donor-table"><tbody>${donorRows}</tbody></table>
+    </div>` : ''}
+
+    <div class="detail-section">
+      <div class="detail-section-label">CRS Notes</div>
+      <p>${d.crs_notes}</p>
+    </div>
+
+    ${d.notes ? `
+    <div class="detail-section">
+      <div class="detail-section-label">Additional Notes</div>
+      <p>${d.notes}</p>
+    </div>` : ''}
+  `;
+
+  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+loadCountry('uganda');
+</script>
+</body>
+</html>
