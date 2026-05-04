@@ -24,205 +24,66 @@
       --blue-bg:   #e6f1fb; --blue-text:  #185fa5; --blue-border:  #b5d4f4;
       --purple-bg: #eeedfe; --purple-text:#534ab7; --purple-border:#cecbf6;
       --gray-bg:   #f1efe8; --gray-text:  #5f5e5a; --gray-border:  #d3d1c7;
+      --teal-bg:   #e1f5ee; --teal-text:  #0f6e56; --teal-border:  #9fe1cb;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg:     #131311;
-        --bg2:    #1c1c1a;
-        --bg3:    #252522;
-        --text:   #e8e6e0;
-        --text2:  #a8a6a0;
-        --text3:  #68685e;
-        --border: #2e2e2a;
-        --border2:#3a3a34;
-
+        --bg:     #131311; --bg2: #1c1c1a; --bg3: #252522;
+        --text:   #e8e6e0; --text2: #a8a6a0; --text3: #68685e;
+        --border: #2e2e2a; --border2: #3a3a34;
         --green-bg:  #173404; --green-text: #c0dd97; --green-border: #27500a;
         --amber-bg:  #412402; --amber-text: #fac775; --amber-border: #633806;
         --red-bg:    #501313; --red-text:   #f7c1c1; --red-border:   #791f1f;
         --blue-bg:   #042c53; --blue-text:  #85b7eb; --blue-border:  #0c447c;
         --purple-bg: #26215c; --purple-text:#afa9ec; --purple-border:#3c3489;
         --gray-bg:   #2c2c2a; --gray-text:  #b4b2a9; --gray-border:  #444441;
+        --teal-bg:   #04342c; --teal-text:  #9fe1cb; --teal-border:  #085041;
       }
     }
 
-    body {
-      font-family: 'IBM Plex Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      font-size: 13px;
-      line-height: 1.5;
-    }
+    body { font-family: 'IBM Plex Sans', sans-serif; background: var(--bg); color: var(--text); font-size: 13px; line-height: 1.5; }
 
-    .page { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .page { max-width: 1300px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
 
-    /* ── Header ── */
-    .header {
-      border-bottom: 2px solid var(--text);
-      padding-bottom: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .header-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 1rem;
-    }
-
-    .eyebrow {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text3);
-      margin-bottom: 4px;
-    }
-
+    /* Header */
+    .header { border-bottom: 2px solid var(--text); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+    .header-top { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem; }
+    .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text3); margin-bottom: 4px; }
     h1 { font-size: 22px; font-weight: 500; letter-spacing: -0.01em; }
+    .header-right { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text3); text-align: right; }
 
-    .header-right {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 11px;
-      color: var(--text3);
-      text-align: right;
-    }
-
-    /* ── Country switcher ── */
-    .country-switcher {
-      display: flex;
-      gap: 0;
-      border: 1px solid var(--border);
-      border-radius: 7px;
-      overflow: hidden;
-      align-self: flex-start;
-      width: fit-content;
-    }
-
-    .country-btn {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      padding: 7px 18px;
-      border: none;
-      background: none;
-      color: var(--text3);
-      cursor: pointer;
-      transition: background 0.15s, color 0.15s;
-      border-right: 1px solid var(--border);
-    }
-
+    /* Country switcher */
+    .country-switcher { display: flex; border: 1px solid var(--border); border-radius: 7px; overflow: hidden; width: fit-content; }
+    .country-btn { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.06em; padding: 7px 18px; border: none; background: none; color: var(--text3); cursor: pointer; transition: background 0.15s, color 0.15s; border-right: 1px solid var(--border); }
     .country-btn:last-child { border-right: none; }
-
     .country-btn:hover { background: var(--bg2); color: var(--text2); }
+    .country-btn.active { background: var(--text); color: var(--bg); }
+    .country-btn.inactive { opacity: 0.4; cursor: default; pointer-events: none; }
+    .coming-soon { font-size: 9px; letter-spacing: 0.05em; opacity: 0.7; display: block; margin-top: 1px; }
 
-    .country-btn.active {
-      background: var(--text);
-      color: var(--bg);
-    }
-
-    .country-btn.inactive {
-      opacity: 0.45;
-      cursor: default;
-      pointer-events: none;
-    }
-
-    .coming-soon {
-      font-size: 9px;
-      letter-spacing: 0.05em;
-      opacity: 0.7;
-      display: block;
-      margin-top: 1px;
-    }
-
-    /* ── Filters ── */
-    .filters {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-bottom: 1.25rem;
-    }
-
-    .filter-label {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text3);
-    }
-
-    select {
-      font-family: 'IBM Plex Sans', sans-serif;
-      font-size: 12px;
-      padding: 5px 10px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      background: var(--bg);
-      color: var(--text);
-      cursor: pointer;
-      appearance: none;
-      -webkit-appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238a8a84' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 8px center;
-      padding-right: 24px;
-    }
-
+    /* Filters */
+    .filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 1.25rem; }
+    .filter-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text3); }
+    select { font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; padding: 5px 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text); cursor: pointer; appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238a8a84' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 8px center; padding-right: 24px; }
     select:focus { outline: none; border-color: var(--text); }
 
-    /* ── Table ── */
+    /* Table */
     .table-wrap { overflow-x: auto; }
-
     table { width: 100%; border-collapse: collapse; font-size: 12px; }
-
-    thead th {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--text3);
-      text-align: left;
-      padding: 6px 12px 6px 0;
-      border-bottom: 1px solid var(--border);
-      cursor: pointer;
-      user-select: none;
-      white-space: nowrap;
-    }
-
-    thead th:hover { color: var(--text2); }
+    thead th { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text3); text-align: left; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--border); cursor: pointer; user-select: none; white-space: nowrap; }
+    thead th.no-sort { cursor: default; }
+    thead th:hover:not(.no-sort) { color: var(--text2); }
     thead th.sorted { color: var(--text); }
     .sort-icon { margin-left: 3px; opacity: 0.4; }
     .sorted .sort-icon { opacity: 1; }
-
-    tbody tr {
-      border-bottom: 1px solid var(--border);
-      cursor: pointer;
-      transition: background 0.1s;
-    }
-
+    tbody tr { border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; }
     tbody tr:hover { background: var(--bg2); }
     tbody tr.active-row { background: var(--bg2); }
+    td { padding: 10px 10px 10px 0; vertical-align: top; }
 
-    td { padding: 10px 12px 10px 0; vertical-align: top; }
-
-    /* ── Tags ── */
-    .tag {
-      display: inline-block;
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
-      padding: 2px 7px;
-      border-radius: 4px;
-      border: 1px solid;
-      white-space: nowrap;
-      margin: 1px 2px 1px 0;
-    }
-
+    /* Tags */
+    .tag { display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 10px; padding: 2px 7px; border-radius: 4px; border: 1px solid; white-space: nowrap; margin: 1px 2px 1px 0; }
     .tier1  { background: var(--green-bg);  color: var(--green-text);  border-color: var(--green-border); }
     .tier2  { background: var(--amber-bg);  color: var(--amber-text);  border-color: var(--amber-border); }
     .tier3  { background: var(--red-bg);    color: var(--red-text);    border-color: var(--red-border); }
@@ -233,6 +94,7 @@
     .s-conversation { background: var(--purple-bg); color: var(--purple-text); border-color: var(--purple-border); }
     .s-active       { background: var(--green-bg);  color: var(--green-text);  border-color: var(--green-border); }
     .product-tag    { background: var(--bg2); color: var(--text2); border-color: var(--border); }
+    .vief-tag       { background: var(--teal-bg);   color: var(--teal-text);   border-color: var(--teal-border); }
 
     .est { font-family: 'IBM Plex Mono', monospace; font-size: 11px; }
     .src { font-size: 10px; margin-top: 1px; }
@@ -247,120 +109,35 @@
 
     .sme-warn { font-size: 10px; color: var(--red-text); display: block; margin-top: 2px; }
 
-    /* ── Loading / error states ── */
-    .state-msg {
-      text-align: center;
-      padding: 3rem 0;
-      color: var(--text3);
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 12px;
-    }
+    .row-num { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); }
+    .row-id  { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); }
 
-    /* ── Detail panel ── */
-    .detail {
-      display: none;
-      background: var(--bg2);
-      border: 1px solid var(--border2);
-      border-radius: 10px;
-      padding: 1.75rem;
-      margin-top: 1rem;
-    }
+    /* State messages */
+    .state-msg { text-align: center; padding: 3rem 0; color: var(--text3); font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
 
+    /* Detail panel */
+    .detail { display: none; background: var(--bg2); border: 1px solid var(--border2); border-radius: 10px; padding: 1.75rem; margin-top: 1rem; }
     .detail.open { display: block; }
-
-    .detail-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 1.25rem;
-      gap: 1rem;
-    }
-
+    .detail-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.25rem; gap: 1rem; }
     .detail-name { font-size: 18px; font-weight: 500; margin-bottom: 3px; }
-    .detail-sub {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 11px;
-      color: var(--text3);
-    }
-
-    .detail-close {
-      background: none;
-      border: 1px solid var(--border);
-      color: var(--text2);
-      border-radius: 6px;
-      padding: 4px 12px;
-      font-size: 11px;
-      font-family: 'IBM Plex Mono', monospace;
-      cursor: pointer;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
+    .detail-sub { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text3); }
+    .detail-close { background: none; border: 1px solid var(--border); color: var(--text2); border-radius: 6px; padding: 4px 12px; font-size: 11px; font-family: 'IBM Plex Mono', monospace; cursor: pointer; white-space: nowrap; flex-shrink: 0; }
     .detail-close:hover { border-color: var(--text); color: var(--text); }
-
-    .detail-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1rem 1.5rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .detail-field label {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text3);
-      display: block;
-      margin-bottom: 3px;
-    }
-
+    .detail-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem 1.5rem; margin-bottom: 1.25rem; }
+    .detail-field label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); display: block; margin-bottom: 3px; }
     .detail-field .val { font-size: 12px; color: var(--text); line-height: 1.5; }
-
-    .detail-section {
-      padding-top: 1rem;
-      margin-top: 1rem;
-      border-top: 1px solid var(--border);
-    }
-
-    .detail-section-label {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text3);
-      margin-bottom: 0.5rem;
-    }
-
+    .detail-section { padding-top: 1rem; margin-top: 1rem; border-top: 1px solid var(--border); }
+    .detail-section-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); margin-bottom: 0.5rem; }
     .detail-section p { font-size: 12px; color: var(--text2); line-height: 1.7; }
-
     .donor-table { width: 100%; border-collapse: collapse; font-size: 12px; }
     .donor-table td { padding: 5px 8px 5px 0; border-bottom: 1px solid var(--border); color: var(--text2); }
     .donor-table td:first-child { font-weight: 500; color: var(--text); }
     .donor-table tr:last-child td { border-bottom: none; }
 
-    /* ── Legend ── */
-    .legend {
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      margin-top: 1.5rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border);
-      font-size: 11px;
-      color: var(--text3);
-    }
-
+    /* Legend */
+    .legend { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 11px; color: var(--text3); }
     .legend-group { display: flex; flex-direction: column; gap: 4px; }
-
-    .legend-title {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 2px;
-    }
-
+    .legend-title { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 2px; }
     .legend-item { display: flex; align-items: center; gap: 6px; }
   </style>
 </head>
@@ -375,16 +152,11 @@
       </div>
       <div class="header-right" id="count-label"></div>
     </div>
-
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem">
       <div class="country-switcher">
         <button class="country-btn active" onclick="switchCountry('uganda', this)">Uganda</button>
-        <button class="country-btn inactive" onclick="switchCountry('madagascar', this)">
-          Madagascar<span class="coming-soon">coming soon</span>
-        </button>
-        <button class="country-btn inactive" onclick="switchCountry('tanzania', this)">
-          Tanzania<span class="coming-soon">coming soon</span>
-        </button>
+        <button class="country-btn inactive">Madagascar<span class="coming-soon">coming soon</span></button>
+        <button class="country-btn inactive">Tanzania<span class="coming-soon">coming soon</span></button>
       </div>
     </div>
   </div>
@@ -409,6 +181,16 @@
       <option value="Indirect">Indirect</option>
       <option value="None">None confirmed</option>
     </select>
+    <select id="f-vief" onchange="render()">
+      <option value="">VIEF: All</option>
+      <option value="yes">VIEF Partners only</option>
+      <option value="no">Non-VIEF only</option>
+    </select>
+    <select id="f-vanex" onchange="render()">
+      <option value="">VANEX: All</option>
+      <option value="yes">VANEX Members only</option>
+      <option value="no">Non-VANEX only</option>
+    </select>
     <select id="f-conf" onchange="render()">
       <option value="">Confidence: All</option>
       <option value="High">High</option>
@@ -421,19 +203,22 @@
     <table>
       <thead>
         <tr>
-          <th style="width:18%" onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
-          <th style="width:12%" onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
-          <th style="width:11%">Products</th>
-          <th style="width:13%" onclick="sortBy('tier')">Tier <span class="sort-icon" id="s-tier">⇅</span></th>
-          <th style="width:12%">Revenue est.</th>
-          <th style="width:12%">Capital need est.</th>
-          <th style="width:9%">CRS link</th>
-          <th style="width:8%" onclick="sortBy('data_confidence')">Confidence <span class="sort-icon" id="s-data_confidence">⇅</span></th>
-          <th style="width:8%" onclick="sortBy('pipeline_status')">Status <span class="sort-icon" id="s-pipeline_status">⇅</span></th>
+          <th class="no-sort" style="width:36px">#</th>
+          <th class="no-sort" style="width:70px">ID</th>
+          <th style="width:16%" onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
+          <th style="width:10%" onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
+          <th style="width:10%">Products</th>
+          <th style="width:11%" onclick="sortBy('tier')">Tier <span class="sort-icon" id="s-tier">⇅</span></th>
+          <th style="width:9%">Revenue est.</th>
+          <th style="width:9%">Capital need est.</th>
+          <th style="width:7%">CRS link</th>
+          <th style="width:5%">VIEF</th>
+          <th style="width:7%" onclick="sortBy('data_confidence')">Confidence <span class="sort-icon" id="s-data_confidence">⇅</span></th>
+          <th style="width:7%" onclick="sortBy('pipeline_status')">Status <span class="sort-icon" id="s-pipeline_status">⇅</span></th>
         </tr>
       </thead>
       <tbody id="tbody">
-        <tr><td colspan="9" class="state-msg">Loading...</td></tr>
+        <tr><td colspan="12" class="state-msg">Loading...</td></tr>
       </tbody>
     </table>
   </div>
@@ -455,10 +240,14 @@
       <div class="legend-item"><span class="src src-unknown">Unknown</span> — no basis</div>
     </div>
     <div class="legend-group">
-      <div class="legend-title">Data confidence</div>
-      <div class="legend-item"><span class="tag c-high">High</span> Multiple independent sources</div>
-      <div class="legend-item"><span class="tag c-med">Medium</span> Single source / partial verification</div>
-      <div class="legend-item"><span class="tag c-low">Low</span> Estimated or single indirect source</div>
+      <div class="legend-title">Confidence</div>
+      <div class="legend-item"><span class="tag c-high">High</span> Multiple sources</div>
+      <div class="legend-item"><span class="tag c-med">Medium</span> Single / partial</div>
+      <div class="legend-item"><span class="tag c-low">Low</span> Estimated / indirect</div>
+    </div>
+    <div class="legend-group">
+      <div class="legend-title">Flags</div>
+      <div class="legend-item"><span class="tag vief-tag">VIEF</span> USDA/CRS VINES partner</div>
     </div>
   </div>
 
@@ -472,7 +261,7 @@ let openId = null;
 let currentCountry = 'uganda';
 
 function switchCountry(country, btn) {
-  if (btn.classList.contains('inactive')) return;
+  if (!btn || btn.classList.contains('inactive')) return;
   currentCountry = country;
   openId = null;
   document.getElementById('detail').classList.remove('open');
@@ -483,11 +272,10 @@ function switchCountry(country, btn) {
 }
 
 function resetFilters() {
-  ['f-tier','f-status','f-crs','f-conf'].forEach(id => {
+  ['f-tier','f-status','f-crs','f-vief','f-vanex','f-conf'].forEach(id => {
     document.getElementById(id).value = '';
   });
-  sortField = null;
-  sortDir = 1;
+  sortField = null; sortDir = 1;
   document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '⇅');
   document.querySelectorAll('thead th').forEach(th => th.classList.remove('sorted'));
 }
@@ -495,18 +283,15 @@ function resetFilters() {
 function loadCountry(country) {
   document.getElementById('count-label').textContent = '';
   document.getElementById('tbody').innerHTML =
-    `<tr><td colspan="9" class="state-msg">Loading ${country} data...</td></tr>`;
+    `<tr><td colspan="12" class="state-msg">Loading ${country} data...</td></tr>`;
   fetch(`${country}.json`)
-    .then(r => {
-      if (!r.ok) throw new Error(`${country}.json not found`);
-      return r.json();
-    })
+    .then(r => { if (!r.ok) throw new Error(`${country}.json not found`); return r.json(); })
     .then(data => { DATA = data; render(); })
     .catch(err => {
       DATA = [];
       document.getElementById('count-label').textContent = 'Error';
       document.getElementById('tbody').innerHTML =
-        `<tr><td colspan="9" class="state-msg">Could not load ${country}.json — make sure the file exists in the same folder.<br><small style="opacity:0.6">${err.message}</small></td></tr>`;
+        `<tr><td colspan="12" class="state-msg">Could not load ${country}.json — make sure the file exists in the same folder.<br><small style="opacity:0.6">${err.message}</small></td></tr>`;
     });
 }
 
@@ -545,7 +330,7 @@ function srcCls(s) {
 }
 
 function srcLabel(s) {
-  if (!s || s === 'Unknown' || s === 'Insufficient data') return '—';
+  if (!s || s === 'Unknown' || s === 'Insufficient data' || s === 'N/A') return '—';
   if (s.toLowerCase().includes('claude')) return 'Est.';
   return s;
 }
@@ -560,6 +345,8 @@ function getFiltered() {
   const tier   = document.getElementById('f-tier').value;
   const status = document.getElementById('f-status').value;
   const crs    = document.getElementById('f-crs').value;
+  const vief   = document.getElementById('f-vief').value;
+  const vanex  = document.getElementById('f-vanex').value;
   const conf   = document.getElementById('f-conf').value;
 
   return DATA.filter(d => {
@@ -568,14 +355,17 @@ function getFiltered() {
     if (crs === 'Active'   && !d.crs_relationship.includes('Active'))   return false;
     if (crs === 'Indirect' && !d.crs_relationship.includes('Indirect')) return false;
     if (crs === 'None'     && d.crs_relationship !== 'None confirmed')   return false;
+    if (vief === 'yes' && !d.vief_partner) return false;
+    if (vief === 'no'  &&  d.vief_partner) return false;
+    if (vanex === 'yes' && !d.vanex_member) return false;
+    if (vanex === 'no'  &&  d.vanex_member) return false;
     if (conf   && d.data_confidence !== conf) return false;
     return true;
   }).sort((a, b) => {
     if (!sortField) return 0;
     let va, vb;
     if (sortField === 'tier') {
-      va = tierNum(a.lending_readiness_tier);
-      vb = tierNum(b.lending_readiness_tier);
+      va = tierNum(a.lending_readiness_tier); vb = tierNum(b.lending_readiness_tier);
     } else {
       va = (a[sortField] || '').toString().toLowerCase();
       vb = (b[sortField] || '').toString().toLowerCase();
@@ -590,29 +380,27 @@ function sortBy(field) {
   document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '⇅');
   document.querySelectorAll('thead th').forEach(th => th.classList.remove('sorted'));
   const el = document.getElementById('s-' + field);
-  if (el) {
-    el.textContent = sortDir === 1 ? '↑' : '↓';
-    el.closest('th').classList.add('sorted');
-  }
+  if (el) { el.textContent = sortDir === 1 ? '↑' : '↓'; el.closest('th').classList.add('sorted'); }
   render();
 }
 
 function render() {
   const rows = getFiltered();
-  const countryLabel = currentCountry.charAt(0).toUpperCase() + currentCountry.slice(1);
+  const label = currentCountry.charAt(0).toUpperCase() + currentCountry.slice(1);
   document.getElementById('count-label').textContent =
-    `${countryLabel} · ${DATA.length} companies · ${rows.length} shown`;
+    `${label} · ${DATA.length} companies · ${rows.length} shown`;
 
   const tbody = document.getElementById('tbody');
-
   if (rows.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="9" class="state-msg">No results match the current filters.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="12" class="state-msg">No results match the current filters.</td></tr>`;
     if (openId) { openId = null; document.getElementById('detail').classList.remove('open'); }
     return;
   }
 
-  tbody.innerHTML = rows.map(d => `
+  tbody.innerHTML = rows.map((d, i) => `
     <tr onclick="toggleDetail('${d.id}')" class="${openId === d.id ? 'active-row' : ''}">
+      <td class="row-num">${i + 1}</td>
+      <td class="row-id">${d.id}</td>
       <td>
         <div style="font-weight:500">${d.name}</div>
         <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text3);margin-top:2px">Est. ${d.founded}</div>
@@ -630,6 +418,7 @@ function render() {
         <div class="src ${srcCls(d.capital_need_source)}">${srcLabel(d.capital_need_source)}</div>
       </td>
       <td>${crsTag(d.crs_relationship)}</td>
+      <td style="text-align:center">${d.vief_partner ? '<span class="tag vief-tag">VIEF</span>' : '<span style="color:var(--border2);font-size:11px">—</span>'}</td>
       <td>${confTag(d.data_confidence)}</td>
       <td>${statusTag(d.pipeline_status)}</td>
     </tr>
@@ -639,13 +428,8 @@ function render() {
 }
 
 function toggleDetail(id) {
-  if (openId === id) {
-    openId = null;
-    document.getElementById('detail').classList.remove('open');
-  } else {
-    openId = id;
-    renderDetail(id);
-  }
+  if (openId === id) { openId = null; document.getElementById('detail').classList.remove('open'); }
+  else { openId = id; renderDetail(id); }
   render();
 }
 
@@ -656,19 +440,20 @@ function renderDetail(id) {
   panel.classList.add('open');
 
   const donorRows = (d.donor_history || []).map(h =>
-    `<tr>
-      <td>${h.donor}</td>
-      <td>${h.amount}</td>
-      <td>${h.year}</td>
-      <td style="color:var(--text3)">${h.source || ''}</td>
-    </tr>`
+    `<tr><td>${h.donor}</td><td>${h.amount}</td><td>${h.year}</td><td style="color:var(--text3)">${h.source || ''}</td></tr>`
   ).join('');
+
+  const badges = [
+    d.vief_partner  ? '<span class="tag vief-tag">VIEF Partner</span>' : '',
+    d.vanex_member  ? '<span class="tag" style="background:var(--blue-bg);color:var(--blue-text);border-color:var(--blue-border)">VANEX Member</span>' : '',
+  ].filter(Boolean).join(' ');
 
   panel.innerHTML = `
     <div class="detail-header">
       <div>
         <div class="detail-name">${d.name}</div>
         <div class="detail-sub">${d.id} · ${d.hq_location} · Est. ${d.founded}</div>
+        ${badges ? `<div style="margin-top:8px">${badges}</div>` : ''}
       </div>
       <button class="detail-close" onclick="toggleDetail('${d.id}')">Close ×</button>
     </div>
@@ -703,7 +488,7 @@ function renderDetail(id) {
       <div class="detail-field"><label>Livelihoods / Env / Women</label><div class="val">${d.livelihood_score}/5 · Env: ${d.environment_focus} · Women: ${d.women_focus}</div></div>
       <div class="detail-field"><label>Primary contact</label><div class="val">${d.primary_contact}</div></div>
       <div class="detail-field"><label>Website</label>
-        <div class="val"><a href="${d.website}" target="_blank" rel="noopener" style="color:var(--blue-text)">${d.website}</a></div>
+        <div class="val">${d.website ? `<a href="${d.website}" target="_blank" rel="noopener" style="color:var(--blue-text)">${d.website}</a>` : '—'}</div>
       </div>
       <div class="detail-field"><label>Last updated</label><div class="val">${d.last_updated}</div></div>
     </div>
