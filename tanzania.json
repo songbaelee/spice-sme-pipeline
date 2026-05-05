@@ -8,29 +8,54 @@
     "primary_contact": "Juan Guardado, Co-founder & Managing Director",
     "org_type": "Social enterprise",
     "value_chain_role": "Vertically integrated (cultivation to extraction)",
-    "primary_products": ["Vanilla", "Vanilla extract", "Cacao", "Coffee", "Orange extract"],
+    "primary_products": [
+      "Vanilla",
+      "Vanilla extract",
+      "Cacao",
+      "Coffee",
+      "Orange extract"
+    ],
     "farmer_network_size": "13,000+ (Tanzania and Uganda combined)",
-    "certifications": ["B Corporation", "Organic", "Halal", "Kosher"],
-    "export_markets": ["Europe", "USA", "East Africa (B2B)"],
-    "revenue_usd_est": "$2M–$5M",
+    "certifications": [
+      "B Corporation",
+      "Organic",
+      "Halal",
+      "Kosher"
+    ],
+    "export_markets": [
+      "Europe",
+      "USA",
+      "East Africa (B2B)"
+    ],
+    "revenue_usd_est": "$2M\u2013$5M",
     "revenue_source": "RocketReach firmographic ($2M reported for 2025); ZoomInfo corroborates",
     "revenue_confidence": "Medium",
-    "staff_count_est": "35–50",
+    "staff_count_est": "35\u201350",
     "staff_source": "RocketReach (37 employees); LinkedIn hiring activity corroborates",
     "staff_confidence": "Medium",
-    "existing_debt": "DOB Equity (Dutch family-backed impact investor) — undisclosed equity stake; prior investment from other DFIs likely",
-    "has_audited_accounts": "Unknown — B Corp status and impact investor backing suggest investor-reviewed financials",
-    "capital_need_est_usd": "$500K–$2M",
+    "existing_debt": "DOB Equity (Dutch family-backed impact investor) \u2014 undisclosed equity stake; prior investment from other DFIs likely",
+    "has_audited_accounts": "Unknown \u2014 B Corp status and impact investor backing suggest investor-reviewed financials",
+    "capital_need_est_usd": "$500K\u2013$2M",
     "capital_use_of_funds": "Farmer outgrower expansion, working capital for vanilla purchasing season, processing capacity",
     "capital_need_source": "Claude estimate based on scale and DOB Equity profile",
     "capital_need_confidence": "Low",
-    "crs_relationship": "Indirect — Juan Guardado (co-founder) also co-founded NEI Uganda; NEI Uganda appeared in CRS VINES project context",
-    "crs_notes": "NEI is the most investment-ready social enterprise in the Tanzania spice/vanilla space. DOB Equity backing provides credibility. Tanzania operations are legally distinct from Uganda entity — confirm structure before proceeding. Blue Pacific Flavors (USA) markets Kilimanjaro Vanilla via NEI supply chain. USAID Digital Agriculture Ecosystem Assessment (Tanzania) featured NEI. Strong livelihoods story: $250 incremental income per household target. Note: may be above SME ceiling if Tanzania + Uganda revenue consolidated.",
+    "crs_relationship": "Indirect \u2014 Juan Guardado (co-founder) also co-founded NEI Uganda; NEI Uganda appeared in CRS VINES project context",
+    "crs_notes": "NEI is the most investment-ready social enterprise in the Tanzania spice/vanilla space. DOB Equity backing provides credibility. Tanzania operations are legally distinct from Uganda entity \u2014 confirm structure before proceeding. Blue Pacific Flavors (USA) markets Kilimanjaro Vanilla via NEI supply chain. USAID Digital Agriculture Ecosystem Assessment (Tanzania) featured NEI. Strong livelihoods story: $250 incremental income per household target. Note: may be above SME ceiling if Tanzania + Uganda revenue consolidated.",
     "donor_history": [
-      {"donor": "DOB Equity (Netherlands)", "type": "Impact equity", "amount": "Undisclosed", "year": "~2018–present"},
-      {"donor": "USAID", "type": "Programme feature / TA", "amount": "Unknown", "year": "2021"}
+      {
+        "donor": "DOB Equity (Netherlands)",
+        "type": "Impact equity",
+        "amount": "Undisclosed",
+        "year": "~2018\u2013present"
+      },
+      {
+        "donor": "USAID",
+        "type": "Programme feature / TA",
+        "amount": "Unknown",
+        "year": "2021"
+      }
     ],
-    "lending_readiness_tier": "Tier 1 — Investment Ready",
+    "lending_readiness_tier": "Tier 1 \u2014 Investment Ready",
     "pipeline_status": "Prospect",
     "taspa_member": false,
     "tanzania_spices_label": false,
@@ -40,7 +65,7 @@
     "data_confidence": "Medium",
     "sme_classification_note": "Revenue likely within SME range for Tanzania entity alone; confirm consolidated vs. standalone financials",
     "last_updated": "2026-05",
-    "notes": "Operates both 'NEI' B2B brand and 'Viva Vanilla' retail/consumer brand. Has own extraction facility in Tanzania — only regional company to do so. SourceTrace digital traceability system in use."
+    "notes": "Operates both 'NEI' B2B brand and 'Viva Vanilla' retail/consumer brand. Has own extraction facility in Tanzania \u2014 only regional company to do so. SourceTrace digital traceability system in use."
   },
   {
     "id": "tza-002",
@@ -51,28 +76,45 @@
     "primary_contact": "Mr. Ayo (founder; full name not publicly listed)",
     "org_type": "Private company (social enterprise model)",
     "value_chain_role": "Processor and exporter",
-    "primary_products": ["Black pepper", "Cardamom", "Cloves", "Turmeric", "Ginger", "Cinnamon"],
+    "primary_products": [
+      "Black pepper",
+      "Cardamom",
+      "Cloves",
+      "Turmeric",
+      "Ginger",
+      "Cinnamon"
+    ],
     "farmer_network_size": "654 (120 of whom are youth); 1,704 hectares under certified organic management",
-    "certifications": ["Organic (20+ years certified)"],
-    "export_markets": ["Europe", "International"],
+    "certifications": [
+      "Organic (20+ years certified)"
+    ],
+    "export_markets": [
+      "Europe",
+      "International"
+    ],
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
-    "staff_count_est": "Unknown — processing house employs 98% women",
+    "staff_count_est": "Unknown \u2014 processing house employs 98% women",
     "staff_source": "Guardian article (Oct 2024)",
     "staff_confidence": "Low",
     "existing_debt": "Unknown",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$100K–$500K",
+    "capital_need_est_usd": "$100K\u2013$500K",
     "capital_use_of_funds": "Processing house expansion, working capital for harvest purchasing, organic certification maintenance",
     "capital_need_source": "Claude estimate based on organic processor profile and farmer network size",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "High alignment with CRS livelihoods and environment priorities. 20+ years organic certification is exceptionally strong for the sector. Women-led processing (98% female labour) is a standout feature. Supported by USAID Tuhifadhi Maliasili (wildlife/biodiversity conservation project) — confirms USAID touchpoint in-country. Community microfinance groups established with district government support — signals existing credit culture among farmer base. CEO contact not publicly listed; approach via website or TanTrade/TASPA introduction.",
+    "crs_notes": "High alignment with CRS livelihoods and environment priorities. 20+ years organic certification is exceptionally strong for the sector. Women-led processing (98% female labour) is a standout feature. Supported by USAID Tuhifadhi Maliasili (wildlife/biodiversity conservation project) \u2014 confirms USAID touchpoint in-country. Community microfinance groups established with district government support \u2014 signals existing credit culture among farmer base. CEO contact not publicly listed; approach via website or TanTrade/TASPA introduction.",
     "donor_history": [
-      {"donor": "USAID Tuhifadhi Maliasili", "type": "Programme support (biodiversity/conservation)", "amount": "Unknown", "year": "~2023–present"}
+      {
+        "donor": "USAID Tuhifadhi Maliasili",
+        "type": "Programme support (biodiversity/conservation)",
+        "amount": "Unknown",
+        "year": "~2023\u2013present"
+      }
     ],
-    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
     "pipeline_status": "Prospect",
     "taspa_member": false,
     "tanzania_spices_label": false,
@@ -82,7 +124,7 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Operations based in East Usambara Mountains, a globally recognised biodiversity hotspot. Organic from 2005 — one of Tanzania's longest-certified organic spice exporters. Registered as independent company in 2011 after years operating as informal scheme. Good Agricultural Practices training includes organic pesticides (neem, garlic, rabbit urine). Kwamhosi village processing house is a documented community anchor."
+    "notes": "Operations based in East Usambara Mountains, a globally recognised biodiversity hotspot. Organic from 2005 \u2014 one of Tanzania's longest-certified organic spice exporters. Registered as independent company in 2011 after years operating as informal scheme. Good Agricultural Practices training includes organic pesticides (neem, garlic, rabbit urine). Kwamhosi village processing house is a documented community anchor."
   },
   {
     "id": "tza-003",
@@ -93,11 +135,22 @@
     "primary_contact": "Abdul Athumani Mkono, CEO",
     "org_type": "Private company",
     "value_chain_role": "Producer, processor, and exporter",
-    "primary_products": ["African bird eye chilli", "Chilli powder", "Pepper"],
+    "primary_products": [
+      "African bird eye chilli",
+      "Chilli powder",
+      "Pepper"
+    ],
     "farmer_network_size": "1,000+ (advisory/extension); 31 contracted outgrowers; sources across Tanzania, Uganda, Zambia",
-    "certifications": ["Unknown"],
-    "export_markets": ["Europe", "Kenya", "India", "Sudan"],
-    "revenue_usd_est": "Unknown — 10 tonnes/month chilli exports reported",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Europe",
+      "Kenya",
+      "India",
+      "Sudan"
+    ],
+    "revenue_usd_est": "Unknown \u2014 10 tonnes/month chilli exports reported",
     "revenue_source": "MSU Alliance for African Partnership profile",
     "revenue_confidence": "Low",
     "staff_count_est": "Unknown",
@@ -105,16 +158,21 @@
     "staff_confidence": "Low",
     "existing_debt": "Unknown",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$50K–$200K",
+    "capital_need_est_usd": "$50K\u2013$200K",
     "capital_use_of_funds": "Outgrower scheme expansion, processing plant scale-up (chilli powder), working capital for harvest",
     "capital_need_source": "Claude estimate based on company stage and outgrower model",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Founder Abdul Mkono is a YIELD programme participant (MSU/Alliance for African Partnership — USAID-funded leadership programme for young agri-entrepreneurs). Seedstars Tanga winner (2018) — early-stage investor validation. Processing plant in pilot stage as of last reported period. EU chilli export standards are a certification gap to close. Outgrower model across three countries is ambitious for a company of this size — supply chain reliability risk. Chilli is not CRS's priority spice (vanilla/cloves/pepper) but is a legitimate adjacent crop.",
+    "crs_notes": "Founder Abdul Mkono is a YIELD programme participant (MSU/Alliance for African Partnership \u2014 USAID-funded leadership programme for young agri-entrepreneurs). Seedstars Tanga winner (2018) \u2014 early-stage investor validation. Processing plant in pilot stage as of last reported period. EU chilli export standards are a certification gap to close. Outgrower model across three countries is ambitious for a company of this size \u2014 supply chain reliability risk. Chilli is not CRS's priority spice (vanilla/cloves/pepper) but is a legitimate adjacent crop.",
     "donor_history": [
-      {"donor": "MSU / USAID (YIELD programme)", "type": "Mentorship and capacity building", "amount": "Non-financial", "year": "2018"}
+      {
+        "donor": "MSU / USAID (YIELD programme)",
+        "type": "Mentorship and capacity building",
+        "amount": "Non-financial",
+        "year": "2018"
+      }
     ],
-    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
     "pipeline_status": "Prospect",
     "taspa_member": false,
     "tanzania_spices_label": true,
@@ -124,7 +182,7 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Founded 2014; chilli exports to Kenya began 2017. Drone and drip irrigation technology in use. AGRISTA app planned to link agricultural stakeholders — not confirmed as live. CEO has agricultural economics degree. Cross-border outgrower model (TZ/UG/ZM) is unusual for this scale."
+    "notes": "Founded 2014; chilli exports to Kenya began 2017. Drone and drip irrigation technology in use. AGRISTA app planned to link agricultural stakeholders \u2014 not confirmed as live. CEO has agricultural economics degree. Cross-border outgrower model (TZ/UG/ZM) is unusual for this scale."
   },
   {
     "id": "tza-004",
@@ -135,10 +193,19 @@
     "primary_contact": "Unknown",
     "org_type": "Private company",
     "value_chain_role": "Producer and processor",
-    "primary_products": ["Cinnamon", "Black pepper", "Pilau masala", "Ginger"],
-    "farmer_network_size": "Unknown — sources from Morogoro smallholder farmers",
-    "certifications": ["Unknown"],
-    "export_markets": ["Local (Mjimwema shop); online — export markets unconfirmed"],
+    "primary_products": [
+      "Cinnamon",
+      "Black pepper",
+      "Pilau masala",
+      "Ginger"
+    ],
+    "farmer_network_size": "Unknown \u2014 sources from Morogoro smallholder farmers",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Local (Mjimwema shop); online \u2014 export markets unconfirmed"
+    ],
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
@@ -152,9 +219,9 @@
     "capital_need_source": "Unknown",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Placeholder entry. Featured on Tanzania Spices website — good agricultural practices claimed. Brand name 'Linda Spices' (meaning 'secure' in Swahili). Morogoro is a cinnamon and black pepper production area. Requires direct outreach to assess readiness.",
+    "crs_notes": "Placeholder entry. Featured on Tanzania Spices website \u2014 good agricultural practices claimed. Brand name 'Linda Spices' (meaning 'secure' in Swahili). Morogoro is a cinnamon and black pepper production area. Requires direct outreach to assess readiness.",
     "donor_history": [],
-    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
     "pipeline_status": "Prospect",
     "taspa_member": false,
     "tanzania_spices_label": true,
@@ -164,21 +231,31 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Very early stage — established 2019. Limited public profile beyond Tanzania Spices listing. Uluguru Mountains sourcing is notable — the area has biodiversity significance."
+    "notes": "Very early stage \u2014 established 2019. Limited public profile beyond Tanzania Spices listing. Uluguru Mountains sourcing is notable \u2014 the area has biodiversity significance."
   },
   {
     "id": "tza-005",
     "name": "Get Aroma Spices",
-    "founded": "2019",
+    "founded": "2018",
     "hq_location": "Morogoro (Southern Highlands / Usambara Mountains sourcing)",
-    "website": "Unknown",
+    "website": "https://getaromaspices.weebly.com",
     "primary_contact": "Unknown",
     "org_type": "Private company",
     "value_chain_role": "Processor and trader",
-    "primary_products": ["Ginger powder", "Cinnamon", "Cardamom", "Tea masala", "Pilau masala"],
-    "farmer_network_size": "Unknown — sources from Morogoro and Singida highlands",
-    "certifications": ["Unknown — climate-smart / GAP practices claimed"],
-    "export_markets": ["Unknown — export readiness not confirmed"],
+    "primary_products": [
+      "Ginger powder",
+      "Cinnamon",
+      "Cardamom",
+      "Tea masala",
+      "Pilau masala"
+    ],
+    "farmer_network_size": "Unknown \u2014 sources from Morogoro and Singida highlands",
+    "certifications": [
+      "Unknown \u2014 climate-smart / GAP practices claimed"
+    ],
+    "export_markets": [
+      "Unknown \u2014 export readiness not confirmed"
+    ],
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
@@ -192,19 +269,19 @@
     "capital_need_source": "Unknown",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Placeholder entry. Featured on Tanzania Spices label website — climate-smart agricultural practices and farmer partnerships cited. Cardamom and ginger focus is relevant to CRS spice mandate. Very limited public profile. Requires direct outreach before further assessment.",
+    "crs_notes": "Placeholder entry. Featured on Tanzania Spices label website \u2014 climate-smart agricultural practices and farmer partnerships cited. Cardamom and ginger focus is relevant to CRS spice mandate. Very limited public profile. Requires direct outreach before further assessment.",
     "donor_history": [],
-    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
     "pipeline_status": "Prospect",
     "taspa_member": false,
     "tanzania_spices_label": true,
     "livelihood_score": 2,
     "environment_focus": "Partial",
     "women_focus": "Unknown",
-    "data_confidence": "Low",
+    "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Founded 2019 alongside Agri Promise — two similar Morogoro-area processors at roughly the same stage. May be worth a combined outreach visit."
+    "notes": "Founded 2019 alongside Agri Promise \u2014 two similar Morogoro-area processors at roughly the same stage. May be worth a combined outreach visit."
   },
   {
     "id": "tza-006",
@@ -215,14 +292,24 @@
     "primary_contact": "Unknown",
     "org_type": "Social enterprise",
     "value_chain_role": "Aggregator and processor",
-    "primary_products": ["Herbal and spiced teas", "Cloves", "Cinnamon", "Ginger", "Mixed spices"],
-    "farmer_network_size": "Multiple communities — Zanzibar, Maasai, Hadzabe, Uluguru, Kilimanjaro, Usambara",
-    "certifications": ["Organic (stated)"],
-    "export_markets": ["Tourism / local retail; export readiness unconfirmed"],
+    "primary_products": [
+      "Herbal and spiced teas",
+      "Cloves",
+      "Cinnamon",
+      "Ginger",
+      "Mixed spices"
+    ],
+    "farmer_network_size": "Multiple communities \u2014 Zanzibar, Maasai, Hadzabe, Uluguru, Kilimanjaro, Usambara",
+    "certifications": [
+      "Organic (stated)"
+    ],
+    "export_markets": [
+      "Tourism / local retail; export readiness unconfirmed"
+    ],
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
-    "staff_count_est": "Unknown — women hand-packers from multiple communities",
+    "staff_count_est": "Unknown \u2014 women hand-packers from multiple communities",
     "staff_source": "Tanzania Spices website",
     "staff_confidence": "Low",
     "existing_debt": "Unknown",
@@ -232,9 +319,9 @@
     "capital_need_source": "Unknown",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Strong gender and livelihoods story — products hand-packed by women from indigenous and rural communities. Carbon offsetting via solar energy cited. Reforestation partnerships mentioned. Currently tourism-facing (spice tour visitors) which limits export revenue visibility. Cross-community sourcing model is unusual and worth understanding. Requires direct outreach.",
+    "crs_notes": "Strong gender and livelihoods story \u2014 products hand-packed by women from indigenous and rural communities. Carbon offsetting via solar energy cited. Reforestation partnerships mentioned. Currently tourism-facing (spice tour visitors) which limits export revenue visibility. Cross-community sourcing model is unusual and worth understanding. Requires direct outreach.",
     "donor_history": [],
-    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
     "pipeline_status": "Prospect",
     "taspa_member": false,
     "tanzania_spices_label": true,
@@ -244,7 +331,7 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Multi-community sourcing model spans mainland and Zanzibar — operationally complex for an early-stage enterprise. Solar energy use and reforestation are genuine environment credentials. Tourism channel is a current revenue floor but limits scale."
+    "notes": "Multi-community sourcing model spans mainland and Zanzibar \u2014 operationally complex for an early-stage enterprise. Solar energy use and reforestation are genuine environment credentials. Tourism channel is a current revenue floor but limits scale."
   },
   {
     "id": "tza-007",
@@ -255,10 +342,16 @@
     "primary_contact": "Unknown",
     "org_type": "Private company",
     "value_chain_role": "Aggregator and processor",
-    "primary_products": ["Ginger (fresh, sun-dried, ground)"],
-    "farmer_network_size": "Unknown — sources from Iringa and Tabora ginger farmers",
-    "certifications": ["Unknown"],
-    "export_markets": ["Unknown"],
+    "primary_products": [
+      "Ginger (fresh, sun-dried, ground)"
+    ],
+    "farmer_network_size": "Unknown \u2014 sources from Iringa and Tabora ginger farmers",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
@@ -272,9 +365,9 @@
     "capital_need_source": "Unknown",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Placeholder entry. Ginger specialist — Iringa and Tabora are confirmed ginger-growing regions. Airtight packaging cited as quality differentiator. Tanzania ginger exports are currently very low (<50 tonnes/year dried) — value-add processing is the right strategic position. Very limited public profile. Requires direct outreach.",
+    "crs_notes": "Placeholder entry. Ginger specialist \u2014 Iringa and Tabora are confirmed ginger-growing regions. Airtight packaging cited as quality differentiator. Tanzania ginger exports are currently very low (<50 tonnes/year dried) \u2014 value-add processing is the right strategic position. Very limited public profile. Requires direct outreach.",
     "donor_history": [],
-    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
     "pipeline_status": "Prospect",
     "taspa_member": false,
     "tanzania_spices_label": true,
@@ -284,7 +377,7 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Ginger focus is strategically interesting — Tanzania has export potential in dried/processed ginger but current volumes are low. Multi-region sourcing (Mwanza, Iringa, Tabora) is a strength if supply chain is managed. Name suggests possible honey diversification."
+    "notes": "Ginger focus is strategically interesting \u2014 Tanzania has export potential in dried/processed ginger but current volumes are low. Multi-region sourcing (Mwanza, Iringa, Tabora) is a strength if supply chain is managed. Name suggests possible honey diversification."
   },
   {
     "id": "tza-008",
@@ -295,10 +388,19 @@
     "primary_contact": "Unknown",
     "org_type": "Private company",
     "value_chain_role": "Aggregator and processor",
-    "primary_products": ["Mixed spices", "Cinnamon", "Cardamom", "Ginger"],
-    "farmer_network_size": "Unknown — sources from smallholder farmers",
-    "certifications": ["Unknown — organic and GAP practices stated"],
-    "export_markets": ["Unknown"],
+    "primary_products": [
+      "Mixed spices",
+      "Cinnamon",
+      "Cardamom",
+      "Ginger"
+    ],
+    "farmer_network_size": "Unknown \u2014 sources from smallholder farmers",
+    "certifications": [
+      "Unknown \u2014 organic and GAP practices stated"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
@@ -312,9 +414,9 @@
     "capital_need_source": "Unknown",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Placeholder entry. Founded 2022 — very early stage. Featured on Tanzania Spices label website. GAP and sustainable practices stated but not verified. Requires direct outreach before any assessment is possible.",
+    "crs_notes": "Placeholder entry. Founded 2022 \u2014 very early stage. Featured on Tanzania Spices label website. GAP and sustainable practices stated but not verified. Requires direct outreach before any assessment is possible.",
     "donor_history": [],
-    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
     "pipeline_status": "Prospect",
     "taspa_member": false,
     "tanzania_spices_label": true,
@@ -324,7 +426,7 @@
     "data_confidence": "Low",
     "sme_classification_note": "Too early stage for lending consideration without significant TA first",
     "last_updated": "2026-05",
-    "notes": "Only 3 years old at time of research. Lowest priority for near-term lending engagement — included for pipeline completeness."
+    "notes": "Only 3 years old at time of research. Lowest priority for near-term lending engagement \u2014 included for pipeline completeness."
   },
   {
     "id": "tza-009",
@@ -335,10 +437,17 @@
     "primary_contact": "Unknown",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Cloves", "Mixed spices"],
-    "farmer_network_size": "Unknown — sources direct from local farmer cooperatives",
-    "certifications": ["Unknown — GAP compliance stated"],
-    "export_markets": ["International (B2B)"],
+    "primary_products": [
+      "Cloves",
+      "Mixed spices"
+    ],
+    "farmer_network_size": "Unknown \u2014 sources direct from local farmer cooperatives",
+    "certifications": [
+      "Unknown \u2014 GAP compliance stated"
+    ],
+    "export_markets": [
+      "International (B2B)"
+    ],
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
@@ -347,14 +456,14 @@
     "staff_confidence": "Low",
     "existing_debt": "Unknown",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$100K–$300K",
+    "capital_need_est_usd": "$100K\u2013$300K",
     "capital_use_of_funds": "Working capital for clove purchasing at harvest; cold storage or grading equipment",
     "capital_need_source": "Claude estimate based on clove exporter profile",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Direct-from-cooperative sourcing model eliminates intermediaries — good value chain alignment. Clove is Tanzania's dominant export spice (90%+ of spice exports). Website is live and professional. Requires direct outreach for financial profile. Clove season working capital is the most common lending need in this segment.",
+    "crs_notes": "Direct-from-cooperative sourcing model eliminates intermediaries \u2014 good value chain alignment. Clove is Tanzania's dominant export spice (90%+ of spice exports). Website is live and professional. Requires direct outreach for financial profile. Clove season working capital is the most common lending need in this segment.",
     "donor_history": [],
-    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
     "pipeline_status": "Prospect",
     "taspa_member": false,
     "tanzania_spices_label": false,
@@ -375,10 +484,16 @@
     "primary_contact": "Unknown",
     "org_type": "Farmer cooperative / association",
     "value_chain_role": "Farmer group",
-    "primary_products": ["Organic cloves"],
+    "primary_products": [
+      "Organic cloves"
+    ],
     "farmer_network_size": "~100 certified organic clove farmers (as of MOU signing period)",
-    "certifications": ["Organic (TanCert — pilot project with ZSTC and GANEFRYD, Denmark)"],
-    "export_markets": ["Europe (via ZSTC / GANEFRYD MOU)"],
+    "certifications": [
+      "Organic (TanCert \u2014 pilot project with ZSTC and GANEFRYD, Denmark)"
+    ],
+    "export_markets": [
+      "Europe (via ZSTC / GANEFRYD MOU)"
+    ],
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
@@ -387,17 +502,27 @@
     "staff_confidence": "Low",
     "existing_debt": "Unknown",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$50K–$150K",
+    "capital_need_est_usd": "$50K\u2013$150K",
     "capital_use_of_funds": "Harvest purchasing float, post-harvest processing (drying, grading), certification maintenance",
     "capital_need_source": "Claude estimate based on cooperative size and organic clove pilot scope",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Pemba organic clove pilot is a documented success story — ~100 certified farmers, European buyer (GANEFRYD), MOU with ZSTC and Zanzibar Government. Organic premium positioning is exactly the kind of upmarket shift CRS's lending facility would want to support. GAFA may benefit from CRS's international buyer networks or certification cost financing. Key risk: ZSTC is the parastatal intermediary — need to understand GAFA's direct vs. ZSTC-mediated export relationship. Approach via TanTrade or ZSTC introduction.",
+    "crs_notes": "Pemba organic clove pilot is a documented success story \u2014 ~100 certified farmers, European buyer (GANEFRYD), MOU with ZSTC and Zanzibar Government. Organic premium positioning is exactly the kind of upmarket shift CRS's lending facility would want to support. GAFA may benefit from CRS's international buyer networks or certification cost financing. Key risk: ZSTC is the parastatal intermediary \u2014 need to understand GAFA's direct vs. ZSTC-mediated export relationship. Approach via TanTrade or ZSTC introduction.",
     "donor_history": [
-      {"donor": "ZSTC (Zanzibar State Trading Corporation)", "type": "Government programme / certification support", "amount": "Unknown", "year": "Ongoing"},
-      {"donor": "GANEFRYD (Denmark)", "type": "Buyer / MOU partner", "amount": "Unknown", "year": "~2015+"}
+      {
+        "donor": "ZSTC (Zanzibar State Trading Corporation)",
+        "type": "Government programme / certification support",
+        "amount": "Unknown",
+        "year": "Ongoing"
+      },
+      {
+        "donor": "GANEFRYD (Denmark)",
+        "type": "Buyer / MOU partner",
+        "amount": "Unknown",
+        "year": "~2015+"
+      }
     ],
-    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
     "pipeline_status": "Prospect",
     "taspa_member": false,
     "tanzania_spices_label": false,
@@ -405,9 +530,9 @@
     "environment_focus": "Yes",
     "women_focus": "Unknown",
     "data_confidence": "Low",
-    "sme_classification_note": "This is a farmer association, not a registered company — legal entity structure for lending must be confirmed",
+    "sme_classification_note": "This is a farmer association, not a registered company \u2014 legal entity structure for lending must be confirmed",
     "last_updated": "2026-05",
-    "notes": "Pemba cloves are documented to have 15–18% essential oil content — significantly higher than global average. GANEFRYD stated European demand for organic cloves at 10,000 tonnes/year minimum. GAFA is the smallholder anchor of the pilot. ZSTC relationship is both an enabler (branding, infrastructure) and a potential constraint (parastatal intermediation of prices)."
+    "notes": "Pemba cloves are documented to have 15\u201318% essential oil content \u2014 significantly higher than global average. GANEFRYD stated European demand for organic cloves at 10,000 tonnes/year minimum. GAFA is the smallholder anchor of the pilot. ZSTC relationship is both an enabler (branding, infrastructure) and a potential constraint (parastatal intermediation of prices)."
   },
   {
     "id": "tza-011",
@@ -418,10 +543,20 @@
     "primary_contact": "Unknown",
     "org_type": "Private company",
     "value_chain_role": "Processor and exporter",
-    "primary_products": ["Ginger", "Pepper", "Turmeric", "Chillies", "Lemongrass"],
+    "primary_products": [
+      "Ginger",
+      "Pepper",
+      "Turmeric",
+      "Chillies",
+      "Lemongrass"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic (stated in IFC/REPOA export strategy document)"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Organic (stated in IFC/REPOA export strategy document)"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
@@ -435,9 +570,9 @@
     "capital_need_source": "Unknown",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Named in REPOA / EU-funded Tanzania export strategy report as a certified organic producer — one of very few named in that document. Multi-location operations (Zanzibar, Tanga, Kigoma) suggest meaningful scale. No web presence found — research via TOAM (Tanzania Organic Agriculture Movement) or TanCert recommended. Broad product range (ginger, pepper, turmeric, chillies, lemongrass) across multiple growing regions is a supply chain strength.",
+    "crs_notes": "Named in REPOA / EU-funded Tanzania export strategy report as a certified organic producer \u2014 one of very few named in that document. Multi-location operations (Zanzibar, Tanga, Kigoma) suggest meaningful scale. No web presence found \u2014 research via TOAM (Tanzania Organic Agriculture Movement) or TanCert recommended. Broad product range (ginger, pepper, turmeric, chillies, lemongrass) across multiple growing regions is a supply chain strength.",
     "donor_history": [],
-    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
     "pipeline_status": "Prospect",
     "taspa_member": false,
     "tanzania_spices_label": false,
@@ -447,7 +582,7 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Source: REPOA / Landell Mills 'Harnessing the potential of Tanzania's exports' report (EU-ACP TradeCom II). Certified organic is confirmed via that document. No independent web presence found — research via TOAM or TanCert directory recommended. Also cited alongside Clove Stem Oil Distillery (Pemba) and Evasa T (Arusha) as established organic operators."
+    "notes": "Source: REPOA / Landell Mills 'Harnessing the potential of Tanzania's exports' report (EU-ACP TradeCom II). Certified organic is confirmed via that document. No independent web presence found \u2014 research via TOAM or TanCert directory recommended. Also cited alongside Clove Stem Oil Distillery (Pemba) and Evasa T (Arusha) as established organic operators."
   },
   {
     "id": "tza-012",
@@ -458,10 +593,20 @@
     "primary_contact": "Unknown",
     "org_type": "Private company",
     "value_chain_role": "Processor",
-    "primary_products": ["Clove stem oil (essential oil)", "Lemongrass oil", "Cinnamon leaf oil", "Eucalyptus oil", "Sweet basil oil"],
+    "primary_products": [
+      "Clove stem oil (essential oil)",
+      "Lemongrass oil",
+      "Cinnamon leaf oil",
+      "Eucalyptus oil",
+      "Sweet basil oil"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International (essential oils)"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International (essential oils)"
+    ],
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
@@ -470,14 +615,14 @@
     "staff_confidence": "Low",
     "existing_debt": "Unknown",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$100K–$500K",
+    "capital_need_est_usd": "$100K\u2013$500K",
     "capital_use_of_funds": "Distillation capacity expansion, raw material (clove stems) purchasing",
     "capital_need_source": "Claude estimate based on essential oil processor profile",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Essential oil distillation is a high-value-add processing step — clove stem oil commands strong international prices in fragrance, pharmaceutical, and food sectors. Pemba location means access to the highest-quality clove stems globally. Value-add model aligns with CRS facility's interest in processors with farmer network impact. Very limited public profile. Named in EU/REPOA export strategy report. Research via ZSTC or TanTrade introduction recommended.",
+    "crs_notes": "Essential oil distillation is a high-value-add processing step \u2014 clove stem oil commands strong international prices in fragrance, pharmaceutical, and food sectors. Pemba location means access to the highest-quality clove stems globally. Value-add model aligns with CRS facility's interest in processors with farmer network impact. Very limited public profile. Named in EU/REPOA export strategy report. Research via ZSTC or TanTrade introduction recommended.",
     "donor_history": [],
-    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
     "pipeline_status": "Prospect",
     "taspa_member": false,
     "tanzania_spices_label": false,
@@ -487,6 +632,6 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Source: REPOA / EU-ACP TradeCom II report. Clove stem oil has 72–90% eugenol content — used in dental anesthesia, fragrance, and food preservation. Pemba is the optimal sourcing location globally for this product. Distillery capital requirements are typically equipment-heavy — lending use case would likely be equipment or working capital for raw material."
+    "notes": "Source: REPOA / EU-ACP TradeCom II report. Clove stem oil has 72\u201390% eugenol content \u2014 used in dental anesthesia, fragrance, and food preservation. Pemba is the optimal sourcing location globally for this product. Distillery capital requirements are typically equipment-heavy \u2014 lending use case would likely be equipment or working capital for raw material."
   }
 ]
