@@ -154,7 +154,7 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Most sophisticated operator in East Africa vanilla extract space. Uganda is a subset of Tanzania-anchored business \u2014 isolate Uganda entity financials before advancing. Feb 2026: partnered with Velora Enterprises (uga-013) for premium Ugandan vanilla supply chain."
+    "notes": "Most sophisticated operator in East Africa vanilla extract space. Uganda is a subset of Tanzania-anchored business. VANEX lists \"Natural Extracts Industries Uganda Ltd\" as a separate entry (uga-005) \u2014 it is unclear whether this is a truly independent legal entity with separate financials or simply the Uganda registration of the same company. This should be clarified in first contact with Abubaker Mulindwa or Juan Guardado before determining which entity a lending facility would contract with. Feb 2026: partnered with Velora Enterprises (uga-013) for premium Ugandan vanilla supply chain."
   },
   {
     "id": "uga-003",
@@ -424,7 +424,7 @@
     "capital_need_source": "Claude estimate \u2014 VANEX profile notes pre-season farmer security financing as active need; FLAVEX partnership confirms working capital gap",
     "capital_need_confidence": "Medium",
     "crs_relationship": "Indirect",
-    "crs_notes": "VIEF partner under VINES. VANEX member. First Uganda company to introduce quality-based pricing combined with Fairtrade and Organic premiums. FLAVEX (Germany) co-finances pre-season farmer security costs \u2014 this is an explicit working capital use case CRS could formalise. Five-certification stack is exceptional for a smaller operator.",
+    "crs_notes": "VIEF partner under VINES. VANEX member. Uganda operation is an extension of Coetzee & Coetzee, a South African family company founded 1996 near Cape Town, originally rooted in the rooibos industry with operations now across South Africa, Namibia, Lesotho, and Uganda. This reframes the Uganda entity \u2014 it is not an expat-led Uganda startup but part of an established South African botanical ingredients business, which may mean a parent company balance sheet exists behind the Uganda operation. First Uganda company to introduce quality-based pricing combined with Fairtrade and Organic premiums. Works with FLAVEX (Germany) in a pre-season co-financing model for farmer security costs \u2014 an explicit working capital use case CRS could formalise.",
     "donor_history": [
       {
         "donor": "USDA / CRS VINES (VIEF partner)",
@@ -441,7 +441,7 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Pre-season farmer security financing (armed guards for vanilla crops) is a concrete, documentable working capital need. Managing Director contact is South African-registered \u2014 company may be expat-led. FLAVEX partnership with Rwenzori cooperatives is well documented."
+    "notes": "South African parent (Coetzee & Coetzee, est. 1996, Cape Town) has roots in rooibos and broader botanical ingredients. Uganda is one of four country footprints. Parent company balance sheet may provide additional collateral or creditworthiness context \u2014 worth exploring. Pre-season farmer security financing (armed guards for vanilla crops) is a concrete, documentable working capital need. FLAVEX partnership with Rwenzori cooperatives is well documented."
   },
   {
     "id": "uga-008",
@@ -508,9 +508,11 @@
     "org_type": "Cooperative",
     "value_chain_role": "Farmer group / Cooperative",
     "primary_products": [
-      "Vanilla"
+      "Vanilla",
+      "Cocoa",
+      "Coffee"
     ],
-    "farmer_network_size": "2,000+",
+    "farmer_network_size": "2,000+ traceable individual farmers across 19 producer organisations",
     "certifications": [
       "Organic",
       "Fair Trade"
@@ -533,7 +535,7 @@
     "capital_need_source": "Claude estimate \u2014 cooperative model with Fairtrade premium redistribution suggests strong governance but limited commercial credit access",
     "capital_need_confidence": "Low",
     "crs_relationship": "Indirect",
-    "crs_notes": "VIEF partner under VINES. First Fairtrade vanilla cooperative on the African continent (2005). Primary buyer is Ndali Estate (UK) \u2014 long-term exclusive relationship. CRS engagement must be complementary. High livelihoods impact \u2014 Fairtrade premiums fund community pharmacy, school roofing, scholarships, maize milling.",
+    "crs_notes": "VIEF partner under VINES. First Fairtrade vanilla cooperative on the African continent (2005). Started as Mubuku Vanilla & Moringa Farmers Association, registered as Cooperative Union in 2014. Now umbrella organisation of 19 producer organisations. TDC-Enabel (Belgian development agency) is a confirmed ongoing support partner \u2014 adds a second major donor relationship beyond Ndali Estate and VINES. Primary buyer is Ndali Estate (UK) \u2014 long-term relationship. CRS engagement must be complementary. High livelihoods impact \u2014 Fairtrade premiums fund community pharmacy, school roofing, scholarships. Also produces cocoa and coffee alongside vanilla.",
     "donor_history": [
       {
         "donor": "USDA / CRS VINES (VIEF partner)",
@@ -546,6 +548,12 @@
         "amount": "Ongoing since 2005",
         "year": "2005\u2013present",
         "source": "Ndali estate website"
+      },
+      {
+        "donor": "TDC-Enabel (Belgian development agency Trade for Development Centre)",
+        "amount": "Undisclosed programme support (2011\u20132013 confirmed; ongoing listed partner)",
+        "year": "2011\u2013present",
+        "source": "TDC-Enabel supported organisations page"
       }
     ],
     "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
@@ -553,10 +561,10 @@
     "livelihood_score": 5,
     "environment_focus": "Yes",
     "women_focus": "Yes",
-    "data_confidence": "Low",
+    "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Exceptional community investment track record. Direct contact details not publicly available beyond Ndali documentation. Would benefit from TA support before direct debt. Ndali Estate relationship is both an asset (market access) and a constraint (exclusivity)."
+    "notes": "TDC-Enabel listed RFCU as a supported organisation covering vanilla, cocoa and coffee. Registered cooperative union number 10567/IRCS. Also working with Atlas Coffee Importers (USA) for natural process Arabica coffee \u2014 broader than vanilla alone. Direct contact details not publicly available; approach via VINES team or Ndali Estate."
   },
   {
     "id": "uga-010",
@@ -592,7 +600,7 @@
     "capital_need_source": "Insufficient data",
     "capital_need_confidence": "Low",
     "crs_relationship": "Indirect",
-    "crs_notes": "VIEF partner under VINES \u2014 confirmed by CRS source. No public web presence or VANEX listing found. CRS VINES team is the primary route to contact information.",
+    "crs_notes": "VIEF partner under VINES \u2014 confirmed by CRS source. No public web presence or VANEX listing found. The CRS VINES team would likely hold contact details for all VIEF partners including Sagetra, making them a practical first route to an introduction \u2014 though this has not been confirmed directly.",
     "donor_history": [
       {
         "donor": "USDA / CRS VINES (VIEF partner)",
@@ -609,7 +617,7 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Placeholder entry \u2014 no public information available. Contact via CRS VINES team: David Hirst (Chief of Party) \u2014 david.hirst@crs.org, +256 757 288356."
+    "notes": "Placeholder entry \u2014 no public information available. Suggested first contact route: CRS VINES Chief of Party David Hirst (david.hirst@crs.org) \u2014 note this is an inference, not a confirmed contact protocol."
   },
   {
     "id": "uga-011",
@@ -1133,7 +1141,7 @@
     "founded": "Unknown",
     "hq_location": "Kilembe area, western Uganda (implied by name)",
     "website": "",
-    "primary_contact": "Unknown",
+    "primary_contact": "Kato Tito (CEO) \u2014 also CEO of Afriflavors Ltd (since 2016)",
     "org_type": "Unknown",
     "value_chain_role": "Exporter",
     "primary_products": [
@@ -1161,7 +1169,7 @@
     "capital_need_source": "Insufficient data",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "VANEX member. Company name suggests Kilembe district base in western Uganda \u2014 the Rwenzori foothills area which is a known vanilla growing zone. No public information found. Contact via VANEX directory.",
+    "crs_notes": "VANEX member. CEO Kato Tito is also CEO of Afriflavors Ltd (since August 2016), suggesting possible processing/value-addition arm alongside the export business. Previously ran Kilembe Sunflower Exporters Ltd (2018\u20132022, Lira). Law graduate (Uganda Pentecostal University). Company name suggests Kilembe district base in western Uganda \u2014 Rwenzori foothills vanilla zone. No public financial information found.",
     "donor_history": [],
     "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
     "pipeline_status": "Prospect",
@@ -1171,7 +1179,7 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Placeholder entry. Kilembe is in Kasese district, western Uganda \u2014 same Rwenzori cluster as Tambiisa, Coetzee, RFCU, and Gourmet Gardens. Geographic clustering may be relevant for a Rwenzori-focused lending approach. No public information beyond VANEX listing."
+    "notes": "CEO LinkedIn profile confirms dual role: Kilembe Vanilla Exporters + Afriflavors Ltd. Afriflavors may be the value-addition/processing entity \u2014 worth clarifying relationship between the two companies in first contact. Kilembe Sunflower Exporters (separate company, now inactive) shows prior agri-export experience."
   },
   {
     "id": "uga-022",
