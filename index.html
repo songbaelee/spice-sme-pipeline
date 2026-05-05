@@ -92,6 +92,8 @@
     .product-tag { background: var(--bg2);       color: var(--text2);       border-color: var(--border); }
     .vief-tag    { background: var(--teal-bg);   color: var(--teal-text);   border-color: var(--teal-border); }
     .vanex-tag   { background: var(--blue-bg);   color: var(--blue-text);   border-color: var(--blue-border); }
+    .net1-tag    { background: var(--teal-bg);   color: var(--teal-text);   border-color: var(--teal-border); }
+    .net2-tag    { background: var(--blue-bg);   color: var(--blue-text);   border-color: var(--blue-border); }
 
     .est { font-family: 'IBM Plex Mono', monospace; font-size: 11px; }
     .src { font-size: 10px; margin-top: 1px; }
@@ -227,8 +229,8 @@
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem">
       <div class="country-switcher">
         <button class="country-btn active" onclick="switchCountry('uganda', this)">Uganda</button>
+        <button class="country-btn" onclick="switchCountry('tanzania', this)">Tanzania</button>
         <button class="country-btn inactive">Madagascar<span class="coming-soon">coming soon</span></button>
-        <button class="country-btn inactive">Tanzania<span class="coming-soon">coming soon</span></button>
       </div>
     </div>
   </div>
@@ -241,15 +243,15 @@
       <option value="2">Tier 2 — Near Ready</option>
       <option value="3">Tier 3 — Needs TA First</option>
     </select>
-    <select id="f-vief" onchange="render()">
-      <option value="">VIEF: All</option>
-      <option value="yes">VIEF Partners only</option>
-      <option value="no">Non-VIEF only</option>
+    <select id="f-net1" onchange="render()" style="display:none">
+      <option value=""></option>
+      <option value="yes"></option>
+      <option value="no"></option>
     </select>
-    <select id="f-vanex" onchange="render()">
-      <option value="">VANEX: All</option>
-      <option value="yes">VANEX Members only</option>
-      <option value="no">Non-VANEX only</option>
+    <select id="f-net2" onchange="render()" style="display:none">
+      <option value=""></option>
+      <option value="yes"></option>
+      <option value="no"></option>
     </select>
     <select id="f-presence" onchange="render()">
       <option value="">Web Presence: All</option>
@@ -271,8 +273,8 @@
           <th style="width:12%" onclick="sortBy('tier')">Tier <span class="sort-icon" id="s-tier">⇅</span></th>
           <th style="width:10%">Revenue est.</th>
           <th style="width:10%">Capital need est.</th>
-          <th style="width:5%" class="no-sort">VIEF</th>
-          <th style="width:5%" class="no-sort">VANEX</th>
+          <th style="width:5%" class="no-sort" id="th-net1">—</th>
+          <th style="width:5%" class="no-sort" id="th-net2">—</th>
           <th style="width:9%" onclick="sortBy('data_confidence')">Web Presence <span class="sort-icon" id="s-data_confidence">⇅</span></th>
         </tr>
       </thead>
@@ -302,10 +304,10 @@
       <div class="legend-item"><span class="tag c-med">Medium</span> Website + some third-party</div>
       <div class="legend-item"><span class="tag c-low">Low</span> VANEX listing or single source only</div>
     </div>
-    <div class="legend-group">
+    <div class="legend-group" id="legend-flags">
       <div class="legend-title">Flags</div>
-      <div class="legend-item"><span class="tag vief-tag">VIEF</span> USDA/CRS VINES partner</div>
-      <div class="legend-item"><span class="tag vanex-tag">VANEX</span> Association member</div>
+      <div class="legend-item" id="legend-net1-item"></div>
+      <div class="legend-item" id="legend-net2-item"></div>
     </div>
   </div>
 </div>
@@ -326,19 +328,76 @@ let currentCountry = 'uganda';
 
 const TIER_COLORS = { 1: '#3b6d11', 2: '#854f0b', 3: '#a32d2d' };
 
+// Country configuration: defines which JSON fields are the two network flags,
+// their display labels, filter option text, and legend descriptions.
+const COUNTRY_CONFIG = {
+  uganda: {
+    net1Field: 'vief_partner',  net1Label: 'VIEF',  net1TagCls: 'vief-tag',
+    net2Field: 'vanex_member',  net2Label: 'VANEX', net2TagCls: 'vanex-tag',
+    net1All: 'VIEF: All', net1Yes: 'VIEF Partners only', net1No: 'Non-VIEF only',
+    net2All: 'VANEX: All', net2Yes: 'VANEX Members only', net2No: 'Non-VANEX only',
+    net1Legend: 'USDA/CRS VINES project partner',
+    net2Legend: 'Uganda Vanilla Exporters Association member',
+  },
+  tanzania: {
+    net1Field: 'taspa_member',           net1Label: 'TASPA',          net1TagCls: 'net1-tag',
+    net2Field: 'tanzania_spices_label',  net2Label: 'TZ Spices Label', net2TagCls: 'net2-tag',
+    net1All: 'TASPA: All', net1Yes: 'TASPA members only', net1No: 'Non-TASPA only',
+    net2All: 'TZ Spices Label: All', net2Yes: 'Label listed only', net2No: 'Not listed',
+    net1Legend: 'Tanzania Spices Association member',
+    net2Legend: 'Listed on Tanzania Spices label (TanTrade)',
+  },
+  madagascar: {
+    net1Field: 'rcce_member',  net1Label: 'RCCE',  net1TagCls: 'net1-tag',
+    net2Field: 'avsf_partner', net2Label: 'AVSF',  net2TagCls: 'net2-tag',
+    net1All: 'RCCE: All', net1Yes: 'RCCE members only', net1No: 'Non-RCCE only',
+    net2All: 'AVSF: All', net2Yes: 'AVSF partners only', net2No: 'No AVSF link',
+    net1Legend: 'RCCE cooperative network member',
+    net2Legend: 'AVSF programme partner',
+  },
+};
+
+function applyCountryConfig(country) {
+  const cfg = COUNTRY_CONFIG[country] || COUNTRY_CONFIG.uganda;
+
+  // Column headers
+  document.getElementById('th-net1').textContent = cfg.net1Label;
+  document.getElementById('th-net2').textContent = cfg.net2Label;
+
+  // Filter selects
+  const f1 = document.getElementById('f-net1');
+  const f2 = document.getElementById('f-net2');
+  f1.options[0].text = cfg.net1All;
+  f1.options[1].text = cfg.net1Yes;
+  f1.options[2].text = cfg.net1No;
+  f2.options[0].text = cfg.net2All;
+  f2.options[1].text = cfg.net2Yes;
+  f2.options[2].text = cfg.net2No;
+  f1.style.display = '';
+  f2.style.display = '';
+
+  // Legend
+  document.getElementById('legend-net1-item').innerHTML =
+    `<span class="tag ${cfg.net1TagCls}">${cfg.net1Label}</span> ${cfg.net1Legend}`;
+  document.getElementById('legend-net2-item').innerHTML =
+    `<span class="tag ${cfg.net2TagCls}">${cfg.net2Label}</span> ${cfg.net2Legend}`;
+}
+
 function switchCountry(country, btn) {
   if (!btn || btn.classList.contains('inactive')) return;
   currentCountry = country;
   closeModal();
   document.querySelectorAll('.country-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
+  applyCountryConfig(country);
   resetFilters();
   loadCountry(country);
 }
 
 function resetFilters() {
-  ['f-tier','f-vief','f-vanex','f-presence'].forEach(id => {
-    document.getElementById(id).value = '';
+  ['f-tier','f-net1','f-net2','f-presence'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.value = '';
   });
   sortField = null; sortDir = 1;
   document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '⇅');
@@ -402,17 +461,18 @@ function flagCell(bool, tagClass, label) {
 }
 
 function getFiltered() {
-  const tier     = document.getElementById('f-tier').value;
-  const vief     = document.getElementById('f-vief').value;
-  const vanex    = document.getElementById('f-vanex').value;
+  const cfg     = COUNTRY_CONFIG[currentCountry] || COUNTRY_CONFIG.uganda;
+  const tier    = document.getElementById('f-tier').value;
+  const net1    = document.getElementById('f-net1').value;
+  const net2    = document.getElementById('f-net2').value;
   const presence = document.getElementById('f-presence').value;
 
   return DATA.filter(d => {
     if (tier     && tierNum(d.lending_readiness_tier) !== parseInt(tier)) return false;
-    if (vief  === 'yes' && !d.vief_partner)  return false;
-    if (vief  === 'no'  &&  d.vief_partner)  return false;
-    if (vanex === 'yes' && !d.vanex_member)  return false;
-    if (vanex === 'no'  &&  d.vanex_member)  return false;
+    if (net1 === 'yes' && !d[cfg.net1Field]) return false;
+    if (net1 === 'no'  &&  d[cfg.net1Field]) return false;
+    if (net2 === 'yes' && !d[cfg.net2Field]) return false;
+    if (net2 === 'no'  &&  d[cfg.net2Field]) return false;
     if (presence && d.data_confidence !== presence) return false;
     return true;
   }).sort((a, b) => {
@@ -450,8 +510,9 @@ function render() {
     return;
   }
 
-  tbody.innerHTML = rows.map((d, i) => `
-    <tr onclick="openModal('${d.id}')">
+  tbody.innerHTML = rows.map((d, i) => {
+    const cfg = COUNTRY_CONFIG[currentCountry] || COUNTRY_CONFIG.uganda;
+    return `<tr onclick="openModal('${d.id}')">
       <td class="row-num">${i + 1}</td>
       <td class="row-id">${d.id}</td>
       <td>
@@ -470,11 +531,11 @@ function render() {
         <div class="est">${d.capital_need_est_usd || '—'}</div>
         <div class="src ${srcCls(d.capital_need_source)}">${srcLabel(d.capital_need_source)}</div>
       </td>
-      <td style="text-align:center">${flagCell(d.vief_partner,  'vief-tag',  'VIEF')}</td>
-      <td style="text-align:center">${flagCell(d.vanex_member, 'vanex-tag', 'VANEX')}</td>
+      <td style="text-align:center">${flagCell(d[cfg.net1Field], cfg.net1TagCls, cfg.net1Label)}</td>
+      <td style="text-align:center">${flagCell(d[cfg.net2Field], cfg.net2TagCls, cfg.net2Label)}</td>
       <td>${presenceTag(d.data_confidence)}</td>
-    </tr>
-  `).join('');
+    </tr>`;
+  }).join('');
 }
 
 function openModal(id) {
@@ -484,9 +545,10 @@ function openModal(id) {
   const n = tierNum(d.lending_readiness_tier);
   document.getElementById('modal-tier-bar').style.background = TIER_COLORS[n] || '#8a8a84';
 
+  const cfg = COUNTRY_CONFIG[currentCountry] || COUNTRY_CONFIG.uganda;
   const badges = [
-    d.vief_partner  ? '<span class="tag vief-tag">VIEF Partner</span>'  : '',
-    d.vanex_member  ? '<span class="tag vanex-tag">VANEX Member</span>' : '',
+    d[cfg.net1Field] ? `<span class="tag ${cfg.net1TagCls}">${cfg.net1Label} Partner</span>` : '',
+    d[cfg.net2Field] ? `<span class="tag ${cfg.net2TagCls}">${cfg.net2Label} Member</span>`  : '',
   ].filter(Boolean).join('');
 
   const donorRows = (d.donor_history || []).map(h =>
@@ -579,6 +641,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') document.getElementById('modal-overlay').classList.remove('open');
 });
 
+applyCountryConfig('uganda');
 loadCountry('uganda');
 </script>
 </body>
