@@ -8,35 +8,77 @@
     "primary_contact": "David Wright (CEO)",
     "org_type": "Private company",
     "value_chain_role": "Vertically integrated",
-    "primary_products": ["Vanilla", "Coffee", "Pineapple", "Jackfruit"],
+    "primary_products": [
+      "Vanilla",
+      "Coffee",
+      "Pineapple",
+      "Jackfruit"
+    ],
     "farmer_network_size": "4,600+",
-    "certifications": ["Organic (EU)", "HACCP"],
-    "export_markets": ["Europe", "USA", "International"],
+    "certifications": [
+      "Organic (EU)",
+      "HACCP"
+    ],
+    "export_markets": [
+      "Europe",
+      "USA",
+      "International"
+    ],
     "vanex_member": true,
     "vief_partner": true,
-    "revenue_usd_est": "$500K–$2M",
+    "revenue_usd_est": "$500K\u2013$2M",
     "revenue_source": "Claude estimate",
     "revenue_confidence": "Low",
-    "staff_count_est": "20–30",
+    "staff_count_est": "20\u201330",
     "staff_source": "Reported",
     "staff_confidence": "Medium",
-    "existing_debt": "CFC (undisclosed); Rabo Foundation (undisclosed); One Acre Ventures ($250K–$750K, 2025); Pearl Capital $515K equity (exited 2024)",
+    "existing_debt": "CFC (undisclosed); Rabo Foundation (undisclosed); One Acre Ventures ($250K\u2013$750K, 2025); Pearl Capital $515K equity (exited 2024)",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$300K–$750K",
+    "capital_need_est_usd": "$300K\u2013$750K",
     "capital_use_of_funds": "Vanilla working capital; coffee processing expansion",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Medium",
     "crs_relationship": "Indirect",
-    "crs_notes": "CRS directly supported Enimiro lab setup via VINES project. Pearl exit means equity slot open; debt is natural next instrument. One Acre Ventures just entered for coffee — CRS facility should focus on vanilla working capital to avoid overlap.",
+    "crs_notes": "CRS directly supported Enimiro lab setup via VINES project. Pearl exit means equity slot open; debt is natural next instrument. One Acre Ventures just entered for coffee \u2014 CRS facility should focus on vanilla working capital to avoid overlap.",
     "donor_history": [
-      { "donor": "Pearl Capital / Yield Fund", "amount": "$515K equity", "year": "2022", "source": "Reported" },
-      { "donor": "Common Fund for Commodities", "amount": "Undisclosed", "year": "Unknown", "source": "CFC project page" },
-      { "donor": "Wood Foundation Africa", "amount": "Undisclosed", "year": "Unknown", "source": "Uganda Business News" },
-      { "donor": "Rabo Foundation", "amount": "Undisclosed", "year": "Unknown", "source": "Uganda Business News" },
-      { "donor": "One Acre Ventures", "amount": "Undisclosed ($250K–$750K range)", "year": "2025", "source": "Reported" },
-      { "donor": "USDA / CRS VINES (VIEF grant)", "amount": "Undisclosed grant", "year": "2021–2026", "source": "CRS VINES project page" }
+      {
+        "donor": "Pearl Capital / Yield Fund",
+        "amount": "$515K equity",
+        "year": "2022",
+        "source": "Reported"
+      },
+      {
+        "donor": "Common Fund for Commodities",
+        "amount": "Undisclosed",
+        "year": "Unknown",
+        "source": "CFC project page"
+      },
+      {
+        "donor": "Wood Foundation Africa",
+        "amount": "Undisclosed",
+        "year": "Unknown",
+        "source": "Uganda Business News"
+      },
+      {
+        "donor": "Rabo Foundation",
+        "amount": "Undisclosed",
+        "year": "Unknown",
+        "source": "Uganda Business News"
+      },
+      {
+        "donor": "One Acre Ventures",
+        "amount": "Undisclosed ($250K\u2013$750K range)",
+        "year": "2025",
+        "source": "Reported"
+      },
+      {
+        "donor": "USDA / CRS VINES (VIEF grant)",
+        "amount": "Undisclosed grant",
+        "year": "2021\u20132026",
+        "source": "CRS VINES project page"
+      }
     ],
-    "lending_readiness_tier": "Tier 1 — Investment Ready",
+    "lending_readiness_tier": "Tier 1 \u2014 Investment Ready",
     "pipeline_status": "Prospect",
     "livelihood_score": 4,
     "environment_focus": "Yes",
@@ -55,31 +97,56 @@
     "primary_contact": "Juan Guardado (MD); Abubaker Mulindwa (Uganda ED)",
     "org_type": "Social enterprise / B-Corp",
     "value_chain_role": "Vertically integrated + extractor",
-    "primary_products": ["Vanilla", "Vanilla extract", "Cocoa", "Coffee"],
+    "primary_products": [
+      "Vanilla",
+      "Vanilla extract",
+      "Cocoa",
+      "Coffee"
+    ],
     "farmer_network_size": "13,000+ (Tanzania + Uganda combined)",
-    "certifications": ["Organic", "Halal", "Kosher", "B-Corp"],
-    "export_markets": ["Europe", "USA", "Asia", "International B2B"],
+    "certifications": [
+      "Organic",
+      "Halal",
+      "Kosher",
+      "B-Corp"
+    ],
+    "export_markets": [
+      "Europe",
+      "USA",
+      "Asia",
+      "International B2B"
+    ],
     "vanex_member": true,
     "vief_partner": true,
-    "revenue_usd_est": "$2M–$5M",
+    "revenue_usd_est": "$2M\u2013$5M",
     "revenue_source": "Reported",
     "revenue_confidence": "Medium",
-    "staff_count_est": "50–120",
+    "staff_count_est": "50\u2013120",
     "staff_source": "Claude estimate",
     "staff_confidence": "Low",
     "existing_debt": "DOB Equity (undisclosed equity)",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$500K–$2M",
+    "capital_need_est_usd": "$500K\u2013$2M",
     "capital_use_of_funds": "Uganda-specific working capital; vanilla extraction scale-up",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
     "crs_relationship": "Indirect",
-    "crs_notes": "NEI received VINES VIEF grant for farmer training, registration, certification and processing facility improvement. Joris de Vries on board — key relationship to activate. Any facility must ring-fence Uganda operations from Tanzania parent.",
+    "crs_notes": "NEI received VINES VIEF grant for farmer training, registration, certification and processing facility improvement. Joris de Vries on board \u2014 key relationship to activate. Any facility must ring-fence Uganda operations from Tanzania parent.",
     "donor_history": [
-      { "donor": "DOB Equity", "amount": "Undisclosed equity", "year": "Unknown", "source": "DOB Equity website" },
-      { "donor": "USDA / CRS VINES (VIEF grant)", "amount": "Undisclosed grant", "year": "2021–2026", "source": "NEI website" }
+      {
+        "donor": "DOB Equity",
+        "amount": "Undisclosed equity",
+        "year": "Unknown",
+        "source": "DOB Equity website"
+      },
+      {
+        "donor": "USDA / CRS VINES (VIEF grant)",
+        "amount": "Undisclosed grant",
+        "year": "2021\u20132026",
+        "source": "NEI website"
+      }
     ],
-    "lending_readiness_tier": "Tier 1 — Investment Ready",
+    "lending_readiness_tier": "Tier 1 \u2014 Investment Ready",
     "pipeline_status": "Prospect",
     "livelihood_score": 5,
     "environment_focus": "Yes",
@@ -87,7 +154,7 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Most sophisticated operator in East Africa vanilla extract space. Uganda is a subset of Tanzania-anchored business — isolate Uganda entity financials before advancing. Feb 2026: partnered with Velora Enterprises (uga-013) for premium Ugandan vanilla supply chain."
+    "notes": "Most sophisticated operator in East Africa vanilla extract space. Uganda is a subset of Tanzania-anchored business \u2014 isolate Uganda entity financials before advancing. Feb 2026: partnered with Velora Enterprises (uga-013) for premium Ugandan vanilla supply chain."
   },
   {
     "id": "uga-003",
@@ -95,16 +162,31 @@
     "founded": "1956 (as Edm. Schluter & Co.); rebranded 1994",
     "hq_location": "Kampala (facilities: Mukono/Ntenjeru and Bundibugyo)",
     "website": "https://www.escouganda.com",
-    "primary_contact": "Nick Moss (General Manager) — info@escouganda.com",
+    "primary_contact": "Nick Moss (General Manager) \u2014 info@escouganda.com",
     "org_type": "Private company (second-generation family business)",
     "value_chain_role": "Processor + Exporter",
-    "primary_products": ["Vanilla", "Cocoa", "Moringa", "Chilies", "Cinchona", "Papain"],
+    "primary_products": [
+      "Vanilla",
+      "Cocoa",
+      "Moringa",
+      "Chilies",
+      "Cinchona",
+      "Papain"
+    ],
     "farmer_network_size": "20,000+",
-    "certifications": ["Organic", "Fair Trade", "HACCP", "Rainforest Alliance", "EUDR compliant"],
-    "export_markets": ["International (global buyers)"],
+    "certifications": [
+      "Organic",
+      "Fair Trade",
+      "HACCP",
+      "Rainforest Alliance",
+      "EUDR compliant"
+    ],
+    "export_markets": [
+      "International (global buyers)"
+    ],
     "vanex_member": false,
     "vief_partner": true,
-    "revenue_usd_est": "$5M–$15M",
+    "revenue_usd_est": "$5M\u2013$15M",
     "revenue_source": "Claude estimate",
     "revenue_confidence": "Low",
     "staff_count_est": "150+",
@@ -112,16 +194,21 @@
     "staff_confidence": "High",
     "existing_debt": "None identified",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$1M–$3M",
+    "capital_need_est_usd": "$1M\u2013$3M",
     "capital_use_of_funds": "Seasonal crop purchase working capital",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
     "crs_relationship": "Indirect",
     "crs_notes": "VIEF partner under VINES. Largest and oldest vanilla exporter in Uganda. At 150+ staff and 20,000 farmers likely above SME ceiling. Track as sector anchor and referral source. Notably absent from current VANEX membership despite being a founding member.",
     "donor_history": [
-      { "donor": "USDA / CRS VINES (VIEF partner)", "amount": "Undisclosed", "year": "2021–2026", "source": "CRS VINES documentation" }
+      {
+        "donor": "USDA / CRS VINES (VIEF partner)",
+        "amount": "Undisclosed",
+        "year": "2021\u20132026",
+        "source": "CRS VINES documentation"
+      }
     ],
-    "lending_readiness_tier": "Tier 1 — Investment Ready",
+    "lending_readiness_tier": "Tier 1 \u2014 Investment Ready",
     "pipeline_status": "Prospect",
     "livelihood_score": 4,
     "environment_focus": "Yes",
@@ -129,39 +216,50 @@
     "data_confidence": "Medium",
     "sme_classification_note": "Possible above SME ceiling",
     "last_updated": "2026-05",
-    "notes": "SME classification caveat: 150+ staff, 20,000 farmers. Revenue estimate could be significantly higher. No longer listed as VANEX member despite being a founding member — reason unknown."
+    "notes": "SME classification caveat: 150+ staff, 20,000 farmers. Revenue estimate could be significantly higher. No longer listed as VANEX member despite being a founding member \u2014 reason unknown."
   },
   {
     "id": "uga-004",
     "name": "Rajon Vanilla Limited",
-    "founded": "2020–2021",
+    "founded": "2020\u20132021",
     "hq_location": "Kigezi region (Kasese / Bundibugyo), western Uganda",
     "website": "https://rajonvanilla.com",
     "primary_contact": "Bahizi Jonathan Buteera; Rajiv Ruparelia (Co-founders)",
     "org_type": "Private company",
     "value_chain_role": "Processor + Exporter",
-    "primary_products": ["Vanilla", "Cocoa", "Cloves", "Cinnamon", "Pepper", "Vetiver"],
+    "primary_products": [
+      "Vanilla",
+      "Cocoa",
+      "Cloves",
+      "Cinnamon",
+      "Pepper",
+      "Vetiver"
+    ],
     "farmer_network_size": "8,000+",
-    "certifications": ["None confirmed (natural farming claimed)"],
-    "export_markets": ["International"],
+    "certifications": [
+      "None confirmed (natural farming claimed)"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "vanex_member": false,
     "vief_partner": false,
-    "revenue_usd_est": "$200K–$1M",
+    "revenue_usd_est": "$200K\u2013$1M",
     "revenue_source": "Claude estimate",
     "revenue_confidence": "Low",
-    "staff_count_est": "10–30",
+    "staff_count_est": "10\u201330",
     "staff_source": "Claude estimate",
     "staff_confidence": "Low",
     "existing_debt": "None identified (no funding rounds per Tracxn)",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$100K–$300K",
+    "capital_need_est_usd": "$100K\u2013$300K",
     "capital_use_of_funds": "Working capital for crop aggregation; certification costs; processing equipment",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Strong livelihoods narrative — healthcare initiative, education programmes, 50,000+ indirect beneficiaries claimed. Western Uganda focus is high CRS livelihoods relevance. Likely needs TA or certification support before debt is appropriate.",
+    "crs_notes": "Strong livelihoods narrative \u2014 healthcare initiative, education programmes, 50,000+ indirect beneficiaries claimed. Western Uganda focus is high CRS livelihoods relevance. Likely needs TA or certification support before debt is appropriate.",
     "donor_history": [],
-    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
     "pipeline_status": "Prospect",
     "livelihood_score": 4,
     "environment_focus": "Yes",
@@ -169,7 +267,7 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Co-founder Rajiv Ruparelia linked to Ruparelia Group (one of Uganda's largest conglomerates) — may signal capital access or that external debt is not a priority. No certifications confirmed. Not a VANEX member or VIEF partner."
+    "notes": "Co-founder Rajiv Ruparelia linked to Ruparelia Group (one of Uganda's largest conglomerates) \u2014 may signal capital access or that external debt is not a priority. No certifications confirmed. Not a VANEX member or VIEF partner."
   },
   {
     "id": "uga-005",
@@ -177,13 +275,22 @@
     "founded": "Unknown",
     "hq_location": "Uganda (multiple processing centres)",
     "website": "https://vanex.org/natural-extracts-industries-u-ltd/",
-    "primary_contact": "Abubaker Mulindwa (Executive Director) — amulindwa@gmail.com; +256752870289",
+    "primary_contact": "Abubaker Mulindwa (Executive Director) \u2014 amulindwa@gmail.com; +256752870289",
     "org_type": "Private company (subsidiary of NEI Tanzania)",
     "value_chain_role": "Processor + Exporter",
-    "primary_products": ["Vanilla", "Vanilla extract"],
-    "farmer_network_size": "Part of NEI's 13,000+ network — Uganda share unknown",
-    "certifications": ["Organic", "Halal", "Kosher"],
-    "export_markets": ["International B2B"],
+    "primary_products": [
+      "Vanilla",
+      "Vanilla extract"
+    ],
+    "farmer_network_size": "Part of NEI's 13,000+ network \u2014 Uganda share unknown",
+    "certifications": [
+      "Organic",
+      "Halal",
+      "Kosher"
+    ],
+    "export_markets": [
+      "International B2B"
+    ],
     "vanex_member": true,
     "vief_partner": true,
     "revenue_usd_est": "Unknown",
@@ -201,9 +308,14 @@
     "crs_relationship": "Indirect",
     "crs_notes": "Listed separately in VANEX as a distinct Uganda entity from Tanzania NEI parent. VIEF partner via VINES. May be the better entry point for a Uganda-specific facility. Needs clarification on whether Uganda entity has independent financials.",
     "donor_history": [
-      { "donor": "USDA / CRS VINES (VIEF grant)", "amount": "Undisclosed grant", "year": "2021–2026", "source": "NEI website" }
+      {
+        "donor": "USDA / CRS VINES (VIEF grant)",
+        "amount": "Undisclosed grant",
+        "year": "2021\u20132026",
+        "source": "NEI website"
+      }
     ],
-    "lending_readiness_tier": "Tier 1 — Investment Ready",
+    "lending_readiness_tier": "Tier 1 \u2014 Investment Ready",
     "pipeline_status": "Prospect",
     "livelihood_score": 4,
     "environment_focus": "Yes",
@@ -222,31 +334,49 @@
     "primary_contact": "Unknown",
     "org_type": "Private company",
     "value_chain_role": "Processor + Exporter",
-    "primary_products": ["Vanilla", "Cocoa"],
+    "primary_products": [
+      "Vanilla",
+      "Cocoa"
+    ],
     "farmer_network_size": "1,000+ (Uganda and DRC)",
-    "certifications": ["Organic", "Fair Trade"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Organic",
+      "Fair Trade"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "vanex_member": false,
     "vief_partner": true,
-    "revenue_usd_est": "$500K–$2M",
+    "revenue_usd_est": "$500K\u2013$2M",
     "revenue_source": "Claude estimate",
     "revenue_confidence": "Low",
     "staff_count_est": "Unknown",
     "staff_source": "Unknown",
     "staff_confidence": "Low",
-    "existing_debt": "AGEFA (Uganda Green Enterprise Finance Accelerator) — amount undisclosed",
+    "existing_debt": "AGEFA (Uganda Green Enterprise Finance Accelerator) \u2014 amount undisclosed",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$200K–$500K",
+    "capital_need_est_usd": "$200K\u2013$500K",
     "capital_use_of_funds": "Processing capacity; farmer network expansion",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
     "crs_relationship": "Indirect",
-    "crs_notes": "VIEF partner under VINES. AGEFA-backed (EU-funded green enterprise accelerator). Based in Rwenzori Mountains — same cluster as Tambiisa and Coetzee Organic. Featured in US Embassy Uganda N*Gen episode alongside Enimiro.",
+    "crs_notes": "VIEF partner under VINES. AGEFA-backed (EU-funded green enterprise accelerator). Based in Rwenzori Mountains \u2014 same cluster as Tambiisa and Coetzee Organic. Featured in US Embassy Uganda N*Gen episode alongside Enimiro.",
     "donor_history": [
-      { "donor": "USDA / CRS VINES (VIEF partner)", "amount": "Undisclosed", "year": "2021–2026", "source": "US Embassy Uganda" },
-      { "donor": "AGEFA (Uganda Green Enterprise Finance Accelerator)", "amount": "Undisclosed", "year": "Unknown", "source": "AGEFA website" }
+      {
+        "donor": "USDA / CRS VINES (VIEF partner)",
+        "amount": "Undisclosed",
+        "year": "2021\u20132026",
+        "source": "US Embassy Uganda"
+      },
+      {
+        "donor": "AGEFA (Uganda Green Enterprise Finance Accelerator)",
+        "amount": "Undisclosed",
+        "year": "Unknown",
+        "source": "AGEFA website"
+      }
     ],
-    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
     "pipeline_status": "Prospect",
     "livelihood_score": 4,
     "environment_focus": "Yes",
@@ -262,16 +392,26 @@
     "founded": "Unknown (exporting vanilla since 2017)",
     "hq_location": "870b Sentongo Close, Kampala",
     "website": "https://vanex.org/coetzee-organic-u-ltd/",
-    "primary_contact": "Niell Coetzee (Managing Director) — niell@coetzeeltd.com; +27 83 383 1462",
+    "primary_contact": "Niell Coetzee (Managing Director) \u2014 niell@coetzeeltd.com; +27 83 383 1462",
     "org_type": "Private company",
     "value_chain_role": "Processor + Exporter",
-    "primary_products": ["Vanilla"],
+    "primary_products": [
+      "Vanilla"
+    ],
     "farmer_network_size": "Multiple formalised smallholder farmer groups (size unknown); FLAVEX partnership: 154 farmers across 3 cooperatives",
-    "certifications": ["Organic (EU)", "Organic (USDA NOP)", "Organic (JAS)", "Fair Trade (FLoCert)", "Fair Trade USA"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Organic (EU)",
+      "Organic (USDA NOP)",
+      "Organic (JAS)",
+      "Fair Trade (FLoCert)",
+      "Fair Trade USA"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "vanex_member": true,
     "vief_partner": true,
-    "revenue_usd_est": "$300K–$1M",
+    "revenue_usd_est": "$300K\u2013$1M",
     "revenue_source": "Claude estimate",
     "revenue_confidence": "Low",
     "staff_count_est": "Unknown",
@@ -279,16 +419,21 @@
     "staff_confidence": "Low",
     "existing_debt": "FLAVEX Naturextrakte GmbH (German buyer-partner pre-season financing model)",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$150K–$400K",
+    "capital_need_est_usd": "$150K\u2013$400K",
     "capital_use_of_funds": "Pre-season farmer financing; farmer security costs; processing equipment",
-    "capital_need_source": "Claude estimate — VANEX profile notes pre-season farmer security financing as active need; FLAVEX partnership confirms working capital gap",
+    "capital_need_source": "Claude estimate \u2014 VANEX profile notes pre-season farmer security financing as active need; FLAVEX partnership confirms working capital gap",
     "capital_need_confidence": "Medium",
     "crs_relationship": "Indirect",
-    "crs_notes": "VIEF partner under VINES. VANEX member. First Uganda company to introduce quality-based pricing combined with Fairtrade and Organic premiums. FLAVEX (Germany) co-finances pre-season farmer security costs — this is an explicit working capital use case CRS could formalise. Five-certification stack is exceptional for a smaller operator.",
+    "crs_notes": "VIEF partner under VINES. VANEX member. First Uganda company to introduce quality-based pricing combined with Fairtrade and Organic premiums. FLAVEX (Germany) co-finances pre-season farmer security costs \u2014 this is an explicit working capital use case CRS could formalise. Five-certification stack is exceptional for a smaller operator.",
     "donor_history": [
-      { "donor": "USDA / CRS VINES (VIEF partner)", "amount": "Undisclosed", "year": "2021–2026", "source": "VINES documentation" }
+      {
+        "donor": "USDA / CRS VINES (VIEF partner)",
+        "amount": "Undisclosed",
+        "year": "2021\u20132026",
+        "source": "VINES documentation"
+      }
     ],
-    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
     "pipeline_status": "Prospect",
     "livelihood_score": 3,
     "environment_focus": "Yes",
@@ -296,24 +441,32 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Pre-season farmer security financing (armed guards for vanilla crops) is a concrete, documentable working capital need. Managing Director contact is South African-registered — company may be expat-led. FLAVEX partnership with Rwenzori cooperatives is well documented."
+    "notes": "Pre-season farmer security financing (armed guards for vanilla crops) is a concrete, documentable working capital need. Managing Director contact is South African-registered \u2014 company may be expat-led. FLAVEX partnership with Rwenzori cooperatives is well documented."
   },
   {
     "id": "uga-008",
     "name": "Tambiisa (U) Ltd",
     "founded": "2008",
-    "hq_location": "Makindye–Ssabagabo, Wakiso district (near Kampala)",
+    "hq_location": "Makindye\u2013Ssabagabo, Wakiso district (near Kampala)",
     "website": "https://vanex.org/tambiisaultd/",
-    "primary_contact": "Tamale Isa Bimbasa (CEO) — bimbaisat@gmail.com; +256 772 675751",
+    "primary_contact": "Tamale Isa Bimbasa (CEO) \u2014 bimbaisat@gmail.com; +256 772 675751",
     "org_type": "Private company",
     "value_chain_role": "Processor + Exporter",
-    "primary_products": ["Vanilla"],
+    "primary_products": [
+      "Vanilla"
+    ],
     "farmer_network_size": "Hundreds of smallholder organic farmers (Rwenzori area)",
-    "certifications": ["Organic (EU NOP)", "Halal", "FDA"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Organic (EU NOP)",
+      "Halal",
+      "FDA"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "vanex_member": true,
     "vief_partner": true,
-    "revenue_usd_est": "$300K–$1M",
+    "revenue_usd_est": "$300K\u2013$1M",
     "revenue_source": "Claude estimate",
     "revenue_confidence": "Low",
     "staff_count_est": "Unknown",
@@ -321,16 +474,21 @@
     "staff_confidence": "Low",
     "existing_debt": "None identified",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$150K–$400K",
+    "capital_need_est_usd": "$150K\u2013$400K",
     "capital_use_of_funds": "Seasonal crop purchase working capital; processing scale-up",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
     "crs_relationship": "Indirect",
     "crs_notes": "VIEF partner under VINES. VANEX member. One of the more established Ugandan-owned vanilla exporters operating since 2008. Rwenzori sourcing geography. State-of-the-art factory in Wakiso district near Kampala.",
     "donor_history": [
-      { "donor": "USDA / CRS VINES (VIEF partner)", "amount": "Undisclosed", "year": "2021–2026", "source": "VINES documentation" }
+      {
+        "donor": "USDA / CRS VINES (VIEF partner)",
+        "amount": "Undisclosed",
+        "year": "2021\u20132026",
+        "source": "VINES documentation"
+      }
     ],
-    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
     "pipeline_status": "Prospect",
     "livelihood_score": 3,
     "environment_focus": "Yes",
@@ -338,7 +496,7 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Direct CEO contact available via VANEX directory. Ugandan-owned and operated since 2008 — stronger ownership profile than some expat-led peers. No public financial information available."
+    "notes": "Direct CEO contact available via VANEX directory. Ugandan-owned and operated since 2008 \u2014 stronger ownership profile than some expat-led peers. No public financial information available."
   },
   {
     "id": "uga-009",
@@ -349,10 +507,17 @@
     "primary_contact": "Joseph Mbusa (Chairman, per Ndali documentation)",
     "org_type": "Cooperative",
     "value_chain_role": "Farmer group / Cooperative",
-    "primary_products": ["Vanilla"],
+    "primary_products": [
+      "Vanilla"
+    ],
     "farmer_network_size": "2,000+",
-    "certifications": ["Organic", "Fair Trade"],
-    "export_markets": ["International (via Ndali Estate, UK)"],
+    "certifications": [
+      "Organic",
+      "Fair Trade"
+    ],
+    "export_markets": [
+      "International (via Ndali Estate, UK)"
+    ],
     "vanex_member": false,
     "vief_partner": true,
     "revenue_usd_est": "Unknown",
@@ -363,17 +528,27 @@
     "staff_confidence": "Low",
     "existing_debt": "None identified",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$50K–$200K",
+    "capital_need_est_usd": "$50K\u2013$200K",
     "capital_use_of_funds": "Pre-harvest working capital; farmer input finance; collective processing",
-    "capital_need_source": "Claude estimate — cooperative model with Fairtrade premium redistribution suggests strong governance but limited commercial credit access",
+    "capital_need_source": "Claude estimate \u2014 cooperative model with Fairtrade premium redistribution suggests strong governance but limited commercial credit access",
     "capital_need_confidence": "Low",
     "crs_relationship": "Indirect",
-    "crs_notes": "VIEF partner under VINES. First Fairtrade vanilla cooperative on the African continent (2005). Primary buyer is Ndali Estate (UK) — long-term exclusive relationship. CRS engagement must be complementary. High livelihoods impact — Fairtrade premiums fund community pharmacy, school roofing, scholarships, maize milling.",
+    "crs_notes": "VIEF partner under VINES. First Fairtrade vanilla cooperative on the African continent (2005). Primary buyer is Ndali Estate (UK) \u2014 long-term exclusive relationship. CRS engagement must be complementary. High livelihoods impact \u2014 Fairtrade premiums fund community pharmacy, school roofing, scholarships, maize milling.",
     "donor_history": [
-      { "donor": "USDA / CRS VINES (VIEF partner)", "amount": "Undisclosed", "year": "2021–2026", "source": "VINES documentation" },
-      { "donor": "Fairtrade premium (via Ndali Estate)", "amount": "Ongoing since 2005", "year": "2005–present", "source": "Ndali estate website" }
+      {
+        "donor": "USDA / CRS VINES (VIEF partner)",
+        "amount": "Undisclosed",
+        "year": "2021\u20132026",
+        "source": "VINES documentation"
+      },
+      {
+        "donor": "Fairtrade premium (via Ndali Estate)",
+        "amount": "Ongoing since 2005",
+        "year": "2005\u2013present",
+        "source": "Ndali estate website"
+      }
     ],
-    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
     "pipeline_status": "Prospect",
     "livelihood_score": 5,
     "environment_focus": "Yes",
@@ -392,10 +567,16 @@
     "primary_contact": "Unknown",
     "org_type": "Unknown",
     "value_chain_role": "Unknown",
-    "primary_products": ["Vanilla"],
+    "primary_products": [
+      "Vanilla"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Unknown"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "vanex_member": false,
     "vief_partner": true,
     "revenue_usd_est": "Unknown",
@@ -411,11 +592,16 @@
     "capital_need_source": "Insufficient data",
     "capital_need_confidence": "Low",
     "crs_relationship": "Indirect",
-    "crs_notes": "VIEF partner under VINES — confirmed by CRS source. No public web presence or VANEX listing found. CRS VINES team is the primary route to contact information.",
+    "crs_notes": "VIEF partner under VINES \u2014 confirmed by CRS source. No public web presence or VANEX listing found. CRS VINES team is the primary route to contact information.",
     "donor_history": [
-      { "donor": "USDA / CRS VINES (VIEF partner)", "amount": "Undisclosed", "year": "2021–2026", "source": "CRS source" }
+      {
+        "donor": "USDA / CRS VINES (VIEF partner)",
+        "amount": "Undisclosed",
+        "year": "2021\u20132026",
+        "source": "CRS source"
+      }
     ],
-    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
     "pipeline_status": "Prospect",
     "livelihood_score": 2,
     "environment_focus": "Unknown",
@@ -423,7 +609,7 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Placeholder entry — no public information available. Contact via CRS VINES team: David Hirst (Chief of Party) — david.hirst@crs.org, +256 757 288356."
+    "notes": "Placeholder entry \u2014 no public information available. Contact via CRS VINES team: David Hirst (Chief of Party) \u2014 david.hirst@crs.org, +256 757 288356."
   },
   {
     "id": "uga-011",
@@ -434,10 +620,19 @@
     "primary_contact": "Unknown (Uganda operations)",
     "org_type": "Subsidiary of large French trading house",
     "value_chain_role": "Trader + Aggregator",
-    "primary_products": ["Vanilla", "Coffee", "Cocoa", "Bird's Eye Chilli"],
+    "primary_products": [
+      "Vanilla",
+      "Coffee",
+      "Cocoa",
+      "Bird's Eye Chilli"
+    ],
     "farmer_network_size": "3,000+ (target, Rwenzori region)",
-    "certifications": ["Unknown for Uganda operations"],
-    "export_markets": ["International (via Touton global network)"],
+    "certifications": [
+      "Unknown for Uganda operations"
+    ],
+    "export_markets": [
+      "International (via Touton global network)"
+    ],
     "vanex_member": false,
     "vief_partner": true,
     "revenue_usd_est": "Not applicable (subsidiary of major trading house)",
@@ -449,22 +644,32 @@
     "existing_debt": "Not applicable (backed by Touton parent)",
     "has_audited_accounts": "Unknown",
     "capital_need_est_usd": "Not applicable",
-    "capital_use_of_funds": "N/A — backed by large parent",
+    "capital_use_of_funds": "N/A \u2014 backed by large parent",
     "capital_need_source": "N/A",
     "capital_need_confidence": "Low",
     "crs_relationship": "Indirect",
-    "crs_notes": "VIEF partner under VINES. Touton is a 170-year-old French commodity trading house — Uganda subsidiary is not a lending target. Track as sector intelligence and potential buyer-partner. Rwenzori regenerative agriculture programme noteworthy for environment alignment.",
+    "crs_notes": "VIEF partner under VINES. Touton is a 170-year-old French commodity trading house \u2014 Uganda subsidiary is not a lending target. Track as sector intelligence and potential buyer-partner. Rwenzori regenerative agriculture programme noteworthy for environment alignment.",
     "donor_history": [
-      { "donor": "USDA / CRS VINES (VIEF partner)", "amount": "Undisclosed", "year": "2021–2026", "source": "VINES documentation" },
-      { "donor": "USAID (Rwenzori research via IITA)", "amount": "Undisclosed", "year": "2021", "source": "Touton website" }
+      {
+        "donor": "USDA / CRS VINES (VIEF partner)",
+        "amount": "Undisclosed",
+        "year": "2021\u20132026",
+        "source": "VINES documentation"
+      },
+      {
+        "donor": "USAID (Rwenzori research via IITA)",
+        "amount": "Undisclosed",
+        "year": "2021",
+        "source": "Touton website"
+      }
     ],
-    "lending_readiness_tier": "Tier 1 — Investment Ready",
+    "lending_readiness_tier": "Tier 1 \u2014 Investment Ready",
     "pipeline_status": "Prospect",
     "livelihood_score": 3,
     "environment_focus": "Yes",
     "women_focus": "Partial",
     "data_confidence": "Low",
-    "sme_classification_note": "Not an SME — subsidiary of large trading house",
+    "sme_classification_note": "Not an SME \u2014 subsidiary of large trading house",
     "last_updated": "2026-05",
     "notes": "Not a lending target. Included for sector completeness as a VIEF partner and major Rwenzori value chain actor. Could be useful as a market linkage partner or buyer reference."
   },
@@ -474,40 +679,73 @@
     "founded": "1998 (predecessor Sun Trade from 1990)",
     "hq_location": "Katalemwa Estate, Kampala (farms across central and northern Uganda)",
     "website": "https://www.african-organic.com",
-    "primary_contact": "Nazim Shivji (Managing Director) — amfri@utlonline.co.ug; +256 777 470 969",
+    "primary_contact": "Nazim Shivji (Managing Director) \u2014 amfri@utlonline.co.ug; +256 777 470 969",
     "org_type": "Private company (family-owned, Ugandan-born Canadian family)",
     "value_chain_role": "Vertically integrated (processor + exporter)",
-    "primary_products": ["Vanilla", "Ginger", "Turmeric", "Chilli", "Herbs & Spices", "Dried Fruits"],
+    "primary_products": [
+      "Vanilla",
+      "Ginger",
+      "Turmeric",
+      "Chilli",
+      "Herbs & Spices",
+      "Dried Fruits"
+    ],
     "farmer_network_size": "560+ organic certified out-growers",
-    "certifications": ["Organic (IMO Switzerland)", "Organic (Ecocert / EU)", "Organic (USDA NOP)", "Demeter (biodynamic)", "Fair For Life", "BRC", "ISO 22000"],
-    "export_markets": ["EU", "USA", "UAE", "Canada", "Germany", "Denmark", "Netherlands"],
+    "certifications": [
+      "Organic (IMO Switzerland)",
+      "Organic (Ecocert / EU)",
+      "Organic (USDA NOP)",
+      "Demeter (biodynamic)",
+      "Fair For Life",
+      "BRC",
+      "ISO 22000"
+    ],
+    "export_markets": [
+      "EU",
+      "USA",
+      "UAE",
+      "Canada",
+      "Germany",
+      "Denmark",
+      "Netherlands"
+    ],
     "vanex_member": false,
     "vief_partner": false,
-    "revenue_usd_est": "$2M–$5M",
+    "revenue_usd_est": "$2M\u2013$5M",
     "revenue_source": "Claude estimate",
     "revenue_confidence": "Low",
-    "staff_count_est": "300–473",
+    "staff_count_est": "300\u2013473",
     "staff_source": "Reported",
     "staff_confidence": "Medium",
     "existing_debt": "Yield Fund Uganda (Pearl Capital) $1.3M joint investment; FCA Investments (equity, undisclosed)",
     "has_audited_accounts": "Likely yes",
-    "capital_need_est_usd": "$500K–$1.5M",
+    "capital_need_est_usd": "$500K\u2013$1.5M",
     "capital_use_of_funds": "Seasonal spice and fruit working capital; processing expansion",
-    "capital_need_source": "Claude estimate — Yield Fund investment was for processing scale-up; ongoing seasonal working capital is likely the residual need",
+    "capital_need_source": "Claude estimate \u2014 Yield Fund investment was for processing scale-up; ongoing seasonal working capital is likely the residual need",
     "capital_need_confidence": "Medium",
     "crs_relationship": "None confirmed",
-    "crs_notes": "No confirmed CRS link. Strong alignment: biodynamic/organic farming, Fair For Life, Demeter — only such plantation on the equatorial belt globally. Spices (vanilla, ginger, turmeric, chilli, herbs) are a major product line. Yield Fund investment implies audited accounts exist. 40% women employees.",
+    "crs_notes": "No confirmed CRS link. Strong alignment: biodynamic/organic farming, Fair For Life, Demeter \u2014 only such plantation on the equatorial belt globally. Spices (vanilla, ginger, turmeric, chilli, herbs) are a major product line. Yield Fund investment implies audited accounts exist. 40% women employees.",
     "donor_history": [
-      { "donor": "Yield Fund Uganda / Pearl Capital", "amount": "$1.3M joint investment", "year": "Unknown", "source": "MMOF case study" },
-      { "donor": "FCA Investments", "amount": "Undisclosed equity", "year": "Unknown", "source": "Crunchbase" }
+      {
+        "donor": "Yield Fund Uganda / Pearl Capital",
+        "amount": "$1.3M joint investment",
+        "year": "Unknown",
+        "source": "MMOF case study"
+      },
+      {
+        "donor": "FCA Investments",
+        "amount": "Undisclosed equity",
+        "year": "Unknown",
+        "source": "Crunchbase"
+      }
     ],
-    "lending_readiness_tier": "Tier 1 — Investment Ready",
+    "lending_readiness_tier": "Tier 1 \u2014 Investment Ready",
     "pipeline_status": "Prospect",
     "livelihood_score": 4,
     "environment_focus": "Yes",
     "women_focus": "Yes",
     "data_confidence": "Medium",
-    "sme_classification_note": "Upper end of SME — 473 staff; assess fit",
+    "sme_classification_note": "Upper end of SME \u2014 473 staff; assess fit",
     "last_updated": "2026-05",
     "notes": "At 473 staff may be above SME ceiling, but Yield Fund invested suggesting SME-eligible at time. First certified organic producer in Uganda. New 500-acre Mabira forest rehabilitation/spice project is a strong environment story."
   },
@@ -520,10 +758,18 @@
     "primary_contact": "Unknown",
     "org_type": "Private company",
     "value_chain_role": "Aggregator + Exporter",
-    "primary_products": ["Vanilla", "Cocoa", "Coffee"],
+    "primary_products": [
+      "Vanilla",
+      "Cocoa",
+      "Coffee"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "vanex_member": false,
     "vief_partner": false,
     "revenue_usd_est": "Unknown",
@@ -534,14 +780,14 @@
     "staff_confidence": "Low",
     "existing_debt": "None identified",
     "has_audited_accounts": "Unknown",
-    "capital_need_est_usd": "$100K–$300K",
+    "capital_need_est_usd": "$100K\u2013$300K",
     "capital_use_of_funds": "Working capital for vanilla aggregation and processing",
-    "capital_need_source": "Claude estimate — new entrant; working capital is primary scaling constraint",
+    "capital_need_source": "Claude estimate \u2014 new entrant; working capital is primary scaling constraint",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Very new operator — first major transaction (5 tons vanilla with NEI) announced February 2026. Sources from Bundibugyo and Central Uganda, including DRC cross-border. NEI partnership gives market access and processing credibility. Too early for debt — watch list.",
+    "crs_notes": "Very new operator \u2014 first major transaction (5 tons vanilla with NEI) announced February 2026. Sources from Bundibugyo and Central Uganda, including DRC cross-border. NEI partnership gives market access and processing credibility. Too early for debt \u2014 watch list.",
     "donor_history": [],
-    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
     "pipeline_status": "Prospect",
     "livelihood_score": 2,
     "environment_focus": "Partial",
@@ -549,6 +795,429 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Early-stage company — first significant deal only Feb 2026. DRC cross-border sourcing adds complexity. Watch list; revisit in 12–18 months once track record develops."
+    "notes": "Early-stage company \u2014 first significant deal only Feb 2026. DRC cross-border sourcing adds complexity. Watch list; revisit in 12\u201318 months once track record develops."
+  },
+  {
+    "id": "uga-014",
+    "name": "UVAN Ltd",
+    "founded": "1990",
+    "hq_location": "Magigye, Gayaza\u2013Ziroobwe Road, Kampala",
+    "website": "https://vanex.org/uvan-ltd/",
+    "primary_contact": "Aga Sekalala Jnr (Executive Director) \u2014 +256 772702905 / 772700800",
+    "org_type": "Private company (family-owned)",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International (globally reputable buyers)"
+    ],
+    "vanex_member": true,
+    "vief_partner": false,
+    "revenue_usd_est": "$1M\u2013$5M",
+    "revenue_source": "Claude estimate",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "None identified",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "$300K\u2013$1M",
+    "capital_use_of_funds": "Seasonal crop purchase working capital",
+    "capital_need_source": "Claude estimate \u2014 one of the largest and longest-established exporters; seasonal working capital is the primary financing need for any vanilla processor at this scale",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "Indirect",
+    "crs_notes": "VANEX founding member alongside Esco and UCIL. One of Uganda's oldest and most established vanilla exporters \u2014 operating since 1990 and formerly commanding 60%+ of the Ugandan vanilla market. Named directly alongside CRS in Uganda Ministry of Agriculture vanilla harvest date announcement (2021), indicating a significant sector relationship. President's Exporter Award winner (multiple years including 2009). Family-run by the Sekalala family. No public financial information available but sector stature suggests audited accounts likely exist.",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 1 \u2014 Investment Ready",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 3,
+    "environment_focus": "Partial",
+    "women_focus": "Partial",
+    "data_confidence": "Medium",
+    "sme_classification_note": "",
+    "last_updated": "2026-05",
+    "notes": "One of the most important sector actors to engage directly. Formerly dominant (60%+ market share historically). Named alongside CRS in government vanilla quality announcement \u2014 suggests existing relationship worth exploring. No website beyond VANEX listing."
+  },
+  {
+    "id": "uga-015",
+    "name": "Nillavan Ltd",
+    "founded": "Unknown (second generation; father started the business)",
+    "hq_location": "Uganda (operations); UK (strategy/marketing director)",
+    "website": "https://vanex.org/nillavan-ltd/",
+    "primary_contact": "Cate Nakitanda (Director, Strategy & Operations, Uganda); Ritah Young (Director, Strategy & Marketing, UK)",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic (claimed \u2014 body not confirmed publicly)"
+    ],
+    "export_markets": [
+      "International (via Social Vanilla, Denmark)"
+    ],
+    "vanex_member": true,
+    "vief_partner": true,
+    "revenue_usd_est": "$100K\u2013$500K",
+    "revenue_source": "Claude estimate",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "None identified",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "$100K\u2013$300K",
+    "capital_use_of_funds": "Working capital; processing equipment; farmer training support",
+    "capital_need_source": "Claude estimate \u2014 early-to-mid stage operator; Social Vanilla partnership provides market access but not capital",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "Indirect",
+    "crs_notes": "VIEF partner under VINES. VANEX member. Second-generation, female-led Ugandan business \u2014 two sisters who took over from their father. Partnership with Social Vanilla (Denmark) for market access and The Sustainable Bean (Denmark) for sector expertise. Anti-middleman positioning and farmer trust-building are core to their model. UK presence (Ritah Young, London) provides international market access. Strong livelihoods and women's empowerment narrative.",
+    "donor_history": [
+      {
+        "donor": "USDA / CRS VINES (VIEF partner)",
+        "amount": "Undisclosed",
+        "year": "2021\u20132026",
+        "source": "VINES documentation"
+      }
+    ],
+    "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 4,
+    "environment_focus": "Yes",
+    "women_focus": "Yes",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-05",
+    "notes": "Compelling ownership and mission profile \u2014 second-generation, female-led, UK/Uganda split, anti-middleman ethos. Social Vanilla (Denmark) is both a market partner and a credibility signal for European buyers. Limited financial profile publicly available. Good CRS alignment on women and livelihoods."
+  },
+  {
+    "id": "uga-016",
+    "name": "Vanaroma Ltd",
+    "founded": "Unknown",
+    "hq_location": "Uganda",
+    "website": "https://vanaroma.org",
+    "primary_contact": "Mary Musabe Kiddu (Executive Director \u2014 20+ years in Uganda vanilla industry)",
+    "org_type": "Private company (female-owned)",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown (anti-microbial free, slow-cure process claimed)"
+    ],
+    "export_markets": [
+      "International"
+    ],
+    "vanex_member": true,
+    "vief_partner": false,
+    "revenue_usd_est": "$100K\u2013$500K",
+    "revenue_source": "Claude estimate",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "None identified",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "$100K\u2013$300K",
+    "capital_use_of_funds": "Working capital; processing scale-up; certification costs",
+    "capital_need_source": "Claude estimate",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "Ugandan female-owned exporter with 20+ years sector experience. Premium gourmet positioning with anti-microbial free, slow-cure process targeting minimum 2%+ vanillin content. Named after grandmother Anastazia \u2014 strong local roots narrative. Supplies Savory Spice (US retail chain) \u2014 documented US buyer relationship is a positive lending signal. Good CRS alignment on women's economic empowerment.",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 2 \u2014 Near Ready",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 3,
+    "environment_focus": "Yes",
+    "women_focus": "Yes",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-05",
+    "notes": "Documented US retail buyer (Savory Spice) is a useful signal of market access and product quality. Executive Director has 20+ years Uganda vanilla experience. Female-owned and operated. Grandmother origin story / brand narrative is distinctive. No public financial information."
+  },
+  {
+    "id": "uga-017",
+    "name": "Mughete Nyakabale Vanilla-Coffee Growers Cooperative Society Ltd",
+    "founded": "2016",
+    "hq_location": "Uganda (location not specified)",
+    "website": "",
+    "primary_contact": "Unknown",
+    "org_type": "Cooperative",
+    "value_chain_role": "Farmer group / Cooperative",
+    "primary_products": [
+      "Vanilla",
+      "Coffee"
+    ],
+    "farmer_network_size": "352 members + 3 groups",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown (sells green vanilla beans to buyers)"
+    ],
+    "vanex_member": true,
+    "vief_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "None identified",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "$25K\u2013$100K",
+    "capital_use_of_funds": "Pre-harvest working capital; farmer input finance; aggregation logistics",
+    "capital_need_source": "Claude estimate \u2014 primary producer cooperative selling green beans; working capital for aggregation is the primary financing gap at this level",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "Farmer-based cooperative registered with Ministry of Trade Industry and Cooperatives (reg. 9611/RCS). Founded 2016 by vanilla farmers facing common problems. 352 members, produces 20MT/year green vanilla beans. Listed on VANEX membership page. Represents the primary producer tier \u2014 exactly the type of cooperative CRS's livelihoods mission targets. Needs TA and governance support before debt is appropriate.",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 4,
+    "environment_focus": "Partial",
+    "women_focus": "Partial",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-05",
+    "notes": "Primary producer cooperative \u2014 sells green (unprocessed) beans. Represents the upstream end of the value chain. CRS engagement would likely focus on livelihoods and TA before any financial product. Contact via VANEX or CRS VINES team."
+  },
+  {
+    "id": "uga-018",
+    "name": "The Simons Uga Ltd",
+    "founded": "Unknown",
+    "hq_location": "Uganda",
+    "website": "",
+    "primary_contact": "Unknown",
+    "org_type": "Unknown",
+    "value_chain_role": "Unknown",
+    "primary_products": [
+      "Vanilla"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "vanex_member": true,
+    "vief_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "VANEX member. No public web presence or additional information found. Contact via VANEX directory or CRS VINES team.",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-05",
+    "notes": "Placeholder entry. No public information available beyond VANEX membership listing."
+  },
+  {
+    "id": "uga-019",
+    "name": "Kastus Investments Company Ltd",
+    "founded": "Unknown",
+    "hq_location": "Uganda",
+    "website": "",
+    "primary_contact": "Unknown",
+    "org_type": "Unknown",
+    "value_chain_role": "Unknown",
+    "primary_products": [
+      "Vanilla"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "vanex_member": true,
+    "vief_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "VANEX member. No public web presence or additional information found. Contact via VANEX directory.",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-05",
+    "notes": "Placeholder entry. No public information available beyond VANEX membership listing."
+  },
+  {
+    "id": "uga-020",
+    "name": "Embe Beverages Ltd",
+    "founded": "Unknown",
+    "hq_location": "Uganda",
+    "website": "",
+    "primary_contact": "Unknown",
+    "org_type": "Unknown",
+    "value_chain_role": "Unknown",
+    "primary_products": [
+      "Vanilla"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "vanex_member": true,
+    "vief_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "VANEX member. The 'Beverages' name suggests possible downstream processing (vanilla extract, beverages) rather than raw bean export. No public information found to confirm. Contact via VANEX directory.",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-05",
+    "notes": "Placeholder entry. Company name suggests possible beverages/extract processing angle \u2014 worth probing. No public information available beyond VANEX membership listing."
+  },
+  {
+    "id": "uga-021",
+    "name": "Kilembe Vanilla Exporters Ltd",
+    "founded": "Unknown",
+    "hq_location": "Kilembe area, western Uganda (implied by name)",
+    "website": "",
+    "primary_contact": "Unknown",
+    "org_type": "Unknown",
+    "value_chain_role": "Exporter",
+    "primary_products": [
+      "Vanilla"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "vanex_member": true,
+    "vief_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "VANEX member. Company name suggests Kilembe district base in western Uganda \u2014 the Rwenzori foothills area which is a known vanilla growing zone. No public information found. Contact via VANEX directory.",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-05",
+    "notes": "Placeholder entry. Kilembe is in Kasese district, western Uganda \u2014 same Rwenzori cluster as Tambiisa, Coetzee, RFCU, and Gourmet Gardens. Geographic clustering may be relevant for a Rwenzori-focused lending approach. No public information beyond VANEX listing."
+  },
+  {
+    "id": "uga-022",
+    "name": "Modern Agro Spices",
+    "founded": "Unknown",
+    "hq_location": "Uganda",
+    "website": "",
+    "primary_contact": "Unknown",
+    "org_type": "Unknown",
+    "value_chain_role": "Unknown",
+    "primary_products": [
+      "Vanilla",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "vanex_member": true,
+    "vief_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "VANEX member. Company name suggests a broader spice focus beyond vanilla \u2014 potentially relevant for a multi-spice lending facility. No public information found. Contact via VANEX directory.",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 \u2014 Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-05",
+    "notes": "Placeholder entry. Broader spice mandate (not just vanilla) may be relevant given CRS facility is targeting spice sector broadly. No public information beyond VANEX membership listing."
   }
 ]
