@@ -302,7 +302,7 @@
       <div class="legend-title">Web Presence</div>
       <div class="legend-item"><span class="tag c-high">High</span> Multiple independent sources</div>
       <div class="legend-item"><span class="tag c-med">Medium</span> Website + some third-party</div>
-      <div class="legend-item"><span class="tag c-low">Low</span> VANEX listing or single source only</div>
+      <div class="legend-item"><span class="tag c-low">Low</span> Single or indirect source only</div>
     </div>
     <div class="legend-group" id="legend-flags">
       <div class="legend-title">Flags</div>
@@ -328,8 +328,6 @@ let currentCountry = 'uganda';
 
 const TIER_COLORS = { 1: '#3b6d11', 2: '#854f0b', 3: '#a32d2d' };
 
-// Country configuration: defines which JSON fields are the two network flags,
-// their display labels, filter option text, and legend descriptions.
 const COUNTRY_CONFIG = {
   uganda: {
     net1Field: 'vief_partner',  net1Label: 'VIEF',  net1TagCls: 'vief-tag',
@@ -340,12 +338,12 @@ const COUNTRY_CONFIG = {
     net2Legend: 'Uganda Vanilla Exporters Association member',
   },
   tanzania: {
-    net1Field: 'taspa_member',           net1Label: 'TASPA',          net1TagCls: 'net1-tag',
-    net2Field: 'tanzania_spices_label',  net2Label: 'TZ Spices Label', net2TagCls: 'net2-tag',
+    net1Field: 'taspa_member',          net1Label: 'TASPA',           net1TagCls: 'net1-tag',
+    net2Field: 'tanzania_spices_label', net2Label: 'TZ Spices Label', net2TagCls: 'net2-tag',
     net1All: 'TASPA: All', net1Yes: 'TASPA members only', net1No: 'Non-TASPA only',
-    net2All: 'TZ Spices Label: All', net2Yes: 'Label listed only', net2No: 'Not listed',
+    net2All: 'TZ Spices Label: All', net2Yes: 'Label certified only', net2No: 'Not certified',
     net1Legend: 'Tanzania Spices Association member',
-    net2Legend: 'Listed on Tanzania Spices label (TanTrade)',
+    net2Legend: 'TZ Spices Label — quality certification for export-grade spices (TanTrade)',
   },
   madagascar: {
     net1Field: 'rcce_member',  net1Label: 'RCCE',  net1TagCls: 'net1-tag',
@@ -359,12 +357,8 @@ const COUNTRY_CONFIG = {
 
 function applyCountryConfig(country) {
   const cfg = COUNTRY_CONFIG[country] || COUNTRY_CONFIG.uganda;
-
-  // Column headers
   document.getElementById('th-net1').textContent = cfg.net1Label;
   document.getElementById('th-net2').textContent = cfg.net2Label;
-
-  // Filter selects
   const f1 = document.getElementById('f-net1');
   const f2 = document.getElementById('f-net2');
   f1.options[0].text = cfg.net1All;
@@ -375,8 +369,8 @@ function applyCountryConfig(country) {
   f2.options[2].text = cfg.net2No;
   f1.style.display = '';
   f2.style.display = '';
-
-  // Legend
+  // Tanzania: hide TASPA filter (not useful as lending signal for now)
+  if (country === 'tanzania') { f1.style.display = 'none'; }
   document.getElementById('legend-net1-item').innerHTML =
     `<span class="tag ${cfg.net1TagCls}">${cfg.net1Label}</span> ${cfg.net1Legend}`;
   document.getElementById('legend-net2-item').innerHTML =
@@ -461,10 +455,10 @@ function flagCell(bool, tagClass, label) {
 }
 
 function getFiltered() {
-  const cfg     = COUNTRY_CONFIG[currentCountry] || COUNTRY_CONFIG.uganda;
-  const tier    = document.getElementById('f-tier').value;
-  const net1    = document.getElementById('f-net1').value;
-  const net2    = document.getElementById('f-net2').value;
+  const cfg      = COUNTRY_CONFIG[currentCountry] || COUNTRY_CONFIG.uganda;
+  const tier     = document.getElementById('f-tier').value;
+  const net1     = document.getElementById('f-net1').value;
+  const net2     = document.getElementById('f-net2').value;
   const presence = document.getElementById('f-presence').value;
 
   return DATA.filter(d => {
