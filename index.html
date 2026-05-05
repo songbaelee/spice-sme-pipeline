@@ -79,20 +79,19 @@
     .sorted .sort-icon { opacity: 1; }
     tbody tr { border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; }
     tbody tr:hover { background: var(--bg2); }
-    tbody tr.active-row { background: var(--bg2); }
     td { padding: 10px 10px 10px 0; vertical-align: top; }
 
     /* Tags */
     .tag { display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 10px; padding: 2px 7px; border-radius: 4px; border: 1px solid; white-space: nowrap; margin: 1px 2px 1px 0; }
-    .tier1  { background: var(--green-bg);  color: var(--green-text);  border-color: var(--green-border); }
-    .tier2  { background: var(--amber-bg);  color: var(--amber-text);  border-color: var(--amber-border); }
-    .tier3  { background: var(--red-bg);    color: var(--red-text);    border-color: var(--red-border); }
-    .c-high { background: var(--green-bg);  color: var(--green-text);  border-color: var(--green-border); }
-    .c-med  { background: var(--amber-bg);  color: var(--amber-text);  border-color: var(--amber-border); }
-    .c-low  { background: var(--gray-bg);   color: var(--gray-text);   border-color: var(--gray-border); }
-    .product-tag    { background: var(--bg2); color: var(--text2); border-color: var(--border); }
-    .vief-tag       { background: var(--teal-bg);   color: var(--teal-text);   border-color: var(--teal-border); }
-    .vanex-tag      { background: var(--blue-bg);   color: var(--blue-text);   border-color: var(--blue-border); }
+    .tier1       { background: var(--green-bg);  color: var(--green-text);  border-color: var(--green-border); }
+    .tier2       { background: var(--amber-bg);  color: var(--amber-text);  border-color: var(--amber-border); }
+    .tier3       { background: var(--red-bg);    color: var(--red-text);    border-color: var(--red-border); }
+    .c-high      { background: var(--green-bg);  color: var(--green-text);  border-color: var(--green-border); }
+    .c-med       { background: var(--amber-bg);  color: var(--amber-text);  border-color: var(--amber-border); }
+    .c-low       { background: var(--gray-bg);   color: var(--gray-text);   border-color: var(--gray-border); }
+    .product-tag { background: var(--bg2);       color: var(--text2);       border-color: var(--border); }
+    .vief-tag    { background: var(--teal-bg);   color: var(--teal-text);   border-color: var(--teal-border); }
+    .vanex-tag   { background: var(--blue-bg);   color: var(--blue-text);   border-color: var(--blue-border); }
 
     .est { font-family: 'IBM Plex Mono', monospace; font-size: 11px; }
     .src { font-size: 10px; margin-top: 1px; }
@@ -102,29 +101,109 @@
     .src-unknown   { color: var(--border2); }
 
     .sme-warn { font-size: 10px; color: var(--red-text); display: block; margin-top: 2px; }
-    .row-num { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); }
-    .row-id  { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); }
+    .row-num  { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); }
+    .row-id   { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); }
 
-    /* State messages */
     .state-msg { text-align: center; padding: 3rem 0; color: var(--text3); font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
 
-    /* Detail panel */
-    .detail { display: none; background: var(--bg2); border: 1px solid var(--border2); border-radius: 10px; padding: 1.75rem; margin-top: 1rem; }
-    .detail.open { display: block; }
-    .detail-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.25rem; gap: 1rem; }
-    .detail-name { font-size: 18px; font-weight: 500; margin-bottom: 3px; }
-    .detail-sub { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text3); }
-    .detail-close { background: none; border: 1px solid var(--border); color: var(--text2); border-radius: 6px; padding: 4px 12px; font-size: 11px; font-family: 'IBM Plex Mono', monospace; cursor: pointer; white-space: nowrap; flex-shrink: 0; }
-    .detail-close:hover { border-color: var(--text); color: var(--text); }
-    .detail-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem 1.5rem; margin-bottom: 1.25rem; }
-    .detail-field label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); display: block; margin-bottom: 3px; }
-    .detail-field .val { font-size: 12px; color: var(--text); line-height: 1.5; }
-    .detail-section { padding-top: 1rem; margin-top: 1rem; border-top: 1px solid var(--border); }
-    .detail-section-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); margin-bottom: 0.5rem; }
-    .detail-section p { font-size: 12px; color: var(--text2); line-height: 1.7; }
+    /* Modal overlay */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .modal-overlay.open { display: flex; }
+
+    .modal {
+      background: var(--bg);
+      border: 1px solid var(--border2);
+      border-radius: 12px;
+      width: 100%;
+      max-width: 720px;
+      max-height: 85vh;
+      overflow-y: auto;
+      position: relative;
+      padding: 2rem;
+    }
+
+    /* Coloured top bar by tier */
+    .modal-tier-bar {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.25rem;
+      gap: 1rem;
+      padding-top: 0.5rem;
+    }
+
+    .modal-name { font-size: 20px; font-weight: 500; margin-bottom: 4px; }
+    .modal-sub  { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text3); }
+
+    .modal-close {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text2);
+      border-radius: 6px;
+      padding: 5px 14px;
+      font-size: 12px;
+      font-family: 'IBM Plex Mono', monospace;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .modal-close:hover { border-color: var(--text); color: var(--text); }
+
+    .modal-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.25rem; }
+
+    .modal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 1rem 1.5rem;
+      margin-bottom: 0;
+    }
+
+    .modal-field label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text3);
+      display: block;
+      margin-bottom: 3px;
+    }
+    .modal-field .val { font-size: 12px; color: var(--text); line-height: 1.5; }
+
+    .modal-section {
+      padding-top: 1rem;
+      margin-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .modal-section-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text3);
+      margin-bottom: 0.5rem;
+    }
+    .modal-section p { font-size: 12px; color: var(--text2); line-height: 1.7; }
+
     .donor-table { width: 100%; border-collapse: collapse; font-size: 12px; }
-    .donor-table td { padding: 5px 8px 5px 0; border-bottom: 1px solid var(--border); color: var(--text2); }
-    .donor-table td:first-child { font-weight: 500; color: var(--text); }
+    .donor-table td { padding: 5px 8px 5px 0; border-bottom: 1px solid var(--border); color: var(--text2); vertical-align: top; }
+    .donor-table td:first-child { font-weight: 500; color: var(--text); width: 40%; }
     .donor-table tr:last-child td { border-bottom: none; }
 
     /* Legend */
@@ -203,8 +282,6 @@
     </table>
   </div>
 
-  <div class="detail" id="detail"></div>
-
   <div class="legend">
     <div class="legend-group">
       <div class="legend-title">Tier</div>
@@ -231,21 +308,28 @@
       <div class="legend-item"><span class="tag vanex-tag">VANEX</span> Association member</div>
     </div>
   </div>
+</div>
 
+<!-- Modal -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-tier-bar" id="modal-tier-bar"></div>
+    <div id="modal-content"></div>
+  </div>
 </div>
 
 <script>
 let DATA = [];
 let sortField = null;
 let sortDir = 1;
-let openId = null;
 let currentCountry = 'uganda';
+
+const TIER_COLORS = { 1: '#3b6d11', 2: '#854f0b', 3: '#a32d2d' };
 
 function switchCountry(country, btn) {
   if (!btn || btn.classList.contains('inactive')) return;
   currentCountry = country;
-  openId = null;
-  document.getElementById('detail').classList.remove('open');
+  closeModal();
   document.querySelectorAll('.country-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   resetFilters();
@@ -363,12 +447,11 @@ function render() {
   const tbody = document.getElementById('tbody');
   if (rows.length === 0) {
     tbody.innerHTML = `<tr><td colspan="11" class="state-msg">No results match the current filters.</td></tr>`;
-    if (openId) { openId = null; document.getElementById('detail').classList.remove('open'); }
     return;
   }
 
   tbody.innerHTML = rows.map((d, i) => `
-    <tr onclick="toggleDetail('${d.id}')" class="${openId === d.id ? 'active-row' : ''}">
+    <tr onclick="openModal('${d.id}')">
       <td class="row-num">${i + 1}</td>
       <td class="row-id">${d.id}</td>
       <td>
@@ -387,102 +470,114 @@ function render() {
         <div class="est">${d.capital_need_est_usd || '—'}</div>
         <div class="src ${srcCls(d.capital_need_source)}">${srcLabel(d.capital_need_source)}</div>
       </td>
-      <td style="text-align:center">${flagCell(d.vief_partner, 'vief-tag', 'VIEF')}</td>
+      <td style="text-align:center">${flagCell(d.vief_partner,  'vief-tag',  'VIEF')}</td>
       <td style="text-align:center">${flagCell(d.vanex_member, 'vanex-tag', 'VANEX')}</td>
       <td>${presenceTag(d.data_confidence)}</td>
     </tr>
   `).join('');
-
-  if (openId) renderDetail(openId);
 }
 
-function toggleDetail(id) {
-  if (openId === id) { openId = null; document.getElementById('detail').classList.remove('open'); }
-  else { openId = id; renderDetail(id); }
-  render();
-}
-
-function renderDetail(id) {
+function openModal(id) {
   const d = DATA.find(x => x.id === id);
   if (!d) return;
-  const panel = document.getElementById('detail');
-  panel.classList.add('open');
 
-  const donorRows = (d.donor_history || []).map(h =>
-    `<tr><td>${h.donor}</td><td>${h.amount}</td><td>${h.year}</td><td style="color:var(--text3)">${h.source || ''}</td></tr>`
-  ).join('');
+  const n = tierNum(d.lending_readiness_tier);
+  document.getElementById('modal-tier-bar').style.background = TIER_COLORS[n] || '#8a8a84';
 
   const badges = [
-    d.vief_partner  ? '<span class="tag vief-tag">VIEF Partner</span>'   : '',
-    d.vanex_member  ? '<span class="tag vanex-tag">VANEX Member</span>'  : '',
-  ].filter(Boolean).join(' ');
+    d.vief_partner  ? '<span class="tag vief-tag">VIEF Partner</span>'  : '',
+    d.vanex_member  ? '<span class="tag vanex-tag">VANEX Member</span>' : '',
+  ].filter(Boolean).join('');
 
-  panel.innerHTML = `
-    <div class="detail-header">
+  const donorRows = (d.donor_history || []).map(h =>
+    `<tr>
+      <td>${h.donor}</td>
+      <td>${h.amount}</td>
+      <td>${h.year}</td>
+      <td style="color:var(--text3)">${h.source || ''}</td>
+    </tr>`
+  ).join('');
+
+  document.getElementById('modal-content').innerHTML = `
+    <div class="modal-header">
       <div>
-        <div class="detail-name">${d.name}</div>
-        <div class="detail-sub">${d.id} · ${d.hq_location} · Est. ${d.founded}</div>
-        ${badges ? `<div style="margin-top:8px">${badges}</div>` : ''}
+        <div class="modal-name">${d.name}</div>
+        <div class="modal-sub">${d.id} · ${d.hq_location} · Est. ${d.founded}</div>
       </div>
-      <button class="detail-close" onclick="toggleDetail('${d.id}')">Close ×</button>
+      <button class="modal-close" onclick="closeModal()">Close ×</button>
     </div>
 
-    <div class="detail-grid">
-      <div class="detail-field"><label>Org type</label><div class="val">${d.org_type}</div></div>
-      <div class="detail-field"><label>Value chain role</label><div class="val">${d.value_chain_role}</div></div>
-      <div class="detail-field"><label>Farmer network</label><div class="val">${d.farmer_network_size}</div></div>
-      <div class="detail-field">
+    ${badges ? `<div class="modal-badges">${badges}</div>` : ''}
+
+    <div class="modal-grid">
+      <div class="modal-field"><label>Org type</label><div class="val">${d.org_type}</div></div>
+      <div class="modal-field"><label>Value chain role</label><div class="val">${d.value_chain_role}</div></div>
+      <div class="modal-field"><label>Lending tier</label><div class="val">${tierTag(d.lending_readiness_tier)}</div></div>
+      <div class="modal-field"><label>Farmer network</label><div class="val">${d.farmer_network_size || '—'}</div></div>
+      <div class="modal-field">
         <label>Staff (est.)</label>
-        <div class="val">${d.staff_count_est}
-          <span class="src ${srcCls(d.staff_source)}" style="font-size:10px"> ${d.staff_source} · ${d.staff_confidence} conf.</span>
+        <div class="val">${d.staff_count_est || '—'}
+          <span class="src ${srcCls(d.staff_source)}" style="font-size:10px;margin-left:4px">${d.staff_source} · ${d.staff_confidence} conf.</span>
         </div>
       </div>
-      <div class="detail-field">
+      <div class="modal-field">
         <label>Revenue est.</label>
-        <div class="val">${d.revenue_usd_est}
-          <span class="src ${srcCls(d.revenue_source)}" style="font-size:10px"> ${d.revenue_source} · ${d.revenue_confidence} conf.</span>
+        <div class="val">${d.revenue_usd_est || '—'}
+          <span class="src ${srcCls(d.revenue_source)}" style="font-size:10px;margin-left:4px">${d.revenue_source} · ${d.revenue_confidence} conf.</span>
         </div>
       </div>
-      <div class="detail-field">
+      <div class="modal-field">
         <label>Capital need est.</label>
-        <div class="val">${d.capital_need_est_usd}
-          <span class="src ${srcCls(d.capital_need_source)}" style="font-size:10px"> ${d.capital_need_confidence} conf.</span>
+        <div class="val">${d.capital_need_est_usd || '—'}
+          <span class="src ${srcCls(d.capital_need_source)}" style="font-size:10px;margin-left:4px">${d.capital_need_confidence} conf.</span>
         </div>
       </div>
-      <div class="detail-field"><label>Use of funds</label><div class="val">${d.capital_use_of_funds}</div></div>
-      <div class="detail-field"><label>Existing debt / investors</label><div class="val">${d.existing_debt || '—'}</div></div>
-      <div class="detail-field"><label>Audited accounts</label><div class="val">${d.has_audited_accounts}</div></div>
-      <div class="detail-field"><label>Certifications</label><div class="val">${(d.certifications || []).join(', ')}</div></div>
-      <div class="detail-field"><label>Export markets</label><div class="val">${(d.export_markets || []).join(', ')}</div></div>
-      <div class="detail-field"><label>Livelihoods / Env / Women</label><div class="val">${d.livelihood_score}/5 · Env: ${d.environment_focus} · Women: ${d.women_focus}</div></div>
-      <div class="detail-field"><label>Primary contact</label><div class="val">${d.primary_contact}</div></div>
-      <div class="detail-field"><label>Website</label>
-        <div class="val">${d.website ? `<a href="${d.website}" target="_blank" rel="noopener" style="color:var(--blue-text)">${d.website}</a>` : '—'}</div>
+      <div class="modal-field"><label>Use of funds</label><div class="val">${d.capital_use_of_funds || '—'}</div></div>
+      <div class="modal-field"><label>Existing debt / investors</label><div class="val">${d.existing_debt || '—'}</div></div>
+      <div class="modal-field"><label>Audited accounts</label><div class="val">${d.has_audited_accounts || '—'}</div></div>
+      <div class="modal-field"><label>Certifications</label><div class="val">${(d.certifications || []).join(', ') || '—'}</div></div>
+      <div class="modal-field"><label>Export markets</label><div class="val">${(d.export_markets || []).join(', ') || '—'}</div></div>
+      <div class="modal-field"><label>Livelihoods / Env / Women</label><div class="val">${d.livelihood_score}/5 · Env: ${d.environment_focus} · Women: ${d.women_focus}</div></div>
+      <div class="modal-field"><label>Primary contact</label><div class="val">${d.primary_contact || '—'}</div></div>
+      <div class="modal-field"><label>Website</label>
+        <div class="val">${d.website
+          ? `<a href="${d.website}" target="_blank" rel="noopener" style="color:var(--blue-text)">${d.website}</a>`
+          : '—'}</div>
       </div>
-      <div class="detail-field"><label>Web presence</label><div class="val">${d.data_confidence}</div></div>
-      <div class="detail-field"><label>Last updated</label><div class="val">${d.last_updated}</div></div>
+      <div class="modal-field"><label>Web presence</label><div class="val">${presenceTag(d.data_confidence)}</div></div>
+      <div class="modal-field"><label>Last updated</label><div class="val">${d.last_updated || '—'}</div></div>
     </div>
 
     ${donorRows ? `
-    <div class="detail-section">
-      <div class="detail-section-label">Donor / Investor History</div>
+    <div class="modal-section">
+      <div class="modal-section-label">Donor / Investor History</div>
       <table class="donor-table"><tbody>${donorRows}</tbody></table>
     </div>` : ''}
 
-    <div class="detail-section">
-      <div class="detail-section-label">CRS Notes</div>
-      <p>${d.crs_notes}</p>
+    <div class="modal-section">
+      <div class="modal-section-label">CRS Notes</div>
+      <p>${d.crs_notes || '—'}</p>
     </div>
 
     ${d.notes ? `
-    <div class="detail-section">
-      <div class="detail-section-label">Additional Notes</div>
+    <div class="modal-section">
+      <div class="modal-section-label">Additional Notes</div>
       <p>${d.notes}</p>
     </div>` : ''}
   `;
 
-  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  document.getElementById('modal-overlay').classList.add('open');
+  document.getElementById('modal').scrollTop = 0;
 }
+
+function closeModal(event) {
+  if (event && event.target !== document.getElementById('modal-overlay')) return;
+  document.getElementById('modal-overlay').classList.remove('open');
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('modal-overlay').classList.remove('open');
+});
 
 loadCountry('uganda');
 </script>
