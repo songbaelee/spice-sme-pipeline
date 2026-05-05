@@ -90,11 +90,9 @@
     .c-high { background: var(--green-bg);  color: var(--green-text);  border-color: var(--green-border); }
     .c-med  { background: var(--amber-bg);  color: var(--amber-text);  border-color: var(--amber-border); }
     .c-low  { background: var(--gray-bg);   color: var(--gray-text);   border-color: var(--gray-border); }
-    .s-prospect     { background: var(--blue-bg);   color: var(--blue-text);   border-color: var(--blue-border); }
-    .s-conversation { background: var(--purple-bg); color: var(--purple-text); border-color: var(--purple-border); }
-    .s-active       { background: var(--green-bg);  color: var(--green-text);  border-color: var(--green-border); }
     .product-tag    { background: var(--bg2); color: var(--text2); border-color: var(--border); }
     .vief-tag       { background: var(--teal-bg);   color: var(--teal-text);   border-color: var(--teal-border); }
+    .vanex-tag      { background: var(--blue-bg);   color: var(--blue-text);   border-color: var(--blue-border); }
 
     .est { font-family: 'IBM Plex Mono', monospace; font-size: 11px; }
     .src { font-size: 10px; margin-top: 1px; }
@@ -103,12 +101,7 @@
     .src-estimated { color: var(--text3); }
     .src-unknown   { color: var(--border2); }
 
-    .crs-active   { color: var(--green-text); font-size: 11px; }
-    .crs-indirect { color: var(--amber-text); font-size: 11px; }
-    .crs-none     { color: var(--text3);      font-size: 11px; }
-
     .sme-warn { font-size: 10px; color: var(--red-text); display: block; margin-top: 2px; }
-
     .row-num { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); }
     .row-id  { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); }
 
@@ -169,18 +162,6 @@
       <option value="2">Tier 2 — Near Ready</option>
       <option value="3">Tier 3 — Needs TA First</option>
     </select>
-    <select id="f-status" onchange="render()">
-      <option value="">Status: All</option>
-      <option value="Prospect">Prospect</option>
-      <option value="In Conversation">In Conversation</option>
-      <option value="Active">Active</option>
-    </select>
-    <select id="f-crs" onchange="render()">
-      <option value="">CRS Link: All</option>
-      <option value="Active">Active partner</option>
-      <option value="Indirect">Indirect</option>
-      <option value="None">None confirmed</option>
-    </select>
     <select id="f-vief" onchange="render()">
       <option value="">VIEF: All</option>
       <option value="yes">VIEF Partners only</option>
@@ -191,8 +172,8 @@
       <option value="yes">VANEX Members only</option>
       <option value="no">Non-VANEX only</option>
     </select>
-    <select id="f-conf" onchange="render()">
-      <option value="">Confidence: All</option>
+    <select id="f-presence" onchange="render()">
+      <option value="">Web Presence: All</option>
       <option value="High">High</option>
       <option value="Medium">Medium</option>
       <option value="Low">Low</option>
@@ -205,20 +186,19 @@
         <tr>
           <th class="no-sort" style="width:36px">#</th>
           <th class="no-sort" style="width:70px">ID</th>
-          <th style="width:16%" onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
-          <th style="width:10%" onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
+          <th style="width:18%" onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
+          <th style="width:11%" onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
           <th style="width:10%">Products</th>
-          <th style="width:11%" onclick="sortBy('tier')">Tier <span class="sort-icon" id="s-tier">⇅</span></th>
-          <th style="width:9%">Revenue est.</th>
-          <th style="width:9%">Capital need est.</th>
-          <th style="width:7%">CRS link</th>
-          <th style="width:5%">VIEF</th>
-          <th style="width:7%" onclick="sortBy('data_confidence')">Confidence <span class="sort-icon" id="s-data_confidence">⇅</span></th>
-          <th style="width:7%" onclick="sortBy('pipeline_status')">Status <span class="sort-icon" id="s-pipeline_status">⇅</span></th>
+          <th style="width:12%" onclick="sortBy('tier')">Tier <span class="sort-icon" id="s-tier">⇅</span></th>
+          <th style="width:10%">Revenue est.</th>
+          <th style="width:10%">Capital need est.</th>
+          <th style="width:5%" class="no-sort">VIEF</th>
+          <th style="width:5%" class="no-sort">VANEX</th>
+          <th style="width:9%" onclick="sortBy('data_confidence')">Web Presence <span class="sort-icon" id="s-data_confidence">⇅</span></th>
         </tr>
       </thead>
       <tbody id="tbody">
-        <tr><td colspan="12" class="state-msg">Loading...</td></tr>
+        <tr><td colspan="11" class="state-msg">Loading...</td></tr>
       </tbody>
     </table>
   </div>
@@ -236,18 +216,19 @@
       <div class="legend-title">Data source</div>
       <div class="legend-item"><span class="src src-verified">Verified</span> — audited / investor docs</div>
       <div class="legend-item"><span class="src src-reported">Reported</span> — company stated, unaudited</div>
-      <div class="legend-item"><span class="src src-estimated">Claude estimate</span> — proxy signals</div>
-      <div class="legend-item"><span class="src src-unknown">Unknown</span> — no basis</div>
+      <div class="legend-item"><span class="src src-estimated">Est.</span> — proxy signals only</div>
+      <div class="legend-item"><span class="src src-unknown">—</span> unknown</div>
     </div>
     <div class="legend-group">
-      <div class="legend-title">Confidence</div>
-      <div class="legend-item"><span class="tag c-high">High</span> Multiple sources</div>
-      <div class="legend-item"><span class="tag c-med">Medium</span> Single / partial</div>
-      <div class="legend-item"><span class="tag c-low">Low</span> Estimated / indirect</div>
+      <div class="legend-title">Web Presence</div>
+      <div class="legend-item"><span class="tag c-high">High</span> Multiple independent sources</div>
+      <div class="legend-item"><span class="tag c-med">Medium</span> Website + some third-party</div>
+      <div class="legend-item"><span class="tag c-low">Low</span> VANEX listing or single source only</div>
     </div>
     <div class="legend-group">
       <div class="legend-title">Flags</div>
       <div class="legend-item"><span class="tag vief-tag">VIEF</span> USDA/CRS VINES partner</div>
+      <div class="legend-item"><span class="tag vanex-tag">VANEX</span> Association member</div>
     </div>
   </div>
 
@@ -272,7 +253,7 @@ function switchCountry(country, btn) {
 }
 
 function resetFilters() {
-  ['f-tier','f-status','f-crs','f-vief','f-vanex','f-conf'].forEach(id => {
+  ['f-tier','f-vief','f-vanex','f-presence'].forEach(id => {
     document.getElementById(id).value = '';
   });
   sortField = null; sortDir = 1;
@@ -283,7 +264,7 @@ function resetFilters() {
 function loadCountry(country) {
   document.getElementById('count-label').textContent = '';
   document.getElementById('tbody').innerHTML =
-    `<tr><td colspan="12" class="state-msg">Loading ${country} data...</td></tr>`;
+    `<tr><td colspan="11" class="state-msg">Loading ${country} data...</td></tr>`;
   fetch(`${country}.json`)
     .then(r => { if (!r.ok) throw new Error(`${country}.json not found`); return r.json(); })
     .then(data => { DATA = data; render(); })
@@ -291,7 +272,7 @@ function loadCountry(country) {
       DATA = [];
       document.getElementById('count-label').textContent = 'Error';
       document.getElementById('tbody').innerHTML =
-        `<tr><td colspan="12" class="state-msg">Could not load ${country}.json — make sure the file exists in the same folder.<br><small style="opacity:0.6">${err.message}</small></td></tr>`;
+        `<tr><td colspan="11" class="state-msg">Could not load ${country}.json — make sure the file exists in the same folder.<br><small style="opacity:0.6">${err.message}</small></td></tr>`;
     });
 }
 
@@ -310,14 +291,9 @@ function tierTag(t) {
   return `<span class="tag ${cls}">${label}</span>`;
 }
 
-function confTag(c) {
+function presenceTag(c) {
   const cls = c === 'High' ? 'c-high' : c === 'Medium' ? 'c-med' : 'c-low';
   return `<span class="tag ${cls}">${c}</span>`;
-}
-
-function statusTag(s) {
-  const cls = s === 'Prospect' ? 's-prospect' : s === 'In Conversation' ? 's-conversation' : 's-active';
-  return `<span class="tag ${cls}">${s}</span>`;
 }
 
 function srcCls(s) {
@@ -335,31 +311,25 @@ function srcLabel(s) {
   return s;
 }
 
-function crsTag(r) {
-  if (!r || r === 'None confirmed') return `<span class="crs-none">○ None</span>`;
-  if (r.toLowerCase().includes('indirect')) return `<span class="crs-indirect">◐ Indirect</span>`;
-  return `<span class="crs-active">● Active</span>`;
+function flagCell(bool, tagClass, label) {
+  return bool
+    ? `<span class="tag ${tagClass}">${label}</span>`
+    : `<span style="color:var(--border2);font-size:11px">—</span>`;
 }
 
 function getFiltered() {
-  const tier   = document.getElementById('f-tier').value;
-  const status = document.getElementById('f-status').value;
-  const crs    = document.getElementById('f-crs').value;
-  const vief   = document.getElementById('f-vief').value;
-  const vanex  = document.getElementById('f-vanex').value;
-  const conf   = document.getElementById('f-conf').value;
+  const tier     = document.getElementById('f-tier').value;
+  const vief     = document.getElementById('f-vief').value;
+  const vanex    = document.getElementById('f-vanex').value;
+  const presence = document.getElementById('f-presence').value;
 
   return DATA.filter(d => {
-    if (tier   && tierNum(d.lending_readiness_tier) !== parseInt(tier)) return false;
-    if (status && d.pipeline_status !== status) return false;
-    if (crs === 'Active'   && !d.crs_relationship.includes('Active'))   return false;
-    if (crs === 'Indirect' && !d.crs_relationship.includes('Indirect')) return false;
-    if (crs === 'None'     && d.crs_relationship !== 'None confirmed')   return false;
-    if (vief === 'yes' && !d.vief_partner) return false;
-    if (vief === 'no'  &&  d.vief_partner) return false;
-    if (vanex === 'yes' && !d.vanex_member) return false;
-    if (vanex === 'no'  &&  d.vanex_member) return false;
-    if (conf   && d.data_confidence !== conf) return false;
+    if (tier     && tierNum(d.lending_readiness_tier) !== parseInt(tier)) return false;
+    if (vief  === 'yes' && !d.vief_partner)  return false;
+    if (vief  === 'no'  &&  d.vief_partner)  return false;
+    if (vanex === 'yes' && !d.vanex_member)  return false;
+    if (vanex === 'no'  &&  d.vanex_member)  return false;
+    if (presence && d.data_confidence !== presence) return false;
     return true;
   }).sort((a, b) => {
     if (!sortField) return 0;
@@ -392,7 +362,7 @@ function render() {
 
   const tbody = document.getElementById('tbody');
   if (rows.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="12" class="state-msg">No results match the current filters.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="11" class="state-msg">No results match the current filters.</td></tr>`;
     if (openId) { openId = null; document.getElementById('detail').classList.remove('open'); }
     return;
   }
@@ -417,10 +387,9 @@ function render() {
         <div class="est">${d.capital_need_est_usd || '—'}</div>
         <div class="src ${srcCls(d.capital_need_source)}">${srcLabel(d.capital_need_source)}</div>
       </td>
-      <td>${crsTag(d.crs_relationship)}</td>
-      <td style="text-align:center">${d.vief_partner ? '<span class="tag vief-tag">VIEF</span>' : '<span style="color:var(--border2);font-size:11px">—</span>'}</td>
-      <td>${confTag(d.data_confidence)}</td>
-      <td>${statusTag(d.pipeline_status)}</td>
+      <td style="text-align:center">${flagCell(d.vief_partner, 'vief-tag', 'VIEF')}</td>
+      <td style="text-align:center">${flagCell(d.vanex_member, 'vanex-tag', 'VANEX')}</td>
+      <td>${presenceTag(d.data_confidence)}</td>
     </tr>
   `).join('');
 
@@ -444,8 +413,8 @@ function renderDetail(id) {
   ).join('');
 
   const badges = [
-    d.vief_partner  ? '<span class="tag vief-tag">VIEF Partner</span>' : '',
-    d.vanex_member  ? '<span class="tag" style="background:var(--blue-bg);color:var(--blue-text);border-color:var(--blue-border)">VANEX Member</span>' : '',
+    d.vief_partner  ? '<span class="tag vief-tag">VIEF Partner</span>'   : '',
+    d.vanex_member  ? '<span class="tag vanex-tag">VANEX Member</span>'  : '',
   ].filter(Boolean).join(' ');
 
   panel.innerHTML = `
@@ -490,6 +459,7 @@ function renderDetail(id) {
       <div class="detail-field"><label>Website</label>
         <div class="val">${d.website ? `<a href="${d.website}" target="_blank" rel="noopener" style="color:var(--blue-text)">${d.website}</a>` : '—'}</div>
       </div>
+      <div class="detail-field"><label>Web presence</label><div class="val">${d.data_confidence}</div></div>
       <div class="detail-field"><label>Last updated</label><div class="val">${d.last_updated}</div></div>
     </div>
 
