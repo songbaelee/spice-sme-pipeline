@@ -269,7 +269,7 @@
           <th class="no-sort" style="width:70px">ID</th>
           <th style="width:18%" onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
           <th style="width:11%" onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
-          <th style="width:10%">Products</th>
+          <th style="width:7%">Products</th>
           <th style="width:12%" onclick="sortBy('tier')">Tier <span class="sort-icon" id="s-tier">⇅</span></th>
           <th style="width:10%">Revenue est.</th>
           <th style="width:10%">Capital need est.</th>
@@ -512,10 +512,12 @@ function render() {
       <td>
         <div style="font-weight:500">${d.name}</div>
         <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text3);margin-top:2px">Est. ${d.founded}</div>
-        ${d.sme_classification_note ? `<span class="sme-warn">⚠ ${d.sme_classification_note}</span>` : ''}
+        ${d.sme_classification_note ? `<span title="${d.sme_classification_note}" style="font-size:11px;color:var(--red-text);cursor:default">⚠</span>` : ''}
       </td>
       <td style="color:var(--text2);font-size:11px">${d.hq_location}</td>
-      <td>${(d.primary_products || []).slice(0,3).map(p => `<span class="tag product-tag">${p}</span>`).join('')}</td>
+      <td style="font-size:11px;color:var(--text2);line-height:1.4">${
+        (() => { const p = d.primary_products || []; const shown = p.slice(0,2).join(', '); const more = p.length > 2 ? ` <span style="color:var(--text3)">+${p.length-2}</span>` : ''; return shown + more; })()
+      }</td>
       <td>${tierTag(d.lending_readiness_tier)}</td>
       <td>
         <div class="est">${d.revenue_usd_est || '—'}</div>
