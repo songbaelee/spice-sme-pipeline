@@ -232,6 +232,55 @@
         <button class="country-btn" onclick="switchCountry('tanzania', this)">Tanzania</button>
         <button class="country-btn inactive">Madagascar<span class="coming-soon">coming soon</span></button>
       </div>
+      <button class="country-btn" id="about-btn" onclick="toggleAbout(this)" style="border-left:1px solid var(--border);margin-left:auto">About</button>
+    </div>
+  </div>
+
+  <div id="about-panel" style="display:none; padding:1.5rem 2rem 2rem; max-width:860px">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem 2.5rem">
+
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.5rem">Purpose</div>
+        <p style="font-size:13px;color:var(--text2);line-height:1.7">An internal CRS Innovative Finance tool for tracking and prioritising spice sector SMEs across Uganda, Tanzania, and Madagascar as potential borrowers in a CRS-managed agri-SME lending facility. Not for external distribution.</p>
+      </div>
+
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.5rem">Data Sources</div>
+        <p style="font-size:13px;color:var(--text2);line-height:1.7">Company websites, donor programme reports (USAID, EU, IFAD, AVSF), trade databases (ITC Trade Map, Tridge), news coverage, sector association directories (VANEX, TASPA, RCCE), buyer/importer documentation, and AI-assisted research synthesis. All entries reviewed by CRS Innovative Finance team.</p>
+      </div>
+
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.5rem">Lending Readiness Tiers</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.9">
+          <div><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;background:var(--green-bg);color:var(--green-text);border:1px solid var(--green-border);padding:1px 6px;border-radius:3px;margin-right:6px">Tier 1</span>Investment ready — track record, audited accounts or investor validation, active export sales</div>
+          <div style="margin-top:.4rem"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;background:var(--amber-bg);color:var(--amber-text);border:1px solid var(--amber-border);padding:1px 6px;border-radius:3px;margin-right:6px">Tier 2</span>Near ready — export-capable but needs light TA, certification support, or financial documentation</div>
+          <div style="margin-top:.4rem"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;background:var(--red-bg);color:var(--red-text);border:1px solid var(--red-border);padding:1px 6px;border-radius:3px;margin-right:6px">Tier 3</span>Pre-lending — significant technical assistance or capacity building required before lending is viable</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.5rem">Web Presence / Data Confidence</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.9">
+          <div><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;background:var(--green-bg);color:var(--green-text);border:1px solid var(--green-border);padding:1px 6px;border-radius:3px;margin-right:6px">High</span>Multiple independent sources — website, third-party reports, and/or investor documentation</div>
+          <div style="margin-top:.4rem"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;background:var(--amber-bg);color:var(--amber-text);border:1px solid var(--amber-border);padding:1px 6px;border-radius:3px;margin-right:6px">Medium</span>Company website plus some third-party verification</div>
+          <div style="margin-top:.4rem"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;background:var(--gray-bg);color:var(--gray-text);border:1px solid var(--gray-border);padding:1px 6px;border-radius:3px;margin-right:6px">Low</span>Single or indirect source only — placeholder entries from consultations or directories</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.5rem">Network Flags</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.9">
+          <div><strong style="color:var(--text)">Uganda:</strong> VIEF = USDA/CRS VINES project partner · VANEX = Uganda Vanilla Exporters Association member</div>
+          <div style="margin-top:.4rem"><strong style="color:var(--text)">Tanzania:</strong> TASPA = Tanzania Spices Association member · TZ Spices Label = quality certification/branding standard for export-grade spices (TanTrade)</div>
+          <div style="margin-top:.4rem"><strong style="color:var(--text)">Madagascar:</strong> RCCE = cooperative network member · AVSF = Agronomes et Vétérinaires Sans Frontières programme partner</div>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.5rem">Limitations</div>
+        <p style="font-size:13px;color:var(--text2);line-height:1.7">Revenue and capital need figures are estimates based on publicly available data and AI-assisted inference — not audited figures. Tier assignments reflect desk research only and should be validated through direct engagement. Many Tier 3 entries are placeholders from in-country consultations with no public profile confirmed.</p>
+      </div>
+
     </div>
   </div>
 
@@ -639,6 +688,31 @@ document.addEventListener('keydown', e => {
 
 applyCountryConfig('uganda');
 loadCountry('uganda');
+
+function toggleAbout(btn) {
+  const panel = document.getElementById('about-panel');
+  const filters = document.querySelector('.filters');
+  const tableWrap = document.querySelector('.table-wrap');
+  const legend = document.querySelector('.legend');
+  const detail = document.getElementById('detail');
+  const isOpen = panel.style.display !== 'none';
+  if (isOpen) {
+    panel.style.display = 'none';
+    filters.style.display = '';
+    tableWrap.style.display = '';
+    if (legend) legend.style.display = '';
+    btn.classList.remove('active');
+  } else {
+    panel.style.display = '';
+    filters.style.display = 'none';
+    tableWrap.style.display = 'none';
+    if (legend) legend.style.display = 'none';
+    if (detail) detail.style.display = 'none';
+    // Deactivate country buttons visually but keep currentCountry state
+    document.querySelectorAll('.country-btn:not(#about-btn)').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+}
 </script>
 </body>
 </html>
