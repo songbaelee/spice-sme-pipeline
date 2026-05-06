@@ -502,6 +502,14 @@ function switchCountry(country, btn) {
   if (!btn || btn.classList.contains('inactive')) return;
   currentCountry = country;
   closeModal();
+
+  // Close About panel if open
+  const panel = document.getElementById('about-panel');
+  if (panel.style.display !== 'none') {
+    const aboutBtn = document.getElementById('about-btn');
+    toggleAbout(aboutBtn);
+  }
+
   document.querySelectorAll('.country-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   applyCountryConfig(country);
