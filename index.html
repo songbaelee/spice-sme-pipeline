@@ -373,6 +373,12 @@
       <option value="yes"></option>
       <option value="no"></option>
     </select>
+    <select id="f-crs" onchange="render()">
+      <option value="">CRS Rel.: All</option>
+      <option value="Direct">Direct</option>
+      <option value="Indirect">Indirect</option>
+      <option value="None confirmed">None confirmed</option>
+    </select>
     <select id="f-presence" onchange="render()">
       <option value="">Web Presence: All</option>
       <option value="High">High</option>
@@ -387,20 +393,21 @@
       <thead>
         <tr>
           <th class="no-sort" style="width:36px">#</th>
-          <th class="no-sort" style="width:70px">ID</th>
-          <th style="width:18%" onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
-          <th style="width:11%" onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
+          <th class="no-sort" style="width:60px">ID</th>
+          <th style="width:13%" onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
+          <th style="width:10%" onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
           <th style="width:7%">Products</th>
-          <th style="width:12%" onclick="sortBy('tier')">Tier <span class="sort-icon" id="s-tier">⇅</span></th>
-          <th style="width:10%">Revenue est.</th>
-          <th style="width:10%">Capital need est.</th>
+          <th style="width:11%" onclick="sortBy('tier')">Tier <span class="sort-icon" id="s-tier">⇅</span></th>
+          <th style="width:9%">Revenue est.</th>
+          <th style="width:9%">Capital need est.</th>
           <th style="width:5%" class="no-sort" id="th-net1">—</th>
           <th style="width:5%" class="no-sort" id="th-net2">—</th>
-          <th style="width:9%" onclick="sortBy('data_confidence')">Web Presence <span class="sort-icon" id="s-data_confidence">⇅</span></th>
+          <th style="width:8%" onclick="sortBy('crs_relationship')">CRS Rel. <span class="sort-icon" id="s-crs_relationship">⇅</span></th>
+          <th style="width:8%" onclick="sortBy('data_confidence')">Web Presence <span class="sort-icon" id="s-data_confidence">⇅</span></th>
         </tr>
       </thead>
       <tbody id="tbody">
-        <tr><td colspan="11" class="state-msg">Loading...</td></tr>
+        <tr><td colspan="12" class="state-msg">Loading...</td></tr>
       </tbody>
     </table>
   </div>
@@ -518,7 +525,7 @@ function switchCountry(country, btn) {
 }
 
 function resetFilters() {
-  ['f-tier','f-net1','f-net2','f-presence'].forEach(id => {
+  ['f-tier','f-net1','f-net2','f-crs','f-presence'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.value = '';
   });
@@ -530,7 +537,7 @@ function resetFilters() {
 function loadCountry(country) {
   document.getElementById('count-label').textContent = '';
   document.getElementById('tbody').innerHTML =
-    `<tr><td colspan="11" class="state-msg">Loading ${country} data...</td></tr>`;
+    `<tr><td colspan="12" class="state-msg">Loading ${country} data...</td></tr>`;
   fetch(`${country}.json`)
     .then(r => { if (!r.ok) throw new Error(`${country}.json not found`); return r.json(); })
     .then(data => { DATA = data; render(); })
@@ -538,7 +545,7 @@ function loadCountry(country) {
       DATA = [];
       document.getElementById('count-label').textContent = 'Error';
       document.getElementById('tbody').innerHTML =
-        `<tr><td colspan="11" class="state-msg">Could not load ${country}.json — make sure the file exists in the same folder.<br><small style="opacity:0.6">${err.message}</small></td></tr>`;
+        `<tr><td colspan="12" class="state-msg">Could not load ${country}.json — make sure the file exists in the same folder.<br><small style="opacity:0.6">${err.message}</small></td></tr>`;
     });
 }
 
@@ -560,6 +567,12 @@ function tierTag(t) {
 function presenceTag(c) {
   const cls = c === 'High' ? 'c-high' : c === 'Medium' ? 'c-med' : 'c-low';
   return `<span class="tag ${cls}">${c}</span>`;
+}
+
+function crsTag(r) {
+  if (r === 'Direct')   return '<span class="tag" style="background:var(--teal-bg);color:var(--teal-text);border:1px solid var(--teal-border)">Direct</span>';
+  if (r === 'Indirect') return '<span class="tag" style="background:var(--blue-bg);color:var(--blue-text);border:1px solid var(--blue-border)">Indirect</span>';
+  return '<span style="color:var(--border2);font-size:11px">—</span>';
 }
 
 function srcCls(s) {
@@ -589,6 +602,7 @@ function getFiltered() {
   const net1     = document.getElementById('f-net1').value;
   const net2     = document.getElementById('f-net2').value;
   const presence = document.getElementById('f-presence').value;
+  const crs      = document.getElementById('f-crs').value;
 
   return DATA.filter(d => {
     if (tier     && tierNum(d.lending_readiness_tier) !== parseInt(tier)) return false;
@@ -596,6 +610,7 @@ function getFiltered() {
     if (net1 === 'no'  &&  d[cfg.net1Field]) return false;
     if (net2 === 'yes' && !d[cfg.net2Field]) return false;
     if (net2 === 'no'  &&  d[cfg.net2Field]) return false;
+    if (crs && (d.crs_relationship || 'None confirmed') !== crs) return false;
     if (presence && d.data_confidence !== presence) return false;
     return true;
   }).sort((a, b) => {
@@ -629,7 +644,7 @@ function render() {
 
   const tbody = document.getElementById('tbody');
   if (rows.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="11" class="state-msg">No results match the current filters.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="12" class="state-msg">No results match the current filters.</td></tr>`;
     return;
   }
 
@@ -658,6 +673,7 @@ function render() {
       </td>
       <td style="text-align:center">${flagCell(d[cfg.net1Field], cfg.net1TagCls, cfg.net1Label)}</td>
       <td style="text-align:center">${flagCell(d[cfg.net2Field], cfg.net2TagCls, cfg.net2Label)}</td>
+      <td>${crsTag(d.crs_relationship)}</td>
       <td>${presenceTag(d.data_confidence)}</td>
     </tr>`;
   }).join('');

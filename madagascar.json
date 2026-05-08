@@ -8,10 +8,27 @@
     "primary_contact": "",
     "org_type": "Private company (family-owned)",
     "value_chain_role": "Processor + Exporter",
-    "primary_products": ["Vanilla", "Black Pepper", "Cloves", "Cinnamon", "Lychee", "Fruit Purees"],
+    "primary_products": [
+      "Vanilla",
+      "Black Pepper",
+      "Cloves",
+      "Cinnamon",
+      "Lychee",
+      "Fruit Purees"
+    ],
     "farmer_network_size": "400+ families",
-    "certifications": ["Organic", "Fair Trade", "GlobalGAP", "FSSC22000", "Halal"],
-    "export_markets": ["Europe", "Canada", "USA"],
+    "certifications": [
+      "Organic",
+      "Fair Trade",
+      "GlobalGAP",
+      "FSSC22000",
+      "Halal"
+    ],
+    "export_markets": [
+      "Europe",
+      "Canada",
+      "USA"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "$1M–$5M",
@@ -26,7 +43,7 @@
     "capital_use_of_funds": "Seasonal crop purchase working capital; processing capacity",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
-    "crs_relationship": "Indirect",
+    "crs_relationship": "None confirmed",
     "crs_notes": "CFC working capital financing documented. First FairTrade-certified lychee exporter in Madagascar. Strong cert stack. Subsidiary MPE (frozen purees) adds revenue diversification. Family-owned structure typical of mid-tier Madagascar exporters. No direct CRS programme link identified — approach via sector channels.",
     "donor_history": [
       {
@@ -61,10 +78,21 @@
     "primary_contact": "Dylan Randriamihaja — dylan@madagascarspices.com",
     "org_type": "Family plantation + small cooperative",
     "value_chain_role": "Producer + Processor + Exporter",
-    "primary_products": ["Bourbon Vanilla", "Tahiti Vanilla", "Pompona Vanilla"],
+    "primary_products": [
+      "Bourbon Vanilla",
+      "Tahiti Vanilla",
+      "Pompona Vanilla"
+    ],
     "farmer_network_size": "32 farmers (4 member families)",
-    "certifications": ["Organic (Ecocert)", "Fair Trade"],
-    "export_markets": ["Europe", "USA", "Canada"],
+    "certifications": [
+      "Organic (Ecocert)",
+      "Fair Trade"
+    ],
+    "export_markets": [
+      "Europe",
+      "USA",
+      "Canada"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "$100K–$500K",
@@ -101,10 +129,21 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Vanilla", "Black Pepper", "Voatsiperifery Wild Pepper", "Pink Pepper", "Cloves", "Ginger"],
+    "primary_products": [
+      "Vanilla",
+      "Black Pepper",
+      "Voatsiperifery Wild Pepper",
+      "Pink Pepper",
+      "Cloves",
+      "Ginger"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International (B2B)"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International (B2B)"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -141,10 +180,24 @@
     "primary_contact": "robustmadagascar@gmail.com",
     "org_type": "Private company",
     "value_chain_role": "Exporter + Aggregator",
-    "primary_products": ["Vanilla", "Black Pepper", "Pink Pepper", "Wild Pepper", "Cloves", "Cinnamon", "Essential Oils", "Pulses", "Edible Nuts"],
+    "primary_products": [
+      "Vanilla",
+      "Black Pepper",
+      "Pink Pepper",
+      "Wild Pepper",
+      "Cloves",
+      "Cinnamon",
+      "Essential Oils",
+      "Pulses",
+      "Edible Nuts"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International (wholesale)"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International (wholesale)"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -181,10 +234,26 @@
     "primary_contact": "",
     "org_type": "Private company (Franco-Malagasy)",
     "value_chain_role": "Exporter",
-    "primary_products": ["Bourbon Vanilla", "Vanilla Powder", "Voatsiperifery Wild Pepper", "Pink Pepper", "Cloves", "Cinnamon", "Turmeric", "Ginger", "Cocoa", "Coffee", "Essential Oils"],
+    "primary_products": [
+      "Bourbon Vanilla",
+      "Vanilla Powder",
+      "Voatsiperifery Wild Pepper",
+      "Pink Pepper",
+      "Cloves",
+      "Cinnamon",
+      "Turmeric",
+      "Ginger",
+      "Cocoa",
+      "Coffee",
+      "Essential Oils"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic"],
-    "export_markets": ["Europe (primarily France)"],
+    "certifications": [
+      "Organic"
+    ],
+    "export_markets": [
+      "Europe (primarily France)"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -221,10 +290,16 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Processor + Exporter",
-    "primary_products": ["Various spices and seasoned food products"],
+    "primary_products": [
+      "Various spices and seasoned food products"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Local and International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Local and International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -261,10 +336,22 @@
     "primary_contact": "",
     "org_type": "Family-based trader",
     "value_chain_role": "Trader + Aggregator",
-    "primary_products": ["Vanilla", "Cloves", "Coffee", "Cinnamon", "Pepper", "Chili", "Lychee"],
+    "primary_products": [
+      "Vanilla",
+      "Cloves",
+      "Coffee",
+      "Cinnamon",
+      "Pepper",
+      "Chili",
+      "Lychee"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International (B2B)"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International (B2B)"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -301,10 +388,26 @@
     "primary_contact": "",
     "org_type": "Cooperative federation (farmer-owned social enterprise)",
     "value_chain_role": "Producer + Processor + Exporter (via SAVAN JV)",
-    "primary_products": ["Vanilla", "Ginger", "Wild Pepper (Voatsiperifery)", "Cinnamon", "Cashew Nuts", "Fruits", "Essential Oils"],
+    "primary_products": [
+      "Vanilla",
+      "Ginger",
+      "Wild Pepper (Voatsiperifery)",
+      "Cinnamon",
+      "Cashew Nuts",
+      "Fruits",
+      "Essential Oils"
+    ],
     "farmer_network_size": "18,000+ members across 4 federations and 19 associations",
-    "certifications": ["Organic", "Fair Trade", "Kosher"],
-    "export_markets": ["USA", "Europe", "International"],
+    "certifications": [
+      "Organic",
+      "Fair Trade",
+      "Kosher"
+    ],
+    "export_markets": [
+      "USA",
+      "Europe",
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "$5M–$20M",
@@ -319,7 +422,7 @@
     "capital_use_of_funds": "Farmer pre-financing; working capital for vanilla and Voatsiperifery purchasing season",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
-    "crs_relationship": "Direct",
+    "crs_relationship": "Indirect",
     "crs_notes": "CRS is a named partner in the TSIRO Alliance — a $5.8M USAID-funded public-private partnership (2021–2026) with Sahanala. This is the highest-priority CRS relationship in Madagascar. 18,000+ farmer members is the largest farmer network of any tracked entity in the three-country pipeline. ADM (via SAVAN JV) is the primary corporate buyer — provides strong offtake security. WFTO membership and blockchain traceability underpin credibility. Sahanala likely above SME ceiling on consolidated basis — assess whether a lending facility could ring-fence a specific federation or product line.",
     "donor_history": [
       {
@@ -354,10 +457,24 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Producer + Processor + Exporter",
-    "primary_products": ["Cloves", "Clove Essential Oil", "Black Pepper", "Cinnamon", "Ginger", "Turmeric", "Vanilla"],
+    "primary_products": [
+      "Cloves",
+      "Clove Essential Oil",
+      "Black Pepper",
+      "Cinnamon",
+      "Ginger",
+      "Turmeric",
+      "Vanilla"
+    ],
     "farmer_network_size": "1,000+ smallholder farmers",
-    "certifications": ["Organic (EU/NOP)", "Fair for Life", "FSSC22000"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Organic (EU/NOP)",
+      "Fair for Life",
+      "FSSC22000"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "$500K–$2M",
@@ -372,7 +489,7 @@
     "capital_use_of_funds": "Smallholder pre-financing; clove and turmeric purchasing season working capital",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
-    "crs_relationship": "None confirmed",
+    "crs_relationship": "Direct",
     "crs_notes": "20+ years operating history with strong certification stack (EU/NOP Organic, Fair for Life, FSSC22000). 1,000+ farmer network across east coast is a meaningful livelihoods footprint. Brickaville turmeric network (est. 2016) shows ability to develop new commodity supply chains. GEGM membership (clove exporters) provides sector standing. No direct CRS link — approach via sector.",
     "donor_history": [],
     "lending_readiness_tier": "Tier 1 — Investment Ready",
@@ -394,10 +511,29 @@
     "primary_contact": "",
     "org_type": "Producer cooperative",
     "value_chain_role": "Producer + Exporter (direct)",
-    "primary_products": ["Cloves", "Turmeric", "Vanilla", "Black Pepper", "White Pepper", "Wild Pepper (Voatsiperifery)", "Ginger", "Cinnamon", "Essential Oils", "Lychee"],
+    "primary_products": [
+      "Cloves",
+      "Turmeric",
+      "Vanilla",
+      "Black Pepper",
+      "White Pepper",
+      "Wild Pepper (Voatsiperifery)",
+      "Ginger",
+      "Cinnamon",
+      "Essential Oils",
+      "Lychee"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic AB", "FLO Fairtrade", "SPP"],
-    "export_markets": ["France", "Switzerland", "International"],
+    "certifications": [
+      "Organic AB",
+      "FLO Fairtrade",
+      "SPP"
+    ],
+    "export_markets": [
+      "France",
+      "Switzerland",
+      "International"
+    ],
     "rcce_member": true,
     "avsf_partner": true,
     "revenue_usd_est": "$100K–$500K",
@@ -412,7 +548,7 @@
     "capital_use_of_funds": "Pre-harvest farmer financing; certification maintenance; processing equipment",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
-    "crs_relationship": "Indirect",
+    "crs_relationship": "None confirmed",
     "crs_notes": "AVSF partner (AVSF = long-standing CRS-adjacent development actor in Madagascar). Ethiquable (France) is a documented fair-trade buyer — offtake risk partially mitigated. IFAD-supported spice processing investment validates institutional interest. Most certification-rich cooperative in the RCCE network. SPP certification (Small Producers Symbol) signals smallholder-specific fair trade alignment — strong CRS livelihoods story.",
     "donor_history": [
       {
@@ -447,10 +583,17 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Bourbon Vanilla (organic, fair trade)"],
+    "primary_products": [
+      "Bourbon Vanilla (organic, fair trade)"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic (Lacon)", "Fair Trade (FLO Cert)"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Organic (Lacon)",
+      "Fair Trade (FLO Cert)"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -487,10 +630,22 @@
     "primary_contact": "",
     "org_type": "Producer cooperative cluster",
     "value_chain_role": "Producer + Exporter (via Pronatec)",
-    "primary_products": ["Bourbon Vanilla", "Cloves", "Cinnamon", "Cocoa", "Ginger", "Turmeric"],
+    "primary_products": [
+      "Bourbon Vanilla",
+      "Cloves",
+      "Cinnamon",
+      "Cocoa",
+      "Ginger",
+      "Turmeric"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic", "Fairtrade (FLO-Cert)"],
-    "export_markets": ["International (via Pronatec, Switzerland)"],
+    "certifications": [
+      "Organic",
+      "Fairtrade (FLO-Cert)"
+    ],
+    "export_markets": [
+      "International (via Pronatec, Switzerland)"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -540,10 +695,20 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Processor + Exporter",
-    "primary_products": ["Vanilla", "Essential Oils", "Cloves", "Spices"],
+    "primary_products": [
+      "Vanilla",
+      "Essential Oils",
+      "Cloves",
+      "Spices"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic", "ISO 22000"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Organic",
+      "ISO 22000"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -580,10 +745,19 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter + Trader",
-    "primary_products": ["Vanilla", "Voatsiperifery Wild Pepper", "Black Pepper"],
+    "primary_products": [
+      "Vanilla",
+      "Voatsiperifery Wild Pepper",
+      "Black Pepper"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic", "Fair Trade"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Organic",
+      "Fair Trade"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -620,10 +794,17 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Vanilla", "Black Pepper"],
+    "primary_products": [
+      "Vanilla",
+      "Black Pepper"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic (Ecocert)"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Organic (Ecocert)"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -660,10 +841,18 @@
     "primary_contact": "",
     "org_type": "Private company (Trimeta Group subsidiary)",
     "value_chain_role": "Processor + Exporter",
-    "primary_products": ["Vanilla", "Spices"],
+    "primary_products": [
+      "Vanilla",
+      "Spices"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["FSSC22000", "Organic"],
-    "export_markets": ["International"],
+    "certifications": [
+      "FSSC22000",
+      "Organic"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -700,10 +889,18 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Vanilla", "Cloves", "Essential Oils"],
+    "primary_products": [
+      "Vanilla",
+      "Cloves",
+      "Essential Oils"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Organic"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -740,10 +937,17 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Vanilla", "Wild Pepper (Voatsiperifery)"],
+    "primary_products": [
+      "Vanilla",
+      "Wild Pepper (Voatsiperifery)"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -780,10 +984,20 @@
     "primary_contact": "",
     "org_type": "Family business",
     "value_chain_role": "Exporter",
-    "primary_products": ["Gourmet Vanilla Beans", "Extraction-Grade Vanilla", "Wholesale Vanilla"],
+    "primary_products": [
+      "Gourmet Vanilla Beans",
+      "Extraction-Grade Vanilla",
+      "Wholesale Vanilla"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic (Lacon)", "Fair Trade (FLO-Cert)"],
-    "export_markets": ["USA", "Europe"],
+    "certifications": [
+      "Organic (Lacon)",
+      "Fair Trade (FLO-Cert)"
+    ],
+    "export_markets": [
+      "USA",
+      "Europe"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "$500K–$2M",
@@ -820,10 +1034,21 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Vanilla Beans", "Vanilla Derivatives"],
+    "primary_products": [
+      "Vanilla Beans",
+      "Vanilla Derivatives"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic (Ecocert)", "Fairtrade"],
-    "export_markets": ["Europe", "USA", "Asia", "Africa"],
+    "certifications": [
+      "Organic (Ecocert)",
+      "Fairtrade"
+    ],
+    "export_markets": [
+      "Europe",
+      "USA",
+      "Asia",
+      "Africa"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -860,10 +1085,22 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Producer + Exporter",
-    "primary_products": ["Pepper", "Cinnamon", "Ginger", "Turmeric", "Cloves", "Vanilla", "Essential Oils"],
+    "primary_products": [
+      "Pepper",
+      "Cinnamon",
+      "Ginger",
+      "Turmeric",
+      "Cloves",
+      "Vanilla",
+      "Essential Oils"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Local and International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Local and International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -900,10 +1137,22 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Processor + Exporter",
-    "primary_products": ["Bourbon Vanilla", "Premium Spices"],
+    "primary_products": [
+      "Bourbon Vanilla",
+      "Premium Spices"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Europe", "USA", "Middle East", "Indian Ocean", "Africa", "Asia"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Europe",
+      "USA",
+      "Middle East",
+      "Indian Ocean",
+      "Africa",
+      "Asia"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -940,10 +1189,18 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Processor + Exporter",
-    "primary_products": ["Vanilla", "Spices", "Exotic Products"],
+    "primary_products": [
+      "Vanilla",
+      "Spices",
+      "Exotic Products"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -980,10 +1237,16 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Vanilla"],
+    "primary_products": [
+      "Vanilla"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1020,10 +1283,16 @@
     "primary_contact": "",
     "org_type": "Private company (European-Malagasy partnership)",
     "value_chain_role": "Producer + Exporter",
-    "primary_products": ["Bourbon Vanilla"],
+    "primary_products": [
+      "Bourbon Vanilla"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1060,10 +1329,19 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Vanilla Beans", "Vanilla Powder", "Vanilla Seeds", "Cloves"],
+    "primary_products": [
+      "Vanilla Beans",
+      "Vanilla Powder",
+      "Vanilla Seeds",
+      "Cloves"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1100,10 +1378,23 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Producer + Exporter",
-    "primary_products": ["Organic Vanilla Beans", "Vanilla Powder"],
+    "primary_products": [
+      "Organic Vanilla Beans",
+      "Vanilla Powder"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic", "Kosher", "HACCP", "Fairtrade", "ISO 22000", "SA8000", "Sedex"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Organic",
+      "Kosher",
+      "HACCP",
+      "Fairtrade",
+      "ISO 22000",
+      "SA8000",
+      "Sedex"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1140,10 +1431,16 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Vanilla"],
+    "primary_products": [
+      "Vanilla"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1180,10 +1477,16 @@
     "primary_contact": "",
     "org_type": "Private company (SAVA SARL subsidiary)",
     "value_chain_role": "Producer + Exporter",
-    "primary_products": ["Premium Bourbon Vanilla"],
+    "primary_products": [
+      "Premium Bourbon Vanilla"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1220,10 +1523,24 @@
     "primary_contact": "",
     "org_type": "Private company (export support platform)",
     "value_chain_role": "Aggregator + Exporter",
-    "primary_products": ["Vanilla", "Cinnamon", "Cloves", "Black Pepper", "Wild Pepper", "White Pepper", "Ginger", "Turmeric", "Pink Pepper"],
+    "primary_products": [
+      "Vanilla",
+      "Cinnamon",
+      "Cloves",
+      "Black Pepper",
+      "Wild Pepper",
+      "White Pepper",
+      "Ginger",
+      "Turmeric",
+      "Pink Pepper"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1260,10 +1577,17 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Voatsiperifery Wild Pepper", "Vanilla Pods"],
+    "primary_products": [
+      "Voatsiperifery Wild Pepper",
+      "Vanilla Pods"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Organic"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1300,10 +1624,20 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Wild Pepper (Voatsiperifery)", "Vanilla", "Honey", "Cloves", "Mixed Spices"],
+    "primary_products": [
+      "Wild Pepper (Voatsiperifery)",
+      "Vanilla",
+      "Honey",
+      "Cloves",
+      "Mixed Spices"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1340,10 +1674,22 @@
     "primary_contact": "",
     "org_type": "Private company (family-owned)",
     "value_chain_role": "Producer + Processor + Exporter",
-    "primary_products": ["Vanilla", "Cinnamon", "Turmeric", "Mixed Spices", "Ingredients", "Fruit", "Nuts"],
+    "primary_products": [
+      "Vanilla",
+      "Cinnamon",
+      "Turmeric",
+      "Mixed Spices",
+      "Ingredients",
+      "Fruit",
+      "Nuts"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["International"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "International"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1380,10 +1726,19 @@
     "primary_contact": "",
     "org_type": "Private company",
     "value_chain_role": "Exporter",
-    "primary_products": ["Organic Vanilla Beans", "Vanilla Powder"],
+    "primary_products": [
+      "Organic Vanilla Beans",
+      "Vanilla Powder"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic", "HACCP"],
-    "export_markets": ["Canada", "USA"],
+    "certifications": [
+      "Organic",
+      "HACCP"
+    ],
+    "export_markets": [
+      "Canada",
+      "USA"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1420,10 +1775,21 @@
     "primary_contact": "",
     "org_type": "Producer cooperative",
     "value_chain_role": "Producer + Exporter (via Pronatec)",
-    "primary_products": ["Turmeric", "Ginger", "Cinnamon", "Lychee"],
+    "primary_products": [
+      "Turmeric",
+      "Ginger",
+      "Cinnamon",
+      "Lychee"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic AB", "FLO Fairtrade", "SPP"],
-    "export_markets": ["International (via Pronatec, Switzerland)"],
+    "certifications": [
+      "Organic AB",
+      "FLO Fairtrade",
+      "SPP"
+    ],
+    "export_markets": [
+      "International (via Pronatec, Switzerland)"
+    ],
     "rcce_member": true,
     "avsf_partner": true,
     "revenue_usd_est": "Unknown",
@@ -1438,7 +1804,7 @@
     "capital_use_of_funds": "Pre-harvest farmer financing; turmeric and ginger purchasing; certification maintenance",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
-    "crs_relationship": "Indirect",
+    "crs_relationship": "None confirmed",
     "crs_notes": "AVSF partner — same warm entry point as Fanohana (mdg-010). RCCE network member. Pronatec buyer relationship provides offtake security. Turmeric + ginger + cinnamon focus means non-vanilla commodity exposure — useful for portfolio diversification within a Madagascar facility. SPP + FLO dual certification. Brickaville district location (Atsinanana) is different from SAVA vanilla cluster — geographic reach is an asset.",
     "donor_history": [
       {
@@ -1473,10 +1839,21 @@
     "primary_contact": "",
     "org_type": "Farmer-owned cooperative / social enterprise",
     "value_chain_role": "Producer + Exporter (direct)",
-    "primary_products": ["Bourbon Vanilla", "Voatsiperifery Wild Pepper", "Cinnamon", "Cloves"],
+    "primary_products": [
+      "Bourbon Vanilla",
+      "Voatsiperifery Wild Pepper",
+      "Cinnamon",
+      "Cloves"
+    ],
     "farmer_network_size": "500+ smallholder farmers",
-    "certifications": ["Organic", "Fairtrade USA"],
-    "export_markets": ["USA", "Europe"],
+    "certifications": [
+      "Organic",
+      "Fairtrade USA"
+    ],
+    "export_markets": [
+      "USA",
+      "Europe"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "$500K–$2M",
@@ -1491,7 +1868,7 @@
     "capital_use_of_funds": "Vanilla and Voatsiperifery purchasing season working capital; farmer pre-financing",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
-    "crs_relationship": "Direct",
+    "crs_relationship": "Indirect",
     "crs_notes": "CRS has a documented direct lending/investment relationship via the Miller Center impact investment partnership (2017). This is CRS's only confirmed Madagascar entity with prior direct financial engagement. Hand in Hand International is a co-partner for farmer training. Fairtrade USA certified since 2014 — among the earliest in Madagascar. 500+ farmer network with above-market price payments and Fairtrade premium redistribution. Strongest livelihoods story of any private company (non-cooperative) in the pipeline. US market access confirmed (direct). Voatsiperifery alongside vanilla gives product diversification.",
     "donor_history": [
       {
@@ -1532,10 +1909,25 @@
     "primary_contact": "Mr. Hervol (co-founder, MBA Global Management); Mrs. Rajaona (co-founder, MSc international business & agriculture)",
     "org_type": "Private company (US-Malagasy partnership)",
     "value_chain_role": "Exporter + Aggregator",
-    "primary_products": ["Vanilla", "Cloves", "Ginger", "Ginger Oil", "Pink Pepper", "Black Pepper", "Cinnamon", "African Bird's Eye Chili", "Pulses"],
+    "primary_products": [
+      "Vanilla",
+      "Cloves",
+      "Ginger",
+      "Ginger Oil",
+      "Pink Pepper",
+      "Black Pepper",
+      "Cinnamon",
+      "African Bird's Eye Chili",
+      "Pulses"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Organic"],
-    "export_markets": ["USA", "Europe"],
+    "certifications": [
+      "Organic"
+    ],
+    "export_markets": [
+      "USA",
+      "Europe"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "$500K–$2M",
@@ -1550,7 +1942,7 @@
     "capital_use_of_funds": "Vanilla and clove purchasing season working capital; chili production scale-up",
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
-    "crs_relationship": "None confirmed",
+    "crs_relationship": "Direct",
     "crs_notes": "Founded by a US Peace Corps Madagascar alumni (2006–07) and a Malagasy agribusiness partner — US-Malagasy co-ownership structure is a differentiator for anglophone market access. Certified organic exporter. Strategically located in Toamasina (Madagascar's main port) — ideal for clove container export. African Bird's Eye Chili produced organically on own project site near Moramanga. Active CSR (school rehabilitation, DREDD reforestation partnership). Appeared on private partners list from CRS-connected colleague — worth direct outreach.",
     "donor_history": [],
     "lending_readiness_tier": "Tier 2 — Near Ready",
@@ -1572,10 +1964,25 @@
     "primary_contact": "Rolland Ramboatiana (CEO/founder)",
     "org_type": "Private company (family-owned)",
     "value_chain_role": "Producer + Processor + Exporter",
-    "primary_products": ["Essential Oils", "Vanilla", "Black Pepper", "Cinnamon", "Ginger", "Turmeric", "Cloves", "Natural Extracts"],
+    "primary_products": [
+      "Essential Oils",
+      "Vanilla",
+      "Black Pepper",
+      "Cinnamon",
+      "Ginger",
+      "Turmeric",
+      "Cloves",
+      "Natural Extracts"
+    ],
     "farmer_network_size": "~250 family homes directly impacted",
-    "certifications": ["Organic (Ecocert)", "Fair Trade (Ecocert ESR Standard)"],
-    "export_markets": ["Europe", "USA"],
+    "certifications": [
+      "Organic (Ecocert)",
+      "Fair Trade (Ecocert ESR Standard)"
+    ],
+    "export_markets": [
+      "Europe",
+      "USA"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "$500K–$3M",
@@ -1612,10 +2019,23 @@
     "primary_contact": "Bertil Åkesson (owner/CEO)",
     "org_type": "Private company (family estate)",
     "value_chain_role": "Producer + Exporter",
-    "primary_products": ["Black Pepper", "Pink Pepper", "Voatsiperifery Wild Pepper", "Cocoa", "Coffee", "Essential Oils"],
+    "primary_products": [
+      "Black Pepper",
+      "Pink Pepper",
+      "Voatsiperifery Wild Pepper",
+      "Cocoa",
+      "Coffee",
+      "Essential Oils"
+    ],
     "farmer_network_size": "Estate-only (not smallholder model)",
-    "certifications": ["Organic (Ecocert EU / NOP USA)"],
-    "export_markets": ["Europe", "USA", "International (300+ chocolate makers globally)"],
+    "certifications": [
+      "Organic (Ecocert EU / NOP USA)"
+    ],
+    "export_markets": [
+      "Europe",
+      "USA",
+      "International (300+ chocolate makers globally)"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1652,10 +2072,16 @@
     "primary_contact": "",
     "org_type": "Unknown",
     "value_chain_role": "Unknown",
-    "primary_products": ["Spices (unknown range)"],
+    "primary_products": [
+      "Spices (unknown range)"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Unknown"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1692,10 +2118,16 @@
     "primary_contact": "",
     "org_type": "Unknown (possibly farmer group or small cooperative)",
     "value_chain_role": "Unknown",
-    "primary_products": ["Spices (unknown — southwest region)"],
+    "primary_products": [
+      "Spices (unknown — southwest region)"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Unknown"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1732,10 +2164,16 @@
     "primary_contact": "",
     "org_type": "Unknown",
     "value_chain_role": "Unknown",
-    "primary_products": ["Unknown"],
+    "primary_products": [
+      "Unknown"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Unknown"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1772,10 +2210,16 @@
     "primary_contact": "",
     "org_type": "Unknown",
     "value_chain_role": "Unknown",
-    "primary_products": ["Unknown"],
+    "primary_products": [
+      "Unknown"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Unknown"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1812,10 +2256,16 @@
     "primary_contact": "",
     "org_type": "Unknown",
     "value_chain_role": "Unknown",
-    "primary_products": ["Unknown (possibly essential oils or bio-extracts)"],
+    "primary_products": [
+      "Unknown (possibly essential oils or bio-extracts)"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Unknown"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1852,10 +2302,16 @@
     "primary_contact": "",
     "org_type": "Unknown",
     "value_chain_role": "Unknown",
-    "primary_products": ["Unknown (possibly fair trade essential oils)"],
+    "primary_products": [
+      "Unknown (possibly fair trade essential oils)"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Unknown"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1892,10 +2348,16 @@
     "primary_contact": "",
     "org_type": "Unknown",
     "value_chain_role": "Unknown",
-    "primary_products": ["Unknown"],
+    "primary_products": [
+      "Unknown"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Unknown"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1932,10 +2394,16 @@
     "primary_contact": "",
     "org_type": "Unknown",
     "value_chain_role": "Unknown",
-    "primary_products": ["Unknown (possibly botanical extracts or aromatic plants)"],
+    "primary_products": [
+      "Unknown (possibly botanical extracts or aromatic plants)"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Unknown"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -1972,10 +2440,16 @@
     "primary_contact": "",
     "org_type": "Unknown (group structure implied)",
     "value_chain_role": "Unknown",
-    "primary_products": ["Unknown"],
+    "primary_products": [
+      "Unknown"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Unknown"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -2012,10 +2486,16 @@
     "primary_contact": "",
     "org_type": "Unknown",
     "value_chain_role": "Unknown",
-    "primary_products": ["Unknown"],
+    "primary_products": [
+      "Unknown"
+    ],
     "farmer_network_size": "Unknown",
-    "certifications": ["Unknown"],
-    "export_markets": ["Unknown"],
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
     "rcce_member": false,
     "avsf_partner": false,
     "revenue_usd_est": "Unknown",
@@ -2042,5 +2522,108 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "⚠ ASK COLLEAGUE: Please identify Gehem — full name (possibly an acronym), location, and products."
+  },
+  {
+    "id": "mdg-050",
+    "name": "PhileoL Madagascar",
+    "founded": "2008",
+    "hq_location": "Antananarivo (operations: south Madagascar)",
+    "website": "https://www.phileol.com",
+    "primary_contact": "",
+    "org_type": "Private company (division of PhileoL group)",
+    "value_chain_role": "Producer + Processor + Exporter",
+    "primary_products": [
+      "Castor Oil",
+      "Vegetable Oils (cosmetic and industrial grade)"
+    ],
+    "farmer_network_size": "700+ families",
+    "certifications": [
+      "Organic",
+      "Fair for Life",
+      "B Corp (score: 101.7)"
+    ],
+    "export_markets": [
+      "Europe",
+      "International"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "~18",
+    "staff_source": "PitchBook",
+    "staff_confidence": "Low",
+    "existing_debt": "I&P (Investisseurs & Partenaires) minority equity (30.5%)",
+    "has_audited_accounts": "Unknown — I&P investment implies investor-reviewed financials",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "Direct",
+    "crs_notes": "Flagged by CRS colleague as one of four highest-priority CRS relationships in Madagascar. B Corp score 101.7 (median 50.9). Fair for Life and Organic certified. Works with 700+ families in south Madagascar — one of the poorest regions on the island. WWF, UNDP, and EFA partnerships on Social Code. I&P minority equity investor (same network that backs Miarakap). NOTE: primary product is castor oil for cosmetics/industry, not a spice. Confirm with colleague whether facility mandate should be broadened to include oil crops.",
+    "donor_history": [
+      {
+        "donor": "Investisseurs & Partenaires (I&P)",
+        "type": "Equity investment (30.5% stake)",
+        "amount": "Undisclosed",
+        "year": "Unknown"
+      }
+    ],
+    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "pipeline_status": "Priority Outreach",
+    "livelihood_score": 4,
+    "environment_focus": "Yes",
+    "women_focus": "Unknown",
+    "data_confidence": "Medium",
+    "sme_classification_note": "Primary product is castor oil — confirm facility mandate scope before proceeding",
+    "last_updated": "2026-05",
+    "notes": "Priority CRS relationship per colleague. Exceptional impact credentials (B Corp 101.7, Fair for Life, Organic, WWF/UNDP partnerships). I&P equity is a strong financial credibility signal. South Madagascar reach aligns with CRS vulnerability mandate. Approach via CRS colleague first to clarify scope."
+  },
+  {
+    "id": "mdg-051",
+    "name": "Eva Fruits",
+    "founded": "2004",
+    "hq_location": "Anosy region (southeast Madagascar)",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company with cooperative network",
+    "value_chain_role": "Producer + Exporter",
+    "primary_products": [
+      "Fruits (Anosy region, southeast)"
+    ],
+    "farmer_network_size": "2,350 farmers across 12 cooperatives",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "170+",
+    "staff_source": "LinkedIn",
+    "staff_confidence": "Medium",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "Direct",
+    "crs_notes": "Flagged by CRS colleague as one of four highest-priority CRS relationships in Madagascar. 2,350 farmers across 12 cooperatives — second-largest farmer network in the pipeline after Sahanala. 170+ direct jobs. Anosy region (southeast) is remote and vulnerable — strong CRS livelihoods mandate alignment. NOTE: primary products appear to be fruits not spices. Confirm whether facility mandate covers fruit value chains or whether Eva Fruits has an undocumented spice component.",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "pipeline_status": "Priority Outreach",
+    "livelihood_score": 5,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "Primary products appear to be fruits — confirm whether spice component exists or facility mandate covers fruit value chains",
+    "last_updated": "2026-05",
+    "notes": "Priority CRS relationship per colleague. 2,350 farmers / 12 cooperatives is a standout livelihoods scale. Anosy southeast adds geographic diversification from SAVA. No website found. Approach via CRS colleague to establish the existing relationship before direct outreach."
   }
 ]
