@@ -405,8 +405,8 @@
       <button class="filter-btn" id="btn-net1" onclick="toggleFilter('net1', this)">RCCE</button>
       <button class="filter-btn" id="btn-net2" onclick="toggleFilter('net2', this)">AVSF</button>
       <button class="filter-btn" id="btn-crs-list" onclick="toggleFilter('crs-list', this)">CRS Consolidated List</button>
-      <button class="filter-btn" id="btn-symabio" onclick="toggleMembership('SYMABIO', this)" style="display:none">SYMABIO</button>
-      <button class="filter-btn" id="btn-gehem" onclick="toggleMembership('GEHEM', this)" style="display:none">GEHEM</button>
+      <button class="filter-btn" id="btn-symabio" onclick="toggleFilter('symabio', this)" style="display:none">SYMABIO</button>
+      <button class="filter-btn" id="btn-gehem" onclick="toggleFilter('gehem', this)" style="display:none">GEHEM</button>
     </div>
 
     <div class="table-scroll-hint">← scroll to see all columns →</div>
@@ -469,8 +469,7 @@ let DATA = [];
 let sortField = null;
 let sortDir = 1;
 let currentCountry = 'uganda';
-let activeFilter = null; // 'net1' | 'net2' | 'crs-list' | null
-let activeMembershipFilters = new Set(); // 'SYMABIO' | 'GEHEM'
+let activeFilter = null; // 'net1' | 'net2' | 'crs-list' | 'symabio' | 'gehem' | null
 
 // Which overlay panel is currently open: 'about' | 'funds' | null
 let activePanel = null;
@@ -553,17 +552,6 @@ function toggleFilter(key, btn) {
   render();
 }
 
-function toggleMembership(key, btn) {
-  if (activeMembershipFilters.has(key)) {
-    activeMembershipFilters.delete(key);
-    btn.classList.remove('active');
-  } else {
-    activeMembershipFilters.add(key);
-    btn.classList.add('active');
-  }
-  render();
-}
-
 const COUNTRY_CONFIG = {
   uganda: {
     net1Field: 'vief_partner',  net1Label: 'VIEF',  net1TagCls: 'vief-tag',
@@ -627,7 +615,6 @@ function switchCountry(country, btn) {
 
 function resetFilters() {
   activeFilter = null;
-  activeMembershipFilters = new Set();
   document.querySelectorAll('#pipeline-panel .filter-btn').forEach(b => b.classList.remove('active'));
   sortField = null; sortDir = 1;
   document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '⇅');
@@ -703,10 +690,8 @@ function getFiltered() {
     if (activeFilter === 'net1' && !d[cfg.net1Field]) return false;
     if (activeFilter === 'net2' && !d[cfg.net2Field]) return false;
     if (activeFilter === 'crs-list' && !d.crs_consolidated_source) return false;
-    if (activeMembershipFilters.size > 0) {
-      const m = d.membership || [];
-      if (!([...activeMembershipFilters].some(k => m.includes(k)))) return false;
-    }
+    if (activeFilter === 'symabio' && !(d.membership || []).includes('SYMABIO')) return false;
+    if (activeFilter === 'gehem'   && !(d.membership || []).includes('GEHEM'))   return false;
     return true;
   }).sort((a, b) => {
     if (!sortField) return 0;
