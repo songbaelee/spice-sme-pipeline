@@ -75,6 +75,8 @@
     .table-wrap { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; font-size: 12px; }
     .table-wrap table { table-layout: fixed; }
+    .table-wrap table#funds-table { table-layout: fixed; }
+    #pipeline-panel .table-wrap table { table-layout: auto; }
     thead th { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text3); text-align: left; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--border); cursor: pointer; user-select: none; white-space: nowrap; }
     thead th.no-sort { cursor: default; }
     thead th:hover:not(.no-sort) { color: var(--text2); }
@@ -84,6 +86,8 @@
     tbody tr { border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; }
     tbody td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     tbody td:nth-child(3) { white-space: normal; }
+    #pipeline-panel tbody td:nth-child(4) { max-width: 220px; }
+    #pipeline-panel tbody td:nth-child(5) { max-width: 180px; }
     tbody tr:hover { background: var(--bg2); }
 
     /* All td padding — right padding is handled per-class for narrow cols */
