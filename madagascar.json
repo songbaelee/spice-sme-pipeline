@@ -8023,5 +8023,60 @@
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
     "notes": ""
+  },
+  {
+    "id": "mdg-166",
+    "name": "Madagascar Vanilla Export (MVE)",
+    "founded": "Unknown",
+    "hq_location": "Toamasina (Tamatave)",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company (family-owned)",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Bourbon Vanilla",
+      "Vanilla Powder"
+    ],
+    "farmer_network_size": "800 smallholder producers (via 2 cooperatives)",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Europe"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "crs_consolidated_source": "",
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "SIDI loan (active, since 2024)",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Seasonal vanilla purchasing working capital",
+    "capital_need_source": "Inferred from SIDI loan purpose",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "Family-owned processor and exporter based in Tamatave, sourcing from two cooperatives in the Mananara area (east coast, Analanjirofo). One cooperative is Label Vavasaha (~500 members). SIDI loan partner since 2024 — 893 beneficiaries, 100% rural, 20% women. Processing warehouse in Tamatave; vanilla sun-dried, cured, graded, and packed for export to Europe (beans by air, powder by boat). Warm intro path: Gabrielle Orliange (SIDI partnership officer, Madagascar-based) identified and assessed MVE — she is already on the CRS contact list.",
+    "donor_history": [
+      {
+        "donor": "SIDI",
+        "type": "Loan",
+        "amount": "Undisclosed",
+        "year": "2024"
+      }
+    ],
+    "lending_readiness_tier": "Tier 1 — Investment Ready",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 4,
+    "environment_focus": "Unknown",
+    "women_focus": "Partial",
+    "data_confidence": "Medium",
+    "sme_classification_note": "Already bankable — SIDI loan confirms creditworthiness. Scale (800 producers, 2 cooperatives) puts this squarely in Tier 1-2 lending range.",
+    "last_updated": "2026-06",
+    "notes": "Notable gap in the pipeline given SIDI active lending relationship. High priority to research further — no public website identified. Approach via Gabrielle Orliange (SIDI) as warm intro. Mananara sourcing geography overlaps with Mananara Biosphere Cooperatives (mdg-012) — worth checking whether the two cooperatives MVE sources from are KOMAM/COPPVM/CPVM or separate entities."
   }
 ]
