@@ -412,16 +412,18 @@
     <div class="table-scroll-hint">← scroll to see all columns →</div>
     <div class="table-wrap">
       <table>
-        <colgroup>
+        <colgroup id="pipeline-colgroup">
           <col style="width:22px">
           <col style="width:62px">
           <col style="width:20%">
           <col style="width:16%">
-          <col style="width:11%">
-          <col style="width:13%">
+          <col id="col-orgtype" style="width:11%">
+          <col id="col-farmernetwork" style="width:13%">
           <col style="width:14%">
-          <col style="width:6%">
-          <col style="width:6%">
+          <col id="col-net1" style="width:6%">
+          <col id="col-net2" style="width:6%">
+          <col id="col-symabio" style="width:5%; display:none">
+          <col id="col-gehem" style="width:5%; display:none">
         </colgroup>
         <thead>
           <tr>
@@ -429,11 +431,13 @@
             <th class="no-sort" style="width:62px; padding-right:6px; white-space:normal; overflow:hidden; max-width:62px">ID</th>
             <th onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
             <th onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
-            <th onclick="sortBy('org_type')">Org Type <span class="sort-icon" id="s-org_type">⇅</span></th>
-            <th class="no-sort">Farmer Network</th>
+            <th id="th-col5" onclick="sortBy('org_type')">Org Type <span class="sort-icon" id="s-org_type">⇅</span></th>
+            <th id="th-col6" class="no-sort">Farmer Network</th>
             <th>Products</th>
-            <th class="no-sort" id="th-net1">—</th>
-            <th class="no-sort" id="th-net2">—</th>
+            <th id="th-net1" class="no-sort">—</th>
+            <th id="th-net2" class="no-sort">—</th>
+            <th id="th-symabio" style="display:none" onclick="sortBy('symabio_member')">SYMABIO <span class="sort-icon" id="s-symabio_member">⇅</span></th>
+            <th id="th-gehem"   style="display:none" onclick="sortBy('gehem_member')">GEHEM <span class="sort-icon" id="s-gehem_member">⇅</span></th>
           </tr>
         </thead>
         <tbody id="tbody">
@@ -575,19 +579,19 @@ const COUNTRY_CONFIG = {
 
 function applyCountryConfig(country) {
   const cfg = COUNTRY_CONFIG[country] || COUNTRY_CONFIG.uganda;
-  document.getElementById('th-net1').textContent = cfg.net1Label;
-  document.getElementById('th-net2').textContent = cfg.net2Label;
+  const isMdg = country === 'madagascar';
+
+  // Filter buttons
   document.getElementById('btn-net1').textContent = cfg.net1Label;
   document.getElementById('btn-net2').textContent = cfg.net2Label;
-  // Tanzania: hide TASPA filter button
   document.getElementById('btn-net1').style.display = country === 'tanzania' ? 'none' : '';
-  // CRS Consolidated List only applies to Madagascar
-  document.getElementById('btn-crs-list').style.display = country === 'madagascar' ? '' : 'none';
-  // SYMABIO / GEHEM filters only apply to Madagascar
-  document.getElementById('btn-symabio').style.display = country === 'madagascar' ? '' : 'none';
-  document.getElementById('btn-gehem').style.display   = country === 'madagascar' ? '' : 'none';
-  document.getElementById('legend-symabio-item').style.display = country === 'madagascar' ? '' : 'none';
-  document.getElementById('legend-gehem-item').style.display   = country === 'madagascar' ? '' : 'none';
+  document.getElementById('btn-crs-list').style.display = isMdg ? '' : 'none';
+  document.getElementById('btn-symabio').style.display  = isMdg ? '' : 'none';
+  document.getElementById('btn-gehem').style.display    = isMdg ? '' : 'none';
+
+  // Legend
+  document.getElementById('legend-symabio-item').style.display = isMdg ? '' : 'none';
+  document.getElementById('legend-gehem-item').style.display   = isMdg ? '' : 'none';
   document.getElementById('legend-symabio-item').innerHTML =
     `<span class="tag purple-tag">SYMABIO</span> SYMABIO organic sector association member`;
   document.getElementById('legend-gehem-item').innerHTML =
@@ -596,6 +600,47 @@ function applyCountryConfig(country) {
     `<span class="tag ${cfg.net1TagCls}">${cfg.net1Label}</span> ${cfg.net1Legend}`;
   document.getElementById('legend-net2-item').innerHTML =
     `<span class="tag ${cfg.net2TagCls}">${cfg.net2Label}</span> ${cfg.net2Legend}`;
+
+  // Madagascar: replace Org Type + Farmer Network with 4 affiliation columns
+  // Other countries: restore Org Type + Farmer Network, hide extra affil cols
+  const thCol5  = document.getElementById('th-col5');
+  const thCol6  = document.getElementById('th-col6');
+  const thNet1  = document.getElementById('th-net1');
+  const thNet2  = document.getElementById('th-net2');
+  const thSym   = document.getElementById('th-symabio');
+  const thGeh   = document.getElementById('th-gehem');
+  const colOrgtype = document.getElementById('col-orgtype');
+  const colFarmer  = document.getElementById('col-farmernetwork');
+  const colNet1    = document.getElementById('col-net1');
+  const colNet2    = document.getElementById('col-net2');
+  const colSym     = document.getElementById('col-symabio');
+  const colGeh     = document.getElementById('col-gehem');
+
+  if (isMdg) {
+    // Hide Org Type and Farmer Network columns
+    thCol5.style.display = 'none'; colOrgtype.style.display = 'none';
+    thCol6.style.display = 'none'; colFarmer.style.display  = 'none';
+    // RCCE and AVSF become sortable affil columns
+    thNet1.textContent = ''; thNet1.innerHTML = `RCCE <span class="sort-icon" id="s-rcce_member">⇅</span>`;
+    thNet1.classList.remove('no-sort'); thNet1.setAttribute('onclick', "sortBy('rcce_member')");
+    thNet2.textContent = ''; thNet2.innerHTML = `AVSF <span class="sort-icon" id="s-avsf_partner">⇅</span>`;
+    thNet2.classList.remove('no-sort'); thNet2.setAttribute('onclick', "sortBy('avsf_partner')");
+    colNet1.style.width = '5%'; colNet2.style.width = '5%';
+    // Show SYMABIO and GEHEM columns
+    thSym.style.display = ''; colSym.style.display = '';
+    thGeh.style.display = ''; colGeh.style.display = '';
+  } else {
+    // Restore Org Type + Farmer Network
+    thCol5.style.display = ''; colOrgtype.style.display = '';
+    thCol6.style.display = ''; colFarmer.style.display  = '';
+    // Restore net1/net2 as plain label headers
+    thNet1.innerHTML = cfg.net1Label; thNet1.classList.add('no-sort'); thNet1.removeAttribute('onclick');
+    thNet2.innerHTML = cfg.net2Label; thNet2.classList.add('no-sort'); thNet2.removeAttribute('onclick');
+    colNet1.style.width = '6%'; colNet2.style.width = '6%';
+    // Hide SYMABIO and GEHEM columns
+    thSym.style.display = 'none'; colSym.style.display = 'none';
+    thGeh.style.display = 'none'; colGeh.style.display = 'none';
+  }
 }
 
 function switchCountry(country, btn) {
@@ -698,6 +743,14 @@ function getFiltered() {
     let va, vb;
     if (sortField === 'tier') {
       va = tierNum(a.lending_readiness_tier); vb = tierNum(b.lending_readiness_tier);
+    } else if (sortField === 'symabio_member') {
+      va = (a.membership || []).includes('SYMABIO') ? 0 : 1;
+      vb = (b.membership || []).includes('SYMABIO') ? 0 : 1;
+    } else if (sortField === 'gehem_member') {
+      va = (a.membership || []).includes('GEHEM') ? 0 : 1;
+      vb = (b.membership || []).includes('GEHEM') ? 0 : 1;
+    } else if (sortField === 'rcce_member' || sortField === 'avsf_partner') {
+      va = a[sortField] ? 0 : 1; vb = b[sortField] ? 0 : 1;
     } else {
       va = (a[sortField] || '').toString().toLowerCase();
       vb = (b[sortField] || '').toString().toLowerCase();
@@ -711,7 +764,12 @@ function sortBy(field) {
   else { sortField = field; sortDir = 1; }
   document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '⇅');
   document.querySelectorAll('thead th').forEach(th => th.classList.remove('sorted'));
-  const el = document.getElementById('s-' + field);
+  const iconId = field === 'rcce_member' ? 's-rcce_member'
+               : field === 'avsf_partner' ? 's-avsf_partner'
+               : field === 'symabio_member' ? 's-symabio_member'
+               : field === 'gehem_member' ? 's-gehem_member'
+               : 's-' + field;
+  const el = document.getElementById(iconId);
   if (el) { el.textContent = sortDir === 1 ? '↑' : '↓'; el.closest('th').classList.add('sorted'); }
   render();
 }
@@ -730,6 +788,21 @@ function render() {
 
   tbody.innerHTML = rows.map((d, i) => {
     const cfg = COUNTRY_CONFIG[currentCountry] || COUNTRY_CONFIG.uganda;
+    const isMdg = currentCountry === 'madagascar';
+    const col5 = isMdg ? '' : `<td style="font-size:11px;color:var(--text2)">${d.org_type || '—'}</td>`;
+    const col6 = isMdg ? '' : `<td style="font-size:11px;color:var(--text2)">${d.farmer_network_size || '—'}</td>`;
+    const net1Cell = isMdg
+      ? `<td style="text-align:center">${flagCell(d.rcce_member, cfg.net1TagCls, 'RCCE')}</td>`
+      : `<td style="text-align:center">${flagCell(d[cfg.net1Field], cfg.net1TagCls, cfg.net1Label)}</td>`;
+    const net2Cell = isMdg
+      ? `<td style="text-align:center">${flagCell(d.avsf_partner, cfg.net2TagCls, 'AVSF')}</td>`
+      : `<td style="text-align:center">${flagCell(d[cfg.net2Field], cfg.net2TagCls, cfg.net2Label)}</td>`;
+    const symCell = isMdg
+      ? `<td style="text-align:center">${flagCell((d.membership||[]).includes('SYMABIO'), 'purple-tag', 'SYMABIO')}</td>`
+      : '';
+    const gehCell = isMdg
+      ? `<td style="text-align:center">${flagCell((d.membership||[]).includes('GEHEM'), 'amber-tag', 'GEHEM')}</td>`
+      : '';
     return `<tr onclick="openModal('${d.id}')">
       <td class="row-num">${i + 1}</td>
       <td class="row-id">${d.id}</td>
@@ -739,13 +812,15 @@ function render() {
         ${d.sme_classification_note ? `<span title="${d.sme_classification_note}" style="font-size:11px;color:var(--red-text);cursor:default">⚠</span>` : ''}
       </td>
       <td style="color:var(--text2);font-size:11px">${d.hq_location}</td>
-      <td style="font-size:11px;color:var(--text2)">${d.org_type || '—'}</td>
-      <td style="font-size:11px;color:var(--text2)">${d.farmer_network_size || '—'}</td>
+      ${col5}
+      ${col6}
       <td style="font-size:11px;color:var(--text2);line-height:1.4">${
         (() => { const p = d.primary_products || []; const shown = p.slice(0,2).join(', '); const more = p.length > 2 ? ` <span style="color:var(--text3)">+${p.length-2}</span>` : ''; return shown + more; })()
       }</td>
-      <td style="text-align:center">${flagCell(d[cfg.net1Field], cfg.net1TagCls, cfg.net1Label)}</td>
-      <td style="text-align:center">${flagCell(d[cfg.net2Field], cfg.net2TagCls, cfg.net2Label)}</td>
+      ${net1Cell}
+      ${net2Cell}
+      ${symCell}
+      ${gehCell}
     </tr>`;
   }).join('');
 }
