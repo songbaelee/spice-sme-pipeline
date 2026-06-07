@@ -88,9 +88,9 @@
 
     /* All td padding — right padding is handled per-class for narrow cols */
     td { padding: 10px 10px 10px 0; vertical-align: top; }
-    .row-num { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); padding: 10px 4px 10px 0; width: 28px; }
+    .row-num { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); padding: 10px 4px 10px 0; }
     .row-id  { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); padding: 10px 6px 10px 0; }
-    /* Match th padding to td padding for fixed-layout narrow columns */
+    /* In table-layout:fixed, col widths are set by colgroup; th inline style reinforces for safety */
     thead th:nth-child(1) { padding-right: 4px; }
     thead th:nth-child(2) { padding-right: 6px; }
 
@@ -373,8 +373,8 @@
         </colgroup>
         <thead>
           <tr>
-            <th class="no-sort" style="width:22px; padding-right:4px">#</th>
-            <th class="no-sort" style="width:62px; padding-right:6px">ID</th>
+            <th class="no-sort" style="width:22px; padding-right:4px; white-space:normal; overflow:hidden">#</th>
+            <th class="no-sort" style="width:62px; padding-right:6px; white-space:normal; overflow:hidden">ID</th>
             <th onclick="sortFundsBy('company')" style="cursor:pointer" id="fth-company">Company <span class="sort-icon" id="fs-company">↑</span></th>
             <th class="no-sort">Fund</th>
             <th class="no-sort">Country</th>
@@ -409,8 +409,8 @@
     <div class="table-wrap">
       <table>
         <colgroup>
-          <col style="width:28px">
-          <col style="width:64px">
+          <col style="width:22px">
+          <col style="width:62px">
           <col style="width:22%">
           <col style="width:18%">
           <col style="width:16%">
@@ -419,8 +419,8 @@
         </colgroup>
         <thead>
           <tr>
-            <th class="no-sort" style="width:22px; padding-right:4px">#</th>
-            <th class="no-sort" style="width:62px; padding-right:6px">ID</th>
+            <th class="no-sort" style="width:22px; padding-right:4px; white-space:normal; overflow:hidden">#</th>
+            <th class="no-sort" style="width:62px; padding-right:6px; white-space:normal; overflow:hidden; max-width:62px">ID</th>
             <th onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
             <th onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
             <th>Products</th>
