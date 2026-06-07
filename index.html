@@ -360,6 +360,7 @@
     <span class="filter-label">Filter:</span>
     <button class="filter-btn" id="btn-net1" onclick="toggleFilter('net1', this)">RCCE</button>
     <button class="filter-btn" id="btn-net2" onclick="toggleFilter('net2', this)">AVSF</button>
+    <button class="filter-btn" id="btn-crs-list" onclick="toggleFilter('crs-list', this)">CRS Consolidated List</button>
   </div>
 
   <div class="table-scroll-hint">← scroll to see all columns →</div>
@@ -556,6 +557,7 @@ function getFiltered() {
   return DATA.filter(d => {
     if (activeFilter === 'net1' && !d[cfg.net1Field]) return false;
     if (activeFilter === 'net2' && !d[cfg.net2Field]) return false;
+    if (activeFilter === 'crs-list' && !d.crs_consolidated_source) return false;
     return true;
   }).sort((a, b) => {
     if (!sortField) return 0;
