@@ -575,7 +575,8 @@
     "data_confidence": "High",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Highest-quality cooperative in the RCCE network with the most documented certification, buyer, and donor relationships. AVSF relationship is a warm entry point via AVSF Madagascar office. Ethiquable buyer relationship provides revenue anchor. Key candidate for pilot cooperative lending in Madagascar. SPP + FLO dual certification is rare and signals premium market access."
+    "notes": "Highest-quality cooperative in the RCCE network with the most documented certification, buyer, and donor relationships. AVSF relationship is a warm entry point via AVSF Madagascar office. Ethiquable buyer relationship provides revenue anchor. Key candidate for pilot cooperative lending in Madagascar. SPP + FLO dual certification is rare and signals premium market access.",
+    "source_url": "https://rcce-madagascar.mg/en/fanohana-cooperative/"
   },
   {
     "id": "mdg-011",
@@ -1834,7 +1835,8 @@
     "data_confidence": "High",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Second-highest-priority cooperative entry after Fanohana. AVSF warm entry point, Pronatec buyer anchor, and SPP/FLO certification stack are all strong. Non-vanilla commodity focus (turmeric, ginger) is a differentiator for portfolio diversification. Brickaville district is geographically distinct — consider alongside Fanohana for a two-cooperative pilot."
+    "notes": "Second-highest-priority cooperative entry after Fanohana. AVSF warm entry point, Pronatec buyer anchor, and SPP/FLO certification stack are all strong. Non-vanilla commodity focus (turmeric, ginger) is a differentiator for portfolio diversification. Brickaville district is geographically distinct — consider alongside Fanohana for a two-cooperative pilot.",
+    "source_url": "https://rcce-madagascar.mg/cooperative-mitsinjo/"
   },
   {
     "id": "mdg-036",
@@ -2666,7 +2668,7 @@
       "International (via RCCE / Ethiquable)"
     ],
     "rcce_member": true,
-    "avsf_partner": true,
+    "avsf_partner": false,
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
@@ -2680,14 +2682,8 @@
     "capital_need_source": "Claude estimate",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "RCCE member and AVSF AgriCoop project partner. Smaller cooperative (163 producers) compared to Fanohana (551). Primary product is whole sugar, not spices — cinnamon and cloves are secondary. Sugar-first profile means less direct relevance to spice facility than MITSINJO or Fanohana, but RCCE network membership and triple certification (Organic/Fairtrade/SPP) are strong. Mangarano/Brickaville area overlaps geographically with MITSINJO.",
+    "crs_notes": "RCCE member and Smaller cooperative (163 producers) compared to Fanohana (551). Primary product is whole sugar, not spices — cinnamon and cloves are secondary. Sugar-first profile means less direct relevance to spice facility than MITSINJO or Fanohana, but RCCE network membership and triple certification (Organic/Fairtrade/SPP) are strong. Mangarano/Brickaville area overlaps geographically with MITSINJO.",
     "donor_history": [
-      {
-        "donor": "AVSF (Agronomes et Vétérinaires Sans Frontières)",
-        "type": "Technical assistance / programme support — AgriCoop project",
-        "amount": "Undisclosed",
-        "year": "Ongoing"
-      },
       {
         "donor": "Agence Française de Développement (AFD)",
         "type": "Project co-funder (AgriCoop)",
@@ -2703,7 +2699,8 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-06",
-    "notes": "Third RCCE cooperative added. Spice relevance is secondary to sugar — lower priority than MITSINJO or Fanohana for a spice facility. However, RCCE membership, triple certification, and AVSF partnership make it a natural inclusion in any RCCE-wide engagement. Confirm spice product volumes directly before advancing."
+    "notes": "Third RCCE cooperative added. Spice relevance is secondary to sugar — lower priority than MITSINJO or Fanohana for a spice facility. However, RCCE membership, triple certification, and AVSF partnership make it a natural inclusion in any RCCE-wide engagement. Confirm spice product volumes directly before advancing. AVSF partnership unconfirmed — inferred from general RCCE network documentation only; not independently verified.",
+    "source_url": "https://rcce-madagascar.mg/en/paaco-cooperative/"
   },
   {
     "id": "mdg-053",
@@ -2727,7 +2724,7 @@
       "Unknown"
     ],
     "rcce_member": true,
-    "avsf_partner": true,
+    "avsf_partner": false,
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
@@ -2741,15 +2738,8 @@
     "capital_need_source": "Unknown",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Confirmed RCCE member — one of five cooperatives in the network. Also listed as AVSF AgriCoop 2.0 project partner. No standalone public profile found. Products, founding date, member count, and location all unconfirmed. Placeholder entry — requires direct outreach via RCCE or AVSF to populate.",
-    "donor_history": [
-      {
-        "donor": "AVSF (Agronomes et Vétérinaires Sans Frontières)",
-        "type": "Technical assistance — AgriCoop project",
-        "amount": "Undisclosed",
-        "year": "Ongoing"
-      }
-    ],
+    "crs_notes": "Confirmed RCCE member — one of five cooperatives in the network. No standalone public profile found. Products, founding date, member count, and location all unconfirmed. Placeholder entry — requires direct outreach via RCCE or AVSF to populate.",
+    "donor_history": [],
     "lending_readiness_tier": "Tier 3 — Needs TA First",
     "pipeline_status": "Placeholder",
     "livelihood_score": 3,
@@ -2758,7 +2748,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — insufficient public data to assess",
     "last_updated": "2026-06",
-    "notes": "Added for RCCE completeness. No meaningful profile available from public sources. Do not advance without direct engagement via RCCE network or AVSF."
+    "notes": "Added for RCCE completeness. No meaningful profile available from public sources. Do not advance without direct engagement via RCCE network or AVSF. AVSF partnership unconfirmed — inferred from general RCCE network documentation only; not independently verified.",
+    "source_url": "https://rcce-madagascar.mg/"
   },
   {
     "id": "mdg-054",
@@ -2782,7 +2773,7 @@
       "Unknown"
     ],
     "rcce_member": true,
-    "avsf_partner": true,
+    "avsf_partner": false,
     "revenue_usd_est": "Unknown",
     "revenue_source": "Unknown",
     "revenue_confidence": "Low",
@@ -2796,15 +2787,8 @@
     "capital_need_source": "Unknown",
     "capital_need_confidence": "Low",
     "crs_relationship": "None confirmed",
-    "crs_notes": "Union-of-cooperatives structure — the only such entity in the RCCE network. Confirmed RCCE member since network formalization in 2018. Also listed as AVSF AgriCoop 2.0 project partner. No standalone public profile found. As a union rather than a direct producer cooperative, lending structure and borrower eligibility would need separate assessment. Placeholder entry.",
-    "donor_history": [
-      {
-        "donor": "AVSF (Agronomes et Vétérinaires Sans Frontières)",
-        "type": "Technical assistance — AgriCoop project",
-        "amount": "Undisclosed",
-        "year": "Ongoing"
-      }
-    ],
+    "crs_notes": "Union-of-cooperatives structure — the only such entity in the RCCE network. Confirmed RCCE member since network formalization in 2018. No standalone public profile found. As a union rather than a direct producer cooperative, lending structure and borrower eligibility would need separate assessment. Placeholder entry.",
+    "donor_history": [],
     "lending_readiness_tier": "Tier 3 — Needs TA First",
     "pipeline_status": "Placeholder",
     "livelihood_score": 3,
@@ -2813,7 +2797,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — union structure; insufficient public data to assess lending eligibility",
     "last_updated": "2026-06",
-    "notes": "Added for RCCE completeness. Union-of-cooperatives structure may complicate direct lending eligibility — assess whether member cooperatives or the union itself would be the borrower. Do not advance without direct engagement via RCCE or AVSF."
+    "notes": "Added for RCCE completeness. Union-of-cooperatives structure may complicate direct lending eligibility — assess whether member cooperatives or the union itself would be the borrower. Do not advance without direct engagement via RCCE or AVSF. AVSF partnership unconfirmed — inferred from general RCCE network documentation only; not independently verified.",
+    "source_url": "https://rcce-madagascar.mg/"
   },
   {
     "id": "mdg-055",
