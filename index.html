@@ -415,9 +415,11 @@
         <colgroup>
           <col style="width:22px">
           <col style="width:62px">
-          <col style="width:22%">
-          <col style="width:18%">
-          <col style="width:16%">
+          <col style="width:19%">
+          <col style="width:14%">
+          <col style="width:11%">
+          <col style="width:14%">
+          <col style="width:13%">
           <col style="width:7%">
           <col style="width:7%">
         </colgroup>
@@ -427,13 +429,15 @@
             <th class="no-sort" style="width:62px; padding-right:6px; white-space:normal; overflow:hidden; max-width:62px">ID</th>
             <th onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
             <th onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
+            <th onclick="sortBy('org_type')">Org Type <span class="sort-icon" id="s-org_type">⇅</span></th>
+            <th class="no-sort">Farmer Network</th>
             <th>Products</th>
             <th class="no-sort" id="th-net1">—</th>
             <th class="no-sort" id="th-net2">—</th>
           </tr>
         </thead>
         <tbody id="tbody">
-          <tr><td colspan="7" class="state-msg">Loading...</td></tr>
+          <tr><td colspan="9" class="state-msg">Loading...</td></tr>
         </tbody>
       </table>
     </div>
@@ -707,7 +711,7 @@ function render() {
 
   const tbody = document.getElementById('tbody');
   if (rows.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="7" class="state-msg">No results match the current filters.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="9" class="state-msg">No results match the current filters.</td></tr>`;
     return;
   }
 
@@ -722,6 +726,8 @@ function render() {
         ${d.sme_classification_note ? `<span title="${d.sme_classification_note}" style="font-size:11px;color:var(--red-text);cursor:default">⚠</span>` : ''}
       </td>
       <td style="color:var(--text2);font-size:11px">${d.hq_location}</td>
+      <td style="font-size:11px;color:var(--text2)">${d.org_type || '—'}</td>
+      <td style="font-size:11px;color:var(--text2)">${d.farmer_network_size || '—'}</td>
       <td style="font-size:11px;color:var(--text2);line-height:1.4">${
         (() => { const p = d.primary_products || []; const shown = p.slice(0,2).join(', '); const more = p.length > 2 ? ` <span style="color:var(--text3)">+${p.length-2}</span>` : ''; return shown + more; })()
       }</td>
