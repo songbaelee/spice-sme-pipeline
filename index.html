@@ -107,8 +107,18 @@
     .src-unknown   { color: var(--border2); }
 
     .sme-warn { font-size: 10px; color: var(--red-text); display: block; margin-top: 2px; }
-    .row-num  { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); }
-    .row-id   { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); }
+    .row-num  { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); padding: 10px 4px 10px 0; }
+    .row-id   { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); padding: 10px 6px 10px 0; }
+
+    .pipeline-match { background: var(--teal-bg); color: var(--teal-text); border-color: var(--teal-border); }
+    .fund-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; flex: 1; min-width: 260px; max-width: 420px; }
+    .fund-card-title { font-size: 14px; font-weight: 500; margin-bottom: 2px; }
+    .fund-card-sub { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); margin-bottom: 0.75rem; }
+    .fund-card-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.35rem; font-size: 11px; color: var(--text2); }
+    .fund-card-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); min-width: 90px; }
+
+    thead th:nth-child(1) { padding-right: 4px; }
+    thead th:nth-child(2) { padding-right: 6px; }
 
     .state-msg { text-align: center; padding: 3rem 0; color: var(--text3); font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
 
@@ -308,6 +318,7 @@
         <button class="country-btn" onclick="switchCountry('madagascar', this)">Madagascar</button>
       </div>
       <button class="country-btn" id="about-btn" onclick="toggleAbout(this)" style="border-left:1px solid var(--border);margin-left:auto">About</button>
+      <button class="country-btn" id="funds-btn" onclick="toggleFunds(this)" style="border-left:1px solid var(--border);margin-left:8px">Funds</button>
     </div>
   </div>
 
@@ -357,9 +368,57 @@
       </div>
 
     </div>
-  </div>
+  </div><!-- /about-panel -->
 
-  <div class="filters">
+  <!-- Funds Panel -->
+  <div id="funds-panel" style="display:none; padding:0 0 2rem">
+
+    <!-- Fund filter bar -->
+    <div class="filters" id="funds-filters">
+      <span class="filter-label">Fund:</span>
+      <button class="filter-btn active" id="fund-btn-all" onclick="setFundFilter('all', this)">All Funds</button>
+    </div>
+
+    <!-- Pipeline-match callout -->
+    <div id="funds-match-note" style="display:none; background:var(--teal-bg); border:1px solid var(--teal-border); color:var(--teal-text); border-radius:6px; padding:10px 16px; margin-bottom:1rem; font-size:12px; font-family:'IBM Plex Mono',monospace; letter-spacing:0.04em;"></div>
+
+    <!-- Funds table -->
+    <div class="table-scroll-hint">← scroll to see all columns →</div>
+    <div class="table-wrap">
+      <table id="funds-table">
+        <colgroup>
+          <col style="width:28px">
+          <col style="width:64px">
+          <col style="width:20%">
+          <col style="width:80px">
+          <col style="width:13%">
+          <col style="width:13%">
+          <col style="width:11%">
+          <col style="width:11%">
+          <col style="width:9%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="no-sort">#</th>
+            <th class="no-sort">ID</th>
+            <th class="no-sort">Company</th>
+            <th class="no-sort">Fund</th>
+            <th class="no-sort">Country</th>
+            <th class="no-sort">Sector</th>
+            <th class="no-sort">Finance</th>
+            <th class="no-sort">Beneficiaries</th>
+            <th class="no-sort">Pipeline</th>
+          </tr>
+        </thead>
+        <tbody id="funds-tbody">
+          <tr><td colspan="9" class="state-msg">Loading funds data...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Fund detail cards -->
+    <div id="fund-cards" style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border);"></div>
+  </div><!-- /funds-panel -->
     <span class="filter-label">Filter:</span>
     <button class="filter-btn" id="btn-net1" onclick="toggleFilter('net1', this)">RCCE</button>
     <button class="filter-btn" id="btn-net2" onclick="toggleFilter('net2', this)">AVSF</button>
@@ -370,8 +429,8 @@
   <div class="table-wrap">
     <table>
       <colgroup>
-        <col style="width:36px">
-        <col style="width:80px">
+        <col style="width:28px">
+        <col style="width:64px">
         <col style="width:22%">
         <col style="width:18%">
         <col style="width:16%">
@@ -486,6 +545,19 @@ function switchCountry(country, btn) {
   if (panel.style.display !== 'none') {
     const aboutBtn = document.getElementById('about-btn');
     toggleAbout(aboutBtn);
+  }
+
+  // Close Funds panel if open
+  const fundsPanel = document.getElementById('funds-panel');
+  if (fundsPanel && fundsPanel.style.display !== 'none') {
+    fundsPanel.style.display = 'none';
+    document.getElementById('funds-btn').classList.remove('active');
+    document.querySelector('.filters').style.display = '';
+    document.querySelector('.table-wrap').style.display = '';
+    const sh = document.querySelector('.table-scroll-hint');
+    if (sh) sh.style.display = '';
+    const lg = document.querySelector('.legend');
+    if (lg) lg.style.display = '';
   }
 
   document.querySelectorAll('.country-btn').forEach(b => b.classList.remove('active'));
@@ -731,6 +803,174 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') document.getElementById('modal-overlay').classList.remove('open');
 });
 
+
+// ── Funds tab ─────────────────────────────────────────────────────────────
+let FUNDS_DATA = null; // { funds: [], portfolio: [] }
+let activeFundFilter = 'all';
+
+function toggleFunds(btn) {
+  const fundsPanel = document.getElementById('funds-panel');
+  const aboutPanel = document.getElementById('about-panel');
+  const filters    = document.querySelector('.filters');
+  const tableWrap  = document.querySelector('.table-wrap');
+  const scrollHint = document.querySelector('.table-scroll-hint');
+  const legend     = document.querySelector('.legend');
+  const detail     = document.getElementById('detail');
+
+  const isOpen = fundsPanel.style.display !== 'none';
+
+  if (isOpen) {
+    // Close funds panel → restore pipeline view
+    fundsPanel.style.display = 'none';
+    filters.style.display = '';
+    tableWrap.style.display = '';
+    if (scrollHint) scrollHint.style.display = '';
+    if (legend) legend.style.display = '';
+    btn.classList.remove('active');
+    // Restore active country button
+    const activeCountry = currentCountry;
+    document.querySelectorAll('.country-btn:not(#about-btn):not(#funds-btn)').forEach(b => {
+      if (b.textContent.toLowerCase().trim() === activeCountry) b.classList.add('active');
+    });
+  } else {
+    // Open funds panel
+    // Close about panel if open
+    if (aboutPanel.style.display !== 'none') {
+      const aboutBtn = document.getElementById('about-btn');
+      toggleAbout(aboutBtn);
+    }
+    filters.style.display = 'none';
+    tableWrap.style.display = 'none';
+    if (scrollHint) scrollHint.style.display = 'none';
+    if (legend) legend.style.display = 'none';
+    if (detail) detail.style.display = 'none';
+    document.querySelectorAll('.country-btn:not(#funds-btn)').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    fundsPanel.style.display = '';
+    if (!FUNDS_DATA) loadFunds();
+  }
+}
+
+function loadFunds() {
+  document.getElementById('funds-tbody').innerHTML =
+    '<tr><td colspan="9" class="state-msg">Loading funds data...</td></tr>';
+  fetch('funds.json')
+    .then(r => { if (!r.ok) throw new Error('funds.json not found'); return r.json(); })
+    .then(data => {
+      FUNDS_DATA = data;
+      buildFundFilterButtons(data.funds);
+      renderFundsTable();
+      renderFundCards(data.funds);
+    })
+    .catch(err => {
+      document.getElementById('funds-tbody').innerHTML =
+        `<tr><td colspan="9" class="state-msg">Could not load funds.json — make sure the file exists in the same folder.<br><small style="opacity:0.6">${err.message}</small></td></tr>`;
+    });
+}
+
+function buildFundFilterButtons(funds) {
+  const bar = document.getElementById('funds-filters');
+  // Clear existing fund-specific buttons (keep All)
+  bar.querySelectorAll('[data-fund-id]').forEach(b => b.remove());
+  funds.forEach(f => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    btn.dataset.fundId = f.fund_id;
+    btn.textContent = f.name;
+    btn.onclick = () => setFundFilter(f.fund_id, btn);
+    bar.appendChild(btn);
+  });
+}
+
+function setFundFilter(id, btn) {
+  activeFundFilter = id;
+  document.querySelectorAll('#funds-filters .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderFundsTable();
+}
+
+function renderFundsTable() {
+  if (!FUNDS_DATA) return;
+  const portfolio = FUNDS_DATA.portfolio.filter(p =>
+    activeFundFilter === 'all' || p.fund_id === activeFundFilter
+  );
+  const funds = FUNDS_DATA.funds;
+  const fundMap = Object.fromEntries(funds.map(f => [f.fund_id, f]));
+
+  // Pipeline-match summary
+  const matches = portfolio.filter(p => p.sme_id);
+  const note = document.getElementById('funds-match-note');
+  if (matches.length > 0) {
+    note.style.display = '';
+    note.textContent = `⚑ ${matches.length} portfolio ${matches.length === 1 ? 'company' : 'companies'} also appear in the CRS lending pipeline: ${matches.map(p => p.company).join(', ')}`;
+  } else {
+    note.style.display = 'none';
+  }
+
+  const tbody = document.getElementById('funds-tbody');
+  if (portfolio.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="9" class="state-msg">No results.</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = portfolio.map((p, i) => {
+    const fund = fundMap[p.fund_id] || {};
+    const hasPipelineMatch = !!p.sme_id;
+
+    // Finance/instrument cell
+    const financeCell = p.finance_type && p.finance_type !== '—'
+      ? `<span class="tag product-tag">${p.finance_type}</span>${p.partner_since && p.partner_since !== '—' ? `<span style="font-size:10px;color:var(--text3);margin-left:4px">${p.partner_since}</span>` : ''}`
+      : `<span style="color:var(--border2);font-size:11px">—</span>`;
+
+    // Beneficiaries cell
+    const benCell = p.beneficiaries && p.beneficiaries !== '—'
+      ? `<span style="font-family:'IBM Plex Mono',monospace;font-size:11px">${Number(p.beneficiaries).toLocaleString()}</span>${p.pct_women && p.pct_women !== '—' ? `<span style="display:block;font-size:10px;color:var(--text3)">${p.pct_women} women</span>` : ''}`
+      : `<span style="color:var(--border2);font-size:11px">—</span>`;
+
+    // Pipeline match cell
+    const pipelineCell = hasPipelineMatch
+      ? `<span class="tag pipeline-match" title="Also in CRS lending pipeline: ${p.sme_id}">⚑ ${p.sme_id}</span>`
+      : `<span style="color:var(--border2);font-size:11px">—</span>`;
+
+    return `<tr>
+      <td class="row-num">${i + 1}</td>
+      <td class="row-id">${p.portfolio_id}</td>
+      <td>
+        <div style="font-weight:500;line-height:1.3">${p.company}</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:2px;line-height:1.4">${p.sub_sector || ''}</div>
+      </td>
+      <td style="font-size:11px;color:var(--text2)">${fund.name || p.fund_id}</td>
+      <td style="font-size:11px;color:var(--text2)">${p.country || '—'}</td>
+      <td style="font-size:11px;color:var(--text2)">${p.sector || '—'}</td>
+      <td>${financeCell}</td>
+      <td>${benCell}</td>
+      <td>${pipelineCell}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderFundCards(funds) {
+  const container = document.getElementById('fund-cards');
+  container.innerHTML = funds.map(f => {
+    const portCount = (FUNDS_DATA.portfolio.filter(p => p.fund_id === f.fund_id)).length;
+    const matchCount = (FUNDS_DATA.portfolio.filter(p => p.fund_id === f.fund_id && p.sme_id)).length;
+    const ticketStr = f.typical_ticket_usd
+      ? `$${(f.typical_ticket_usd.min/1000).toFixed(0)}K – $${(f.typical_ticket_usd.max/1000).toFixed(0)}K`
+      : '—';
+    return `<div class="fund-card">
+      <div class="fund-card-title">${f.name}</div>
+      <div class="fund-card-sub">${f.parent_org} · ${f.hq_country} · ${f.fund_type}</div>
+      <div class="fund-card-row"><span class="fund-card-label">Geography</span>${f.geography_focus.join(', ')}</div>
+      <div class="fund-card-row"><span class="fund-card-label">Instruments</span>${f.instruments.join(', ')}</div>
+      <div class="fund-card-row"><span class="fund-card-label">Ticket</span>${ticketStr}</div>
+      <div class="fund-card-row"><span class="fund-card-label">Sectors</span>${f.sector_focus.join(', ')}</div>
+      <div class="fund-card-row"><span class="fund-card-label">Portfolio</span>${portCount} companies tracked${matchCount > 0 ? ` · <span style="color:var(--teal-text)">⚑ ${matchCount} pipeline match${matchCount > 1 ? 'es' : ''}</span>` : ''}</div>
+      ${f.notes ? `<div style="margin-top:0.6rem;font-size:11px;color:var(--text3);line-height:1.6;border-top:1px solid var(--border);padding-top:0.6rem">${f.notes}</div>` : ''}
+      ${f.website ? `<div style="margin-top:0.5rem"><a href="https://${f.website}" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--blue-text)">↗ ${f.website}</a></div>` : ''}
+    </div>`;
+  }).join('');
+}
+
 applyCountryConfig('uganda');
 loadCountry('uganda');
 
@@ -741,6 +981,7 @@ function toggleAbout(btn) {
   const scrollHint = document.querySelector('.table-scroll-hint');
   const legend = document.querySelector('.legend');
   const detail = document.getElementById('detail');
+  const fundsPanel = document.getElementById('funds-panel');
   const isOpen = panel.style.display !== 'none';
   if (isOpen) {
     panel.style.display = 'none';
@@ -750,6 +991,11 @@ function toggleAbout(btn) {
     if (legend) legend.style.display = '';
     btn.classList.remove('active');
   } else {
+    // Close funds panel if open
+    if (fundsPanel && fundsPanel.style.display !== 'none') {
+      fundsPanel.style.display = 'none';
+      document.getElementById('funds-btn').classList.remove('active');
+    }
     panel.style.display = '';
     filters.style.display = 'none';
     tableWrap.style.display = 'none';
