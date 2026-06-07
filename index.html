@@ -456,6 +456,8 @@ function applyCountryConfig(country) {
   document.getElementById('btn-net2').textContent = cfg.net2Label;
   // Tanzania: hide TASPA filter button (not useful as lending signal for now)
   document.getElementById('btn-net1').style.display = country === 'tanzania' ? 'none' : '';
+  // CRS Consolidated List only applies to Madagascar
+  document.getElementById('btn-crs-list').style.display = country === 'madagascar' ? '' : 'none';
   document.getElementById('legend-net1-item').innerHTML =
     `<span class="tag ${cfg.net1TagCls}">${cfg.net1Label}</span> ${cfg.net1Legend}`;
   document.getElementById('legend-net2-item').innerHTML =
