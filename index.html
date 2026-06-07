@@ -368,15 +368,24 @@
   <div class="table-scroll-hint">← scroll to see all columns →</div>
   <div class="table-wrap">
     <table>
+      <colgroup>
+        <col style="width:36px">
+        <col style="width:80px">
+        <col style="width:22%">
+        <col style="width:18%">
+        <col style="width:16%">
+        <col style="width:7%">
+        <col style="width:7%">
+      </colgroup>
       <thead>
         <tr>
-          <th class="no-sort" style="width:36px">#</th>
-          <th class="no-sort" style="width:60px">ID</th>
-          <th style="width:20%" onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
-          <th style="width:14%" onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
-          <th style="width:12%">Products</th>
-          <th style="width:7%" class="no-sort" id="th-net1">—</th>
-          <th style="width:7%" class="no-sort" id="th-net2">—</th>
+          <th class="no-sort">#</th>
+          <th class="no-sort">ID</th>
+          <th onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
+          <th onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
+          <th>Products</th>
+          <th class="no-sort" id="th-net1">—</th>
+          <th class="no-sort" id="th-net2">—</th>
         </tr>
       </thead>
       <tbody id="tbody">
