@@ -83,7 +83,11 @@
     tbody td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     tbody td:nth-child(3) { white-space: normal; }
     tbody tr:hover { background: var(--bg2); }
+
+    /* All td padding — right padding is handled per-class for narrow cols */
     td { padding: 10px 10px 10px 0; vertical-align: top; }
+    .row-num { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); padding: 10px 4px 10px 0; width: 28px; }
+    .row-id  { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); padding: 10px 6px 10px 0; }
 
     /* Tags */
     .tag { display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 10px; padding: 2px 7px; border-radius: 4px; border: 1px solid; white-space: nowrap; margin: 1px 2px 1px 0; }
@@ -98,6 +102,7 @@
     .vanex-tag   { background: var(--blue-bg);   color: var(--blue-text);   border-color: var(--blue-border); }
     .net1-tag    { background: var(--teal-bg);   color: var(--teal-text);   border-color: var(--teal-border); }
     .net2-tag    { background: var(--blue-bg);   color: var(--blue-text);   border-color: var(--blue-border); }
+    .pipeline-match { background: var(--teal-bg); color: var(--teal-text); border-color: var(--teal-border); }
 
     .est { font-family: 'IBM Plex Mono', monospace; font-size: 11px; }
     .src { font-size: 10px; margin-top: 1px; }
@@ -107,18 +112,13 @@
     .src-unknown   { color: var(--border2); }
 
     .sme-warn { font-size: 10px; color: var(--red-text); display: block; margin-top: 2px; }
-    .row-num  { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); padding: 10px 4px 10px 0; }
-    .row-id   { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); padding: 10px 6px 10px 0; }
 
-    .pipeline-match { background: var(--teal-bg); color: var(--teal-text); border-color: var(--teal-border); }
+    /* Fund cards */
     .fund-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; flex: 1; min-width: 260px; max-width: 420px; }
     .fund-card-title { font-size: 14px; font-weight: 500; margin-bottom: 2px; }
     .fund-card-sub { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--text3); margin-bottom: 0.75rem; }
     .fund-card-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.35rem; font-size: 11px; color: var(--text2); }
     .fund-card-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); min-width: 90px; }
-
-    thead th:nth-child(1) { padding-right: 4px; }
-    thead th:nth-child(2) { padding-right: 6px; }
 
     .state-msg { text-align: center; padding: 3rem 0; color: var(--text3); font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
 
@@ -147,7 +147,6 @@
       padding: 2rem;
     }
 
-    /* Coloured top bar by tier */
     .modal-tier-bar {
       position: absolute;
       top: 0; left: 0; right: 0;
@@ -240,57 +239,26 @@
     }
 
     @media (max-width: 700px) {
-      /* Page */
       .page { padding: 1.25rem 1rem 3rem; }
-
-      /* Header */
       .header-top { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
       .header-right { text-align: left; font-size: 10px; }
       h1 { font-size: 19px; }
-
-      /* Country switcher row */
-      .header > div:last-of-type {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-      }
+      .header > div:last-of-type { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
       .country-switcher { flex-wrap: wrap; width: 100%; }
       .country-btn { padding: 9px 14px; flex: 1; text-align: center; min-height: 40px; }
       #about-btn { margin-left: 0 !important; min-height: 40px; }
-
-      /* Filters */
       .filter-label { display: none; }
       .filters { gap: 6px; }
       .filter-btn { font-size: 12px; padding: 8px 14px; min-height: 40px; }
-
-      /* Table scroll hint */
       .table-scroll-hint { display: block; }
-
-      /* Modal */
       .modal-overlay { padding: 0.75rem; align-items: flex-end; }
-      .modal {
-        padding: 1.25rem 1rem 1.5rem;
-        max-height: 92vh;
-        border-radius: 10px 10px 6px 6px;
-      }
-      .modal-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.75rem;
-      }
-      .modal-close {
-        align-self: flex-start;
-        min-height: 40px;
-        padding: 8px 16px;
-      }
+      .modal { padding: 1.25rem 1rem 1.5rem; max-height: 92vh; border-radius: 10px 10px 6px 6px; }
+      .modal-header { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+      .modal-close { align-self: flex-start; min-height: 40px; padding: 8px 16px; }
       .modal-name { font-size: 17px; }
       .modal-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem 1rem; }
-
-      /* About panel */
       #about-panel { padding: 1rem 0 1.5rem; }
       #about-panel > div { grid-template-columns: 1fr !important; gap: 1.25rem 0 !important; }
-
-      /* Legend */
       .legend { gap: 1rem; }
     }
 
@@ -317,11 +285,12 @@
         <button class="country-btn" onclick="switchCountry('tanzania', this)">Tanzania</button>
         <button class="country-btn" onclick="switchCountry('madagascar', this)">Madagascar</button>
       </div>
-      <button class="country-btn" id="about-btn" onclick="toggleAbout(this)" style="border-left:1px solid var(--border);margin-left:auto">About</button>
-      <button class="country-btn" id="funds-btn" onclick="toggleFunds(this)" style="border-left:1px solid var(--border);margin-left:8px">Funds</button>
+      <button class="country-btn" id="about-btn" onclick="togglePanel('about', this)" style="border-left:1px solid var(--border);margin-left:auto">About</button>
+      <button class="country-btn" id="funds-btn" onclick="togglePanel('funds', this)" style="border-left:1px solid var(--border);margin-left:8px">Funds</button>
     </div>
   </div>
 
+  <!-- ── About Panel ──────────────────────────────────────────────────── -->
   <div id="about-panel" style="display:none; padding:1.5rem 2rem 2rem; max-width:860px">
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem 2.5rem">
 
@@ -370,7 +339,7 @@
     </div>
   </div><!-- /about-panel -->
 
-  <!-- Funds Panel -->
+  <!-- ── Funds Panel ──────────────────────────────────────────────────── -->
   <div id="funds-panel" style="display:none; padding:0 0 2rem">
 
     <!-- Fund filter bar -->
@@ -416,52 +385,61 @@
       </table>
     </div>
 
-    <!-- Fund detail cards -->
+    <!-- Fund detail cards — appear BELOW the portfolio table -->
     <div id="fund-cards" style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border);"></div>
+
   </div><!-- /funds-panel -->
-    <span class="filter-label">Filter:</span>
-    <button class="filter-btn" id="btn-net1" onclick="toggleFilter('net1', this)">RCCE</button>
-    <button class="filter-btn" id="btn-net2" onclick="toggleFilter('net2', this)">AVSF</button>
-    <button class="filter-btn" id="btn-crs-list" onclick="toggleFilter('crs-list', this)">CRS Consolidated List</button>
-  </div>
 
-  <div class="table-scroll-hint">← scroll to see all columns →</div>
-  <div class="table-wrap">
-    <table>
-      <colgroup>
-        <col style="width:28px">
-        <col style="width:64px">
-        <col style="width:22%">
-        <col style="width:18%">
-        <col style="width:16%">
-        <col style="width:7%">
-        <col style="width:7%">
-      </colgroup>
-      <thead>
-        <tr>
-          <th class="no-sort">#</th>
-          <th class="no-sort">ID</th>
-          <th onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
-          <th onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
-          <th>Products</th>
-          <th class="no-sort" id="th-net1">—</th>
-          <th class="no-sort" id="th-net2">—</th>
-        </tr>
-      </thead>
-      <tbody id="tbody">
-        <tr><td colspan="7" class="state-msg">Loading...</td></tr>
-      </tbody>
-    </table>
-  </div>
+  <!-- ── Pipeline Panel (filters + table + legend) ─────────────────────── -->
+  <div id="pipeline-panel">
 
-  <div class="legend">
-    <div class="legend-group" id="legend-flags">
-      <div class="legend-title">Affiliations</div>
-      <div class="legend-item" id="legend-net1-item"></div>
-      <div class="legend-item" id="legend-net2-item"></div>
+    <div class="filters">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-btn" id="btn-net1" onclick="toggleFilter('net1', this)">RCCE</button>
+      <button class="filter-btn" id="btn-net2" onclick="toggleFilter('net2', this)">AVSF</button>
+      <button class="filter-btn" id="btn-crs-list" onclick="toggleFilter('crs-list', this)">CRS Consolidated List</button>
     </div>
-  </div>
-</div>
+
+    <div class="table-scroll-hint">← scroll to see all columns →</div>
+    <div class="table-wrap">
+      <table>
+        <colgroup>
+          <col style="width:28px">
+          <col style="width:64px">
+          <col style="width:22%">
+          <col style="width:18%">
+          <col style="width:16%">
+          <col style="width:7%">
+          <col style="width:7%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="no-sort">#</th>
+            <th class="no-sort">ID</th>
+            <th onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
+            <th onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
+            <th>Products</th>
+            <th class="no-sort" id="th-net1">—</th>
+            <th class="no-sort" id="th-net2">—</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr><td colspan="7" class="state-msg">Loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="legend">
+      <div class="legend-group" id="legend-flags">
+        <div class="legend-title">Affiliations</div>
+        <div class="legend-item" id="legend-net1-item"></div>
+        <div class="legend-item" id="legend-net2-item"></div>
+      </div>
+    </div>
+
+  </div><!-- /pipeline-panel -->
+
+</div><!-- /page -->
 
 <!-- Modal -->
 <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
@@ -476,17 +454,54 @@ let DATA = [];
 let sortField = null;
 let sortDir = 1;
 let currentCountry = 'uganda';
-let activeFilter = null; // 'net1' | 'net2' | null
+let activeFilter = null; // 'net1' | 'net2' | 'crs-list' | null
+
+// Which overlay panel is currently open: 'about' | 'funds' | null
+let activePanel = null;
 
 const TIER_COLORS = { 1: '#3b6d11', 2: '#854f0b', 3: '#a32d2d' };
 
+// ── Panel switching ────────────────────────────────────────────────────────
+function showPanel(name) {
+  // Hide all overlay panels
+  document.getElementById('about-panel').style.display    = 'none';
+  document.getElementById('funds-panel').style.display    = 'none';
+  document.getElementById('pipeline-panel').style.display = 'none';
+
+  document.querySelectorAll('#about-btn, #funds-btn').forEach(b => b.classList.remove('active'));
+
+  if (name === 'about') {
+    document.getElementById('about-panel').style.display = '';
+    document.getElementById('about-btn').classList.add('active');
+    activePanel = 'about';
+  } else if (name === 'funds') {
+    document.getElementById('funds-panel').style.display = '';
+    document.getElementById('funds-btn').classList.add('active');
+    activePanel = 'funds';
+    if (!FUNDS_DATA) loadFunds();
+  } else {
+    // pipeline (default)
+    document.getElementById('pipeline-panel').style.display = '';
+    activePanel = null;
+  }
+}
+
+function togglePanel(name, btn) {
+  if (activePanel === name) {
+    showPanel('pipeline');
+  } else {
+    showPanel(name);
+  }
+}
+
+// ── Filter ─────────────────────────────────────────────────────────────────
 function toggleFilter(key, btn) {
   if (activeFilter === key) {
     activeFilter = null;
     btn.classList.remove('active');
   } else {
     activeFilter = key;
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('#pipeline-panel .filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
   }
   render();
@@ -496,24 +511,18 @@ const COUNTRY_CONFIG = {
   uganda: {
     net1Field: 'vief_partner',  net1Label: 'VIEF',  net1TagCls: 'vief-tag',
     net2Field: 'vanex_member',  net2Label: 'VANEX', net2TagCls: 'vanex-tag',
-    net1All: 'VIEF: All', net1Yes: 'VIEF Partners only', net1No: 'Non-VIEF only',
-    net2All: 'VANEX: All', net2Yes: 'VANEX Members only', net2No: 'Non-VANEX only',
     net1Legend: 'USDA/CRS VINES project partner',
     net2Legend: 'Uganda Vanilla Exporters Association member',
   },
   tanzania: {
     net1Field: 'taspa_member',          net1Label: 'TASPA',           net1TagCls: 'net1-tag',
     net2Field: 'tanzania_spices_label', net2Label: 'TZ Spices Label', net2TagCls: 'net2-tag',
-    net1All: 'TASPA: All', net1Yes: 'TASPA members only', net1No: 'Non-TASPA only',
-    net2All: 'TZ Spices Label: All', net2Yes: 'Label certified only', net2No: 'Not certified',
     net1Legend: 'Tanzania Spices Association member',
     net2Legend: 'TZ Spices Label — quality certification for export-grade spices (TanTrade)',
   },
   madagascar: {
     net1Field: 'rcce_member',  net1Label: 'RCCE',  net1TagCls: 'net1-tag',
     net2Field: 'avsf_partner', net2Label: 'AVSF',  net2TagCls: 'net2-tag',
-    net1All: 'RCCE: All', net1Yes: 'RCCE members only', net1No: 'Non-RCCE only',
-    net2All: 'AVSF: All', net2Yes: 'AVSF partners only', net2No: 'No AVSF link',
     net1Legend: '<a href="https://rcce-madagascar.mg" target="_blank" rel="noreferrer" style="color:inherit">RCCE</a> cooperative network member',
     net2Legend: '<a href="https://www.avsf.org" target="_blank" rel="noreferrer" style="color:inherit">AVSF</a> programme partner',
   },
@@ -525,7 +534,7 @@ function applyCountryConfig(country) {
   document.getElementById('th-net2').textContent = cfg.net2Label;
   document.getElementById('btn-net1').textContent = cfg.net1Label;
   document.getElementById('btn-net2').textContent = cfg.net2Label;
-  // Tanzania: hide TASPA filter button (not useful as lending signal for now)
+  // Tanzania: hide TASPA filter button
   document.getElementById('btn-net1').style.display = country === 'tanzania' ? 'none' : '';
   // CRS Consolidated List only applies to Madagascar
   document.getElementById('btn-crs-list').style.display = country === 'madagascar' ? '' : 'none';
@@ -540,27 +549,10 @@ function switchCountry(country, btn) {
   currentCountry = country;
   closeModal();
 
-  // Close About panel if open
-  const panel = document.getElementById('about-panel');
-  if (panel.style.display !== 'none') {
-    const aboutBtn = document.getElementById('about-btn');
-    toggleAbout(aboutBtn);
-  }
+  // Switch to pipeline view
+  showPanel('pipeline');
 
-  // Close Funds panel if open
-  const fundsPanel = document.getElementById('funds-panel');
-  if (fundsPanel && fundsPanel.style.display !== 'none') {
-    fundsPanel.style.display = 'none';
-    document.getElementById('funds-btn').classList.remove('active');
-    document.querySelector('.filters').style.display = '';
-    document.querySelector('.table-wrap').style.display = '';
-    const sh = document.querySelector('.table-scroll-hint');
-    if (sh) sh.style.display = '';
-    const lg = document.querySelector('.legend');
-    if (lg) lg.style.display = '';
-  }
-
-  document.querySelectorAll('.country-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.country-btn:not(#about-btn):not(#funds-btn)').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   applyCountryConfig(country);
   resetFilters();
@@ -569,7 +561,7 @@ function switchCountry(country, btn) {
 
 function resetFilters() {
   activeFilter = null;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#pipeline-panel .filter-btn').forEach(b => b.classList.remove('active'));
   sortField = null; sortDir = 1;
   document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '⇅');
   document.querySelectorAll('thead th').forEach(th => th.classList.remove('sorted'));
@@ -577,7 +569,7 @@ function resetFilters() {
 
 function loadCountry(country) {
   document.getElementById('count-label').textContent = '';
-    document.getElementById('tbody').innerHTML =
+  document.getElementById('tbody').innerHTML =
     `<tr><td colspan="7" class="state-msg">Loading ${country} data...</td></tr>`;
   fetch(`${country}.json`)
     .then(r => { if (!r.ok) throw new Error(`${country}.json not found`); return r.json(); })
@@ -804,52 +796,9 @@ document.addEventListener('keydown', e => {
 });
 
 
-// ── Funds tab ─────────────────────────────────────────────────────────────
-let FUNDS_DATA = null; // { funds: [], portfolio: [] }
+// ── Funds tab ──────────────────────────────────────────────────────────────
+let FUNDS_DATA = null;
 let activeFundFilter = 'all';
-
-function toggleFunds(btn) {
-  const fundsPanel = document.getElementById('funds-panel');
-  const aboutPanel = document.getElementById('about-panel');
-  const filters    = document.querySelector('.filters');
-  const tableWrap  = document.querySelector('.table-wrap');
-  const scrollHint = document.querySelector('.table-scroll-hint');
-  const legend     = document.querySelector('.legend');
-  const detail     = document.getElementById('detail');
-
-  const isOpen = fundsPanel.style.display !== 'none';
-
-  if (isOpen) {
-    // Close funds panel → restore pipeline view
-    fundsPanel.style.display = 'none';
-    filters.style.display = '';
-    tableWrap.style.display = '';
-    if (scrollHint) scrollHint.style.display = '';
-    if (legend) legend.style.display = '';
-    btn.classList.remove('active');
-    // Restore active country button
-    const activeCountry = currentCountry;
-    document.querySelectorAll('.country-btn:not(#about-btn):not(#funds-btn)').forEach(b => {
-      if (b.textContent.toLowerCase().trim() === activeCountry) b.classList.add('active');
-    });
-  } else {
-    // Open funds panel
-    // Close about panel if open
-    if (aboutPanel.style.display !== 'none') {
-      const aboutBtn = document.getElementById('about-btn');
-      toggleAbout(aboutBtn);
-    }
-    filters.style.display = 'none';
-    tableWrap.style.display = 'none';
-    if (scrollHint) scrollHint.style.display = 'none';
-    if (legend) legend.style.display = 'none';
-    if (detail) detail.style.display = 'none';
-    document.querySelectorAll('.country-btn:not(#funds-btn)').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    fundsPanel.style.display = '';
-    if (!FUNDS_DATA) loadFunds();
-  }
-}
 
 function loadFunds() {
   document.getElementById('funds-tbody').innerHTML =
@@ -870,7 +819,6 @@ function loadFunds() {
 
 function buildFundFilterButtons(funds) {
   const bar = document.getElementById('funds-filters');
-  // Clear existing fund-specific buttons (keep All)
   bar.querySelectorAll('[data-fund-id]').forEach(b => b.remove());
   funds.forEach(f => {
     const btn = document.createElement('button');
@@ -917,17 +865,14 @@ function renderFundsTable() {
     const fund = fundMap[p.fund_id] || {};
     const hasPipelineMatch = !!p.sme_id;
 
-    // Finance/instrument cell
     const financeCell = p.finance_type && p.finance_type !== '—'
       ? `<span class="tag product-tag">${p.finance_type}</span>${p.partner_since && p.partner_since !== '—' ? `<span style="font-size:10px;color:var(--text3);margin-left:4px">${p.partner_since}</span>` : ''}`
       : `<span style="color:var(--border2);font-size:11px">—</span>`;
 
-    // Beneficiaries cell
     const benCell = p.beneficiaries && p.beneficiaries !== '—'
       ? `<span style="font-family:'IBM Plex Mono',monospace;font-size:11px">${Number(p.beneficiaries).toLocaleString()}</span>${p.pct_women && p.pct_women !== '—' ? `<span style="display:block;font-size:10px;color:var(--text3)">${p.pct_women} women</span>` : ''}`
       : `<span style="color:var(--border2);font-size:11px">—</span>`;
 
-    // Pipeline match cell
     const pipelineCell = hasPipelineMatch
       ? `<span class="tag pipeline-match" title="Also in CRS lending pipeline: ${p.sme_id}">⚑ ${p.sme_id}</span>`
       : `<span style="color:var(--border2);font-size:11px">—</span>`;
@@ -971,42 +916,9 @@ function renderFundCards(funds) {
   }).join('');
 }
 
+// ── Init ───────────────────────────────────────────────────────────────────
 applyCountryConfig('uganda');
 loadCountry('uganda');
-
-function toggleAbout(btn) {
-  const panel = document.getElementById('about-panel');
-  const filters = document.querySelector('.filters');
-  const tableWrap = document.querySelector('.table-wrap');
-  const scrollHint = document.querySelector('.table-scroll-hint');
-  const legend = document.querySelector('.legend');
-  const detail = document.getElementById('detail');
-  const fundsPanel = document.getElementById('funds-panel');
-  const isOpen = panel.style.display !== 'none';
-  if (isOpen) {
-    panel.style.display = 'none';
-    filters.style.display = '';
-    tableWrap.style.display = '';
-    if (scrollHint) scrollHint.style.display = '';
-    if (legend) legend.style.display = '';
-    btn.classList.remove('active');
-  } else {
-    // Close funds panel if open
-    if (fundsPanel && fundsPanel.style.display !== 'none') {
-      fundsPanel.style.display = 'none';
-      document.getElementById('funds-btn').classList.remove('active');
-    }
-    panel.style.display = '';
-    filters.style.display = 'none';
-    tableWrap.style.display = 'none';
-    if (scrollHint) scrollHint.style.display = 'none';
-    if (legend) legend.style.display = 'none';
-    if (detail) detail.style.display = 'none';
-    // Deactivate country buttons visually but keep currentCountry state
-    document.querySelectorAll('.country-btn:not(#about-btn)').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-  }
-}
 </script>
 </body>
 </html>
