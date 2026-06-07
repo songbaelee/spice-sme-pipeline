@@ -62,11 +62,12 @@
     .country-btn.inactive { opacity: 0.4; cursor: default; pointer-events: none; }
     .coming-soon { font-size: 9px; letter-spacing: 0.05em; opacity: 0.7; display: block; margin-top: 1px; }
 
-    /* Filters */
+    /* Filter buttons */
     .filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 1.25rem; }
     .filter-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text3); }
-    select { font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; padding: 5px 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text); cursor: pointer; appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238a8a84' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 8px center; padding-right: 24px; }
-    select:focus { outline: none; border-color: var(--text); }
+    .filter-btn { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.06em; padding: 6px 14px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text2); cursor: pointer; transition: background 0.15s, color 0.15s, border-color 0.15s; }
+    .filter-btn:hover { background: var(--bg2); color: var(--text); border-color: var(--border2); }
+    .filter-btn.active { background: var(--text); color: var(--bg); border-color: var(--text); }
 
     /* Table */
     .table-wrap { overflow-x: auto; }
@@ -247,7 +248,7 @@
       /* Filters */
       .filter-label { display: none; }
       .filters { gap: 6px; }
-      .filters select { font-size: 13px; padding: 8px 28px 8px 10px; min-height: 40px; flex: 1 1 calc(50% - 6px); min-width: 130px; }
+      .filter-btn { font-size: 12px; padding: 8px 14px; min-height: 40px; }
 
       /* Table scroll hint */
       .table-scroll-hint { display: block; }
@@ -357,34 +358,8 @@
 
   <div class="filters">
     <span class="filter-label">Filter:</span>
-    <select id="f-tier" onchange="render()">
-      <option value="">Tier: All</option>
-      <option value="1">Tier 1 — Investment Ready</option>
-      <option value="2">Tier 2 — Near Ready</option>
-      <option value="3">Tier 3 — Needs TA First</option>
-    </select>
-    <select id="f-net1" onchange="render()" style="display:none">
-      <option value=""></option>
-      <option value="yes"></option>
-      <option value="no"></option>
-    </select>
-    <select id="f-net2" onchange="render()" style="display:none">
-      <option value=""></option>
-      <option value="yes"></option>
-      <option value="no"></option>
-    </select>
-    <select id="f-crs" onchange="render()">
-      <option value="">CRS Rel.: All</option>
-      <option value="Direct">Direct</option>
-      <option value="Indirect">Indirect</option>
-      <option value="None confirmed">None confirmed</option>
-    </select>
-    <select id="f-presence" onchange="render()">
-      <option value="">Web Presence: All</option>
-      <option value="High">High</option>
-      <option value="Medium">Medium</option>
-      <option value="Low">Low</option>
-    </select>
+    <button class="filter-btn" id="btn-net1" onclick="toggleFilter('net1', this)">RCCE</button>
+    <button class="filter-btn" id="btn-net2" onclick="toggleFilter('net2', this)">AVSF</button>
   </div>
 
   <div class="table-scroll-hint">← scroll to see all columns →</div>
@@ -394,44 +369,20 @@
         <tr>
           <th class="no-sort" style="width:36px">#</th>
           <th class="no-sort" style="width:60px">ID</th>
-          <th style="width:13%" onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
-          <th style="width:10%" onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
-          <th style="width:7%">Products</th>
-          <th style="width:11%" onclick="sortBy('tier')">Tier <span class="sort-icon" id="s-tier">⇅</span></th>
-          <th style="width:9%">Revenue est.</th>
-          <th style="width:9%">Capital need est.</th>
-          <th style="width:5%" class="no-sort" id="th-net1">—</th>
-          <th style="width:5%" class="no-sort" id="th-net2">—</th>
-          <th style="width:8%" onclick="sortBy('crs_relationship')">CRS Rel. <span class="sort-icon" id="s-crs_relationship">⇅</span></th>
-          <th style="width:8%" onclick="sortBy('data_confidence')">Web Presence <span class="sort-icon" id="s-data_confidence">⇅</span></th>
+          <th style="width:20%" onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
+          <th style="width:14%" onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
+          <th style="width:12%">Products</th>
+          <th style="width:7%" class="no-sort" id="th-net1">—</th>
+          <th style="width:7%" class="no-sort" id="th-net2">—</th>
         </tr>
       </thead>
       <tbody id="tbody">
-        <tr><td colspan="12" class="state-msg">Loading...</td></tr>
+        <tr><td colspan="7" class="state-msg">Loading...</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="legend">
-    <div class="legend-group">
-      <div class="legend-title">Tier</div>
-      <div class="legend-item"><span class="tag tier1">Tier 1</span> Investment Ready</div>
-      <div class="legend-item"><span class="tag tier2">Tier 2</span> Near Ready</div>
-      <div class="legend-item"><span class="tag tier3">Tier 3</span> Needs TA First</div>
-    </div>
-    <div class="legend-group">
-      <div class="legend-title">Data source</div>
-      <div class="legend-item"><span class="src src-verified">Verified</span> — audited / investor docs</div>
-      <div class="legend-item"><span class="src src-reported">Reported</span> — company stated, unaudited</div>
-      <div class="legend-item"><span class="src src-estimated">Est.</span> — proxy signals only</div>
-      <div class="legend-item"><span class="src src-unknown">—</span> unknown</div>
-    </div>
-    <div class="legend-group">
-      <div class="legend-title">Web Presence</div>
-      <div class="legend-item"><span class="tag c-high">High</span> Multiple independent sources</div>
-      <div class="legend-item"><span class="tag c-med">Medium</span> Website + some third-party</div>
-      <div class="legend-item"><span class="tag c-low">Low</span> Single or indirect source only</div>
-    </div>
     <div class="legend-group" id="legend-flags">
       <div class="legend-title">Flags</div>
       <div class="legend-item" id="legend-net1-item"></div>
@@ -453,8 +404,21 @@ let DATA = [];
 let sortField = null;
 let sortDir = 1;
 let currentCountry = 'uganda';
+let activeFilter = null; // 'net1' | 'net2' | null
 
 const TIER_COLORS = { 1: '#3b6d11', 2: '#854f0b', 3: '#a32d2d' };
+
+function toggleFilter(key, btn) {
+  if (activeFilter === key) {
+    activeFilter = null;
+    btn.classList.remove('active');
+  } else {
+    activeFilter = key;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+  render();
+}
 
 const COUNTRY_CONFIG = {
   uganda: {
@@ -487,18 +451,10 @@ function applyCountryConfig(country) {
   const cfg = COUNTRY_CONFIG[country] || COUNTRY_CONFIG.uganda;
   document.getElementById('th-net1').textContent = cfg.net1Label;
   document.getElementById('th-net2').textContent = cfg.net2Label;
-  const f1 = document.getElementById('f-net1');
-  const f2 = document.getElementById('f-net2');
-  f1.options[0].text = cfg.net1All;
-  f1.options[1].text = cfg.net1Yes;
-  f1.options[2].text = cfg.net1No;
-  f2.options[0].text = cfg.net2All;
-  f2.options[1].text = cfg.net2Yes;
-  f2.options[2].text = cfg.net2No;
-  f1.style.display = '';
-  f2.style.display = '';
-  // Tanzania: hide TASPA filter (not useful as lending signal for now)
-  if (country === 'tanzania') { f1.style.display = 'none'; }
+  document.getElementById('btn-net1').textContent = cfg.net1Label;
+  document.getElementById('btn-net2').textContent = cfg.net2Label;
+  // Tanzania: hide TASPA filter button (not useful as lending signal for now)
+  document.getElementById('btn-net1').style.display = country === 'tanzania' ? 'none' : '';
   document.getElementById('legend-net1-item').innerHTML =
     `<span class="tag ${cfg.net1TagCls}">${cfg.net1Label}</span> ${cfg.net1Legend}`;
   document.getElementById('legend-net2-item').innerHTML =
@@ -525,10 +481,8 @@ function switchCountry(country, btn) {
 }
 
 function resetFilters() {
-  ['f-tier','f-net1','f-net2','f-crs','f-presence'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.value = '';
-  });
+  activeFilter = null;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   sortField = null; sortDir = 1;
   document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '⇅');
   document.querySelectorAll('thead th').forEach(th => th.classList.remove('sorted'));
@@ -536,8 +490,8 @@ function resetFilters() {
 
 function loadCountry(country) {
   document.getElementById('count-label').textContent = '';
-  document.getElementById('tbody').innerHTML =
-    `<tr><td colspan="12" class="state-msg">Loading ${country} data...</td></tr>`;
+    document.getElementById('tbody').innerHTML =
+    `<tr><td colspan="7" class="state-msg">Loading ${country} data...</td></tr>`;
   fetch(`${country}.json`)
     .then(r => { if (!r.ok) throw new Error(`${country}.json not found`); return r.json(); })
     .then(data => { DATA = data; render(); })
@@ -545,7 +499,7 @@ function loadCountry(country) {
       DATA = [];
       document.getElementById('count-label').textContent = 'Error';
       document.getElementById('tbody').innerHTML =
-        `<tr><td colspan="12" class="state-msg">Could not load ${country}.json — make sure the file exists in the same folder.<br><small style="opacity:0.6">${err.message}</small></td></tr>`;
+        `<tr><td colspan="7" class="state-msg">Could not load ${country}.json — make sure the file exists in the same folder.<br><small style="opacity:0.6">${err.message}</small></td></tr>`;
     });
 }
 
@@ -597,21 +551,11 @@ function flagCell(bool, tagClass, label) {
 }
 
 function getFiltered() {
-  const cfg      = COUNTRY_CONFIG[currentCountry] || COUNTRY_CONFIG.uganda;
-  const tier     = document.getElementById('f-tier').value;
-  const net1     = document.getElementById('f-net1').value;
-  const net2     = document.getElementById('f-net2').value;
-  const presence = document.getElementById('f-presence').value;
-  const crs      = document.getElementById('f-crs').value;
+  const cfg = COUNTRY_CONFIG[currentCountry] || COUNTRY_CONFIG.uganda;
 
   return DATA.filter(d => {
-    if (tier     && tierNum(d.lending_readiness_tier) !== parseInt(tier)) return false;
-    if (net1 === 'yes' && !d[cfg.net1Field]) return false;
-    if (net1 === 'no'  &&  d[cfg.net1Field]) return false;
-    if (net2 === 'yes' && !d[cfg.net2Field]) return false;
-    if (net2 === 'no'  &&  d[cfg.net2Field]) return false;
-    if (crs && (d.crs_relationship || 'None confirmed') !== crs) return false;
-    if (presence && d.data_confidence !== presence) return false;
+    if (activeFilter === 'net1' && !d[cfg.net1Field]) return false;
+    if (activeFilter === 'net2' && !d[cfg.net2Field]) return false;
     return true;
   }).sort((a, b) => {
     if (!sortField) return 0;
@@ -644,7 +588,7 @@ function render() {
 
   const tbody = document.getElementById('tbody');
   if (rows.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="12" class="state-msg">No results match the current filters.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="7" class="state-msg">No results match the current filters.</td></tr>`;
     return;
   }
 
@@ -662,20 +606,11 @@ function render() {
       <td style="font-size:11px;color:var(--text2);line-height:1.4">${
         (() => { const p = d.primary_products || []; const shown = p.slice(0,2).join(', '); const more = p.length > 2 ? ` <span style="color:var(--text3)">+${p.length-2}</span>` : ''; return shown + more; })()
       }</td>
-      <td>${tierTag(d.lending_readiness_tier)}</td>
-      <td>
-        <div class="est">${d.revenue_usd_est || '—'}</div>
-        <div class="src ${srcCls(d.revenue_source)}">${srcLabel(d.revenue_source)}</div>
-      </td>
-      <td>
-        <div class="est">${d.capital_need_est_usd || '—'}</div>
-        <div class="src ${srcCls(d.capital_need_source)}">${srcLabel(d.capital_need_source)}</div>
-      </td>
       <td style="text-align:center">${flagCell(d[cfg.net1Field], cfg.net1TagCls, cfg.net1Label)}</td>
       <td style="text-align:center">${flagCell(d[cfg.net2Field], cfg.net2TagCls, cfg.net2Label)}</td>
-      <td>${crsTag(d.crs_relationship)}</td>
-      <td>${presenceTag(d.data_confidence)}</td>
     </tr>`;
+  }).join('');
+}
   }).join('');
 }
 
