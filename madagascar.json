@@ -68,7 +68,8 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "One of the most certified exporters in Madagascar's spice/fruit sector. CFC precedent confirms lenders are comfortable with the entity. Ethiquable (France) is a documented buyer — useful for revenue validation. Direct approach via website. First mover advantage if CRS can establish relationship before other DFIs.",
-    "crs_consolidated_source": "CRS"
+    "crs_consolidated_source": "CRS",
+    "membership": []
   },
   {
     "id": "mdg-002",
@@ -119,7 +120,8 @@
     "data_confidence": "High",
     "sme_classification_note": "Scale likely below minimum ticket; consider as part of aggregated SAVA vanilla facility",
     "last_updated": "2026-05",
-    "notes": "Very small but clean profile. Direct contact available. Would benefit from aggregated lending alongside other SAVA vanilla SMEs rather than standalone facility. Strong certification baseline means TA need is primarily financial documentation."
+    "notes": "Very small but clean profile. Direct contact available. Would benefit from aggregated lending alongside other SAVA vanilla SMEs rather than standalone facility. Strong certification baseline means TA need is primarily financial documentation.",
+    "membership": []
   },
   {
     "id": "mdg-003",
@@ -170,7 +172,8 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Insufficient data for lending assessment. Approach via website to establish scale. Voatsiperifery positioning could be interesting for premium niche facility if scale is confirmed."
+    "notes": "Insufficient data for lending assessment. Approach via website to establish scale. Voatsiperifery positioning could be interesting for premium niche facility if scale is confirmed.",
+    "membership": []
   },
   {
     "id": "mdg-004",
@@ -224,7 +227,8 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Long operating history but minimal public financial data. Approach via email to establish scale and financial profile. Certification gap is a barrier for premium-market lending."
+    "notes": "Long operating history but minimal public financial data. Approach via email to establish scale and financial profile. Certification gap is a barrier for premium-market lending.",
+    "membership": []
   },
   {
     "id": "mdg-005",
@@ -280,7 +284,8 @@
     "data_confidence": "Medium",
     "sme_classification_note": "Confirm entity structure and whether Franco-Malagasy co-ownership affects lending jurisdiction",
     "last_updated": "2026-05",
-    "notes": "CTHT and Ecocert working relationships are strong quality signals. Agroecology sourcing approach aligns with CRS environment mandate. Financial profile entirely unknown — needs first contact to assess lending readiness."
+    "notes": "CTHT and Ecocert working relationships are strong quality signals. Agroecology sourcing approach aligns with CRS environment mandate. Financial profile entirely unknown — needs first contact to assess lending readiness.",
+    "membership": []
   },
   {
     "id": "mdg-006",
@@ -326,7 +331,8 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Placeholder entry. Needs first contact to establish product focus, scale, and financial documentation baseline."
+    "notes": "Placeholder entry. Needs first contact to establish product focus, scale, and financial documentation baseline.",
+    "membership": []
   },
   {
     "id": "mdg-007",
@@ -378,7 +384,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Remote location creates both sourcing advantage and operational complexity. Community rice programme is a social signal worth exploring. Insufficient data for lending tier elevation."
+    "notes": "Remote location creates both sourcing advantage and operational complexity. Community rice programme is a social signal worth exploring. Insufficient data for lending tier elevation.",
+    "membership": []
   },
   {
     "id": "mdg-008",
@@ -448,7 +455,11 @@
     "sme_classification_note": "Likely above SME ceiling on consolidated basis — consider ring-fencing a specific federation or product line (e.g. Voatsiperifery, ginger) for a sub-facility",
     "last_updated": "2026-05",
     "notes": "Highest-priority entry in the Madagascar pipeline. CRS has an active TSIRO programme relationship — this is the strongest warm entry point in the country. ADM offtake via SAVAN JV significantly de-risks revenue. Blockchain traceability and 600,000 hectares of protected area management are standout environment credentials. Scale may require creative structuring to fit SME facility parameters.",
-    "crs_consolidated_source": "CRS"
+    "crs_consolidated_source": "CRS",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-009",
@@ -503,7 +514,11 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "One of the strongest non-vanilla candidates in the Madagascar pipeline. Clove and turmeric focus provides diversification. FSSC22000 implies food safety systems that support financial documentation culture. Approach via website — no specific contact listed. Strong alignment with multi-spice facility mandate.",
-    "crs_consolidated_source": "CRS"
+    "crs_consolidated_source": "CRS",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-010",
@@ -576,7 +591,8 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "Highest-quality cooperative in the RCCE network with the most documented certification, buyer, and donor relationships. AVSF relationship is a warm entry point via AVSF Madagascar office. Ethiquable buyer relationship provides revenue anchor. Key candidate for pilot cooperative lending in Madagascar. SPP + FLO dual certification is rare and signals premium market access.",
-    "source_url": "https://rcce-madagascar.mg/en/fanohana-cooperative/"
+    "source_url": "https://rcce-madagascar.mg/en/fanohana-cooperative/",
+    "membership": []
   },
   {
     "id": "mdg-011",
@@ -623,7 +639,8 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Certifications are real differentiators but scale is unknown. Lacon is a European certification body — may indicate EU buyer relationships. Needs scale confirmation before lending tier elevation."
+    "notes": "Certifications are real differentiators but scale is unknown. Lacon is a European certification body — may indicate EU buyer relationships. Needs scale confirmation before lending tier elevation.",
+    "membership": []
   },
   {
     "id": "mdg-012",
@@ -688,7 +705,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Single-buyer (Pronatec) dependency is a concentration risk — confirm whether cooperatives have alternative offtake routes",
     "last_updated": "2026-05",
-    "notes": "Biosphere Reserve designation is a compelling environment story for CRS. Long Fairtrade track record (KOMAM since 2006) suggests financial discipline. Pronatec relationship is the primary commercial anchor — confirm exclusivity and buyer willingness to support lending facility before proceeding."
+    "notes": "Biosphere Reserve designation is a compelling environment story for CRS. Long Fairtrade track record (KOMAM since 2006) suggests financial discipline. Pronatec relationship is the primary commercial anchor — confirm exclusivity and buyer willingness to support lending facility before proceeding.",
+    "membership": []
   },
   {
     "id": "mdg-013",
@@ -738,7 +756,11 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Long-established Vohemar processor — ISO 22000 is a meaningful systems signal. Approach via website. Upgrade to Tier 2 pending scale and financial documentation confirmation."
+    "notes": "Long-established Vohemar processor — ISO 22000 is a meaningful systems signal. Approach via website. Upgrade to Tier 2 pending scale and financial documentation confirmation.",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-014",
@@ -787,7 +809,8 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Wild pepper specialist with environment credentials — interesting for a premium niche facility. Certifications in place but scale unknown. Voatsiperifery forest harvesting protocols are a natural CRS environment story."
+    "notes": "Wild pepper specialist with environment credentials — interesting for a premium niche facility. Certifications in place but scale unknown. Voatsiperifery forest harvesting protocols are a natural CRS environment story.",
+    "membership": []
   },
   {
     "id": "mdg-015",
@@ -834,7 +857,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Long history but low web presence — confirm whether still actively trading before investment in relationship."
+    "notes": "Long history but low web presence — confirm whether still actively trading before investment in relationship.",
+    "membership": []
   },
   {
     "id": "mdg-016",
@@ -882,7 +906,11 @@
     "data_confidence": "Low",
     "sme_classification_note": "Conglomerate subsidiary — confirm whether Trimeta Group consolidated revenue exceeds SME ceiling",
     "last_updated": "2026-05",
-    "notes": "Conglomerate structure complicates SME classification. FSSC22000 is a positive systems signal. Deprioritise until standalone entity and financials can be confirmed."
+    "notes": "Conglomerate structure complicates SME classification. FSSC22000 is a positive systems signal. Deprioritise until standalone entity and financials can be confirmed.",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-017",
@@ -931,7 +959,10 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "SYMABIO membership is useful for sector outreach. Very low profile — approach via SYMABIO network contact.",
-    "crs_consolidated_source": "Prospects - Agri"
+    "crs_consolidated_source": "Prospects - Agri",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-018",
@@ -978,7 +1009,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Placeholder entry. Approach via Antalaha sector contacts or RCCE if any cooperative affiliation confirmed."
+    "notes": "Placeholder entry. Approach via Antalaha sector contacts or RCCE if any cooperative affiliation confirmed.",
+    "membership": []
   },
   {
     "id": "mdg-019",
@@ -1029,7 +1061,10 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "Long track record + Nielsen-Massey buyer relationship = one of the stronger vanilla-focused SME lending candidates. Approach via website. Financial documentation is the primary unknown. Consider alongside other Sambava-based exporters for aggregated SAVA facility.",
-    "crs_consolidated_source": "Prospects - Agri"
+    "crs_consolidated_source": "Prospects - Agri",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-020",
@@ -1080,7 +1115,8 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Broad export geography is a positive scale signal. Needs first contact to confirm volume and financial documentation."
+    "notes": "Broad export geography is a positive scale signal. Needs first contact to confirm volume and financial documentation.",
+    "membership": []
   },
   {
     "id": "mdg-021",
@@ -1132,7 +1168,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Atsinanana positioning is interesting given MITSINJO cooperative presence in same region. Approach via website to confirm certifications and export volumes."
+    "notes": "Atsinanana positioning is interesting given MITSINJO cooperative presence in same region. Approach via website to confirm certifications and export volumes.",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-022",
@@ -1184,7 +1223,8 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "New cooperative link (2024) is worth tracking. Broad export geography suggests a functional export business — needs first contact for financial profile."
+    "notes": "New cooperative link (2024) is worth tracking. Broad export geography suggests a functional export business — needs first contact for financial profile.",
+    "membership": []
   },
   {
     "id": "mdg-023",
@@ -1232,7 +1272,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "In-house processing factory is a positive infrastructure signal. Approach via website to confirm scale and certifications."
+    "notes": "In-house processing factory is a positive infrastructure signal. Approach via website to confirm scale and certifications.",
+    "membership": []
   },
   {
     "id": "mdg-024",
@@ -1278,7 +1319,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Founded 2022 — insufficient operating history for lending assessment",
     "last_updated": "2026-05",
-    "notes": "Too new for lending consideration without documented track record. Monitor and revisit 2027."
+    "notes": "Too new for lending consideration without documented track record. Monitor and revisit 2027.",
+    "membership": []
   },
   {
     "id": "mdg-025",
@@ -1324,7 +1366,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Confirm entity jurisdiction — European co-ownership may affect lending eligibility",
     "last_updated": "2026-05",
-    "notes": "Entity structure confirmation needed before lending assessment. Approach via website."
+    "notes": "Entity structure confirmation needed before lending assessment. Approach via website.",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-026",
@@ -1374,7 +1419,8 @@
     "sme_classification_note": "Founded 2021 — limited operating history",
     "last_updated": "2026-05",
     "notes": "New entrant. Insufficient operating history and financial data for lending consideration. Monitor.",
-    "crs_consolidated_source": "Prospects - Agri"
+    "crs_consolidated_source": "Prospects - Agri",
+    "membership": []
   },
   {
     "id": "mdg-027",
@@ -1427,7 +1473,10 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "SA8000 and Sedex membership strongly suggest institutional/multinational buyer relationships — likely significant export volume. Scale confirmation is the primary missing piece. Approach via website or Boston contact. High potential if scale confirmed."
+    "notes": "SA8000 and Sedex membership strongly suggest institutional/multinational buyer relationships — likely significant export volume. Scale confirmation is the primary missing piece. Approach via website or Boston contact. High potential if scale confirmed.",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-028",
@@ -1473,7 +1522,8 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Long history but no certified buyer relationships confirmed. Certification and financial documentation are the primary gaps. Approach via website."
+    "notes": "Long history but no certified buyer relationships confirmed. Certification and financial documentation are the primary gaps. Approach via website.",
+    "membership": []
   },
   {
     "id": "mdg-029",
@@ -1519,7 +1569,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Subsidiary — confirm SAVA SARL parent entity structure and consolidated financials",
     "last_updated": "2026-05",
-    "notes": "Parent entity structure needs clarification. Cooperative sourcing is a positive livelihoods signal. Deprioritise until entity and financial profile clarified."
+    "notes": "Parent entity structure needs clarification. Cooperative sourcing is a positive livelihoods signal. Deprioritise until entity and financial profile clarified.",
+    "membership": []
   },
   {
     "id": "mdg-030",
@@ -1573,7 +1624,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Comprehensive spice range is interesting for multi-spice facility. Digital/tech positioning may indicate more sophisticated financial systems than peers. Approach via website."
+    "notes": "Comprehensive spice range is interesting for multi-spice facility. Digital/tech positioning may indicate more sophisticated financial systems than peers. Approach via website.",
+    "membership": []
   },
   {
     "id": "mdg-031",
@@ -1620,7 +1672,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Voatsiperifery specialist — premium niche signal. Approach via website to confirm scale."
+    "notes": "Voatsiperifery specialist — premium niche signal. Approach via website to confirm scale.",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-032",
@@ -1670,7 +1725,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Minimal profile. Approach via website only after higher-priority entries are exhausted."
+    "notes": "Minimal profile. Approach via website only after higher-priority entries are exhausted.",
+    "membership": []
   },
   {
     "id": "mdg-033",
@@ -1722,7 +1778,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "Vertically integrated claim and Vanille BV listing are modest positive signals. Certification and financial documentation are the main gaps. Approach via website or trade show contacts."
+    "notes": "Vertically integrated claim and Vanille BV listing are modest positive signals. Certification and financial documentation are the main gaps. Approach via website or trade show contacts.",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-034",
@@ -1771,7 +1830,10 @@
     "data_confidence": "Medium",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "HACCP and organic certifications with North American market focus are solid signals. GAP programme and rural cooperative sourcing align with CRS livelihoods mandate. Needs scale confirmation."
+    "notes": "HACCP and organic certifications with North American market focus are solid signals. GAP programme and rural cooperative sourcing align with CRS livelihoods mandate. Needs scale confirmation.",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-035",
@@ -1836,7 +1898,8 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "Second-highest-priority cooperative entry after Fanohana. AVSF warm entry point, Pronatec buyer anchor, and SPP/FLO certification stack are all strong. Non-vanilla commodity focus (turmeric, ginger) is a differentiator for portfolio diversification. Brickaville district is geographically distinct — consider alongside Fanohana for a two-cooperative pilot.",
-    "source_url": "https://rcce-madagascar.mg/cooperative-mitsinjo/"
+    "source_url": "https://rcce-madagascar.mg/cooperative-mitsinjo/",
+    "membership": []
   },
   {
     "id": "mdg-036",
@@ -1907,7 +1970,10 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "Highest-priority private company (non-cooperative) entry in the Madagascar pipeline. CRS has a prior direct financial relationship — the strongest warm entry point alongside Sahanala. Fairtrade USA certification since 2014 implies consistent financial reporting culture. Above-market farmer prices and premium redistribution are standout livelihoods credentials. Voatsiperifery + vanilla product mix de-risks vanilla price volatility. First outreach call.",
-    "crs_consolidated_source": "CRS"
+    "crs_consolidated_source": "CRS",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-037",
@@ -1963,7 +2029,10 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "Co-founder's Peace Corps background and 15+ years Madagascar experience give strong local network. Toamasina port location is a logistics advantage for cloves. Chili production adds non-vanilla income stream. Approach via mcingredients.com. Confirmed as 'MCI' on colleague's private partners list.",
-    "crs_consolidated_source": "CRS"
+    "crs_consolidated_source": "CRS",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-038",
@@ -2018,7 +2087,11 @@
     "data_confidence": "High",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "One of the most substantively documented non-cooperative spice processors in the pipeline. Own plantations (not just aggregation) means stronger collateral story for lending. Ecocert certification and 45-year track record are strong credit signals. Essential oils alongside spices provide revenue diversification. Approach via website — CEO contact is Rolland Ramboatiana."
+    "notes": "One of the most substantively documented non-cooperative spice processors in the pipeline. Own plantations (not just aggregation) means stronger collateral story for lending. Ecocert certification and 45-year track record are strong credit signals. Essential oils alongside spices provide revenue diversification. Approach via website — CEO contact is Rolland Ramboatiana.",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-039",
@@ -2072,7 +2145,10 @@
     "sme_classification_note": "Large family estate — not an SME lending target. Retain as sector anchor reference only.",
     "last_updated": "2026-05",
     "notes": "Sector anchor. Estate-based model with own supply chain. Not a borrower prospect but useful as market reference and introduction point to premium international buyers. Swedish-Malagasy family, estate roots since 1920. Solar energy conversion completed. Appeared on colleague's private partners list.",
-    "crs_consolidated_source": "CRS"
+    "crs_consolidated_source": "CRS",
+    "membership": [
+      "GEHEM"
+    ]
   },
   {
     "id": "mdg-040",
@@ -2119,7 +2195,8 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "⚠ ASK COLLEAGUE: Please confirm the identity of 'Mada Spices' from the partner list image. Confirmed distinct from Madaroma Spice. A general trading entity with this name exists in Antananarivo but may not be the same company shown on the logo. No website or spice-specific profile found.",
-    "crs_consolidated_source": "CRS"
+    "crs_consolidated_source": "CRS",
+    "membership": []
   },
   {
     "id": "mdg-041",
@@ -2165,7 +2242,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Very small — below minimum ticket without aggregation",
     "last_updated": "2026-05",
-    "notes": "⚠ ASK COLLEAGUE: Please confirm what Toly Hare does, their products, and how they appeared on the partner list. Southwest location is unusual for spice sector. Pseau.org listing suggests community/WASH angle. Colleague described as 'very small'."
+    "notes": "⚠ ASK COLLEAGUE: Please confirm what Toly Hare does, their products, and how they appeared on the partner list. Southwest location is unusual for spice sector. Pseau.org listing suggests community/WASH angle. Colleague described as 'very small'.",
+    "membership": []
   },
   {
     "id": "mdg-042",
@@ -2212,7 +2290,8 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "⚠ ASK COLLEAGUE: Please identify HCP — full name, location, products, and role in the spice sector. No public information found.",
-    "crs_consolidated_source": "CRS"
+    "crs_consolidated_source": "CRS",
+    "membership": []
   },
   {
     "id": "mdg-043",
@@ -2259,7 +2338,8 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "⚠ ASK COLLEAGUE: Please clarify what Diary Farm does and whether it has a spice sector role. Name may suggest dairy — confirm products and relevance to spice lending facility.",
-    "crs_consolidated_source": "CRS"
+    "crs_consolidated_source": "CRS",
+    "membership": []
   },
   {
     "id": "mdg-044",
@@ -2306,7 +2386,11 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "⚠ ASK COLLEAGUE: Please identify Bionex — full name, location, and products. Name suggests bio-extract or essential oil company.",
-    "crs_consolidated_source": "CRS"
+    "crs_consolidated_source": "CRS",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-045",
@@ -2352,7 +2436,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "⚠ ASK COLLEAGUE: Please identify Fairoils — location, products, and certifications. Name suggests fair trade oils — potentially in scope if essential oils are included in facility mandate."
+    "notes": "⚠ ASK COLLEAGUE: Please identify Fairoils — location, products, and certifications. Name suggests fair trade oils — potentially in scope if essential oils are included in facility mandate.",
+    "membership": []
   },
   {
     "id": "mdg-046",
@@ -2398,7 +2483,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "⚠ ASK COLLEAGUE: Please identify Beelson Group — full name, location, products, and sector. No public information found."
+    "notes": "⚠ ASK COLLEAGUE: Please identify Beelson Group — full name, location, products, and sector. No public information found.",
+    "membership": []
   },
   {
     "id": "mdg-047",
@@ -2444,7 +2530,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "",
     "last_updated": "2026-05",
-    "notes": "⚠ ASK COLLEAGUE: Please identify Flora Mad — full name, location, and products."
+    "notes": "⚠ ASK COLLEAGUE: Please identify Flora Mad — full name, location, and products.",
+    "membership": []
   },
   {
     "id": "mdg-048",
@@ -2490,7 +2577,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Group structure — confirm if any spice subsidiary would be the lending counterparty",
     "last_updated": "2026-05",
-    "notes": "⚠ ASK COLLEAGUE: Please identify Groupe Basan — sector, products, and whether they have a spice-specific arm. Group structures complicate SME classification."
+    "notes": "⚠ ASK COLLEAGUE: Please identify Groupe Basan — sector, products, and whether they have a spice-specific arm. Group structures complicate SME classification.",
+    "membership": []
   },
   {
     "id": "mdg-049",
@@ -2537,7 +2625,8 @@
     "sme_classification_note": "",
     "last_updated": "2026-05",
     "notes": "⚠ ASK COLLEAGUE: Please identify Gehem — full name (possibly an acronym), location, and products.",
-    "crs_consolidated_source": "CRS"
+    "crs_consolidated_source": "CRS",
+    "membership": []
   },
   {
     "id": "mdg-050",
@@ -2595,7 +2684,11 @@
     "sme_classification_note": "Primary product is castor oil — confirm facility mandate scope before proceeding",
     "last_updated": "2026-05",
     "notes": "Priority CRS relationship per colleague. Exceptional impact credentials (B Corp 101.7, Fair for Life, Organic, WWF/UNDP partnerships). I&P equity is a strong financial credibility signal. South Madagascar reach aligns with CRS vulnerability mandate. Approach via CRS colleague first to clarify scope.",
-    "crs_consolidated_source": "CRS"
+    "crs_consolidated_source": "CRS",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-051",
@@ -2641,7 +2734,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Primary products appear to be fruits — confirm whether spice component exists or facility mandate covers fruit value chains",
     "last_updated": "2026-05",
-    "notes": "Priority CRS relationship per colleague. 2,350 farmers / 12 cooperatives is a standout livelihoods scale. Anosy southeast adds geographic diversification from SAVA. No website found. Approach via CRS colleague to establish the existing relationship before direct outreach."
+    "notes": "Priority CRS relationship per colleague. 2,350 farmers / 12 cooperatives is a standout livelihoods scale. Anosy southeast adds geographic diversification from SAVA. No website found. Approach via CRS colleague to establish the existing relationship before direct outreach.",
+    "membership": []
   },
   {
     "id": "mdg-052",
@@ -2700,7 +2794,8 @@
     "sme_classification_note": "",
     "last_updated": "2026-06",
     "notes": "Third RCCE cooperative added. Spice relevance is secondary to sugar — lower priority than MITSINJO or Fanohana for a spice facility. However, RCCE membership, triple certification, and AVSF partnership make it a natural inclusion in any RCCE-wide engagement. Confirm spice product volumes directly before advancing. AVSF partnership unconfirmed — inferred from general RCCE network documentation only; not independently verified.",
-    "source_url": "https://rcce-madagascar.mg/en/paaco-cooperative/"
+    "source_url": "https://rcce-madagascar.mg/en/paaco-cooperative/",
+    "membership": []
   },
   {
     "id": "mdg-053",
@@ -2749,7 +2844,8 @@
     "sme_classification_note": "Placeholder — insufficient public data to assess",
     "last_updated": "2026-06",
     "notes": "Added for RCCE completeness. No meaningful profile available from public sources. Do not advance without direct engagement via RCCE network or AVSF. AVSF partnership unconfirmed — inferred from general RCCE network documentation only; not independently verified.",
-    "source_url": "https://rcce-madagascar.mg/"
+    "source_url": "https://rcce-madagascar.mg/",
+    "membership": []
   },
   {
     "id": "mdg-054",
@@ -2798,7 +2894,10 @@
     "sme_classification_note": "Placeholder — union structure; insufficient public data to assess lending eligibility",
     "last_updated": "2026-06",
     "notes": "Added for RCCE completeness. Union-of-cooperatives structure may complicate direct lending eligibility — assess whether member cooperatives or the union itself would be the borrower. Do not advance without direct engagement via RCCE or AVSF. AVSF partnership unconfirmed — inferred from general RCCE network documentation only; not independently verified.",
-    "source_url": "https://rcce-madagascar.mg/"
+    "source_url": "https://rcce-madagascar.mg/",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-055",
@@ -2845,7 +2944,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-056",
@@ -2892,7 +2992,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-057",
@@ -2939,7 +3040,11 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-058",
@@ -2986,7 +3091,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-059",
@@ -3033,7 +3139,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-060",
@@ -3080,7 +3187,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "GEHEM"
+    ]
   },
   {
     "id": "mdg-061",
@@ -3127,7 +3237,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-062",
@@ -3175,7 +3286,11 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-063",
@@ -3222,7 +3337,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-064",
@@ -3269,7 +3385,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-065",
@@ -3316,7 +3433,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-066",
@@ -3363,7 +3481,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-067",
@@ -3410,7 +3529,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-068",
@@ -3457,7 +3577,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-069",
@@ -3504,7 +3625,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-070",
@@ -3551,7 +3673,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-071",
@@ -3598,7 +3721,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-072",
@@ -3645,7 +3769,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-073",
@@ -3692,7 +3817,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-074",
@@ -3739,7 +3865,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-075",
@@ -3788,7 +3915,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-076",
@@ -3835,7 +3963,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-077",
@@ -3882,7 +4011,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-078",
@@ -3929,7 +4059,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-079",
@@ -3976,7 +4107,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-080",
@@ -4023,7 +4155,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-081",
@@ -4070,7 +4203,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-082",
@@ -4117,7 +4251,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-083",
@@ -4164,7 +4299,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-084",
@@ -4211,7 +4349,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-085",
@@ -4258,7 +4397,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-086",
@@ -4305,7 +4445,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-087",
@@ -4352,7 +4493,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-088",
@@ -4399,7 +4541,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-089",
@@ -4446,7 +4589,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-090",
@@ -4493,7 +4637,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-091",
@@ -4540,7 +4685,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-092",
@@ -4587,7 +4733,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-093",
@@ -4634,7 +4781,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "GEHEM"
+    ]
   },
   {
     "id": "mdg-094",
@@ -4681,7 +4831,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-095",
@@ -4728,7 +4879,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-096",
@@ -4775,7 +4927,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-097",
@@ -4822,7 +4975,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-098",
@@ -4869,7 +5023,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-099",
@@ -4917,7 +5072,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-100",
@@ -4964,7 +5120,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-101",
@@ -5013,7 +5170,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-102",
@@ -5060,7 +5218,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-103",
@@ -5107,7 +5266,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-104",
@@ -5154,7 +5314,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-105",
@@ -5201,7 +5362,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-106",
@@ -5248,7 +5410,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-107",
@@ -5295,7 +5458,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-108",
@@ -5342,7 +5506,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-109",
@@ -5389,7 +5554,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "GEHEM"
+    ]
   },
   {
     "id": "mdg-110",
@@ -5436,7 +5604,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-111",
@@ -5483,7 +5652,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-112",
@@ -5530,7 +5700,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-113",
@@ -5577,7 +5748,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "GEHEM"
+    ]
   },
   {
     "id": "mdg-114",
@@ -5624,7 +5798,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-115",
@@ -5671,7 +5846,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-116",
@@ -5718,7 +5894,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-117",
@@ -5765,7 +5944,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-118",
@@ -5812,7 +5992,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-119",
@@ -5859,7 +6040,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-120",
@@ -5906,7 +6088,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-121",
@@ -5953,7 +6136,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-122",
@@ -6000,7 +6184,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-123",
@@ -6047,7 +6232,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-124",
@@ -6094,7 +6280,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-125",
@@ -6141,7 +6328,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-126",
@@ -6188,7 +6376,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-127",
@@ -6235,7 +6424,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-128",
@@ -6282,7 +6472,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-129",
@@ -6329,7 +6520,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-130",
@@ -6376,7 +6568,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-131",
@@ -6423,7 +6616,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-132",
@@ -6470,7 +6664,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-133",
@@ -6517,7 +6712,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-134",
@@ -6564,7 +6760,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-135",
@@ -6611,7 +6808,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-136",
@@ -6659,7 +6857,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-137",
@@ -6706,7 +6905,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-138",
@@ -6753,7 +6953,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-139",
@@ -6800,7 +7003,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-140",
@@ -6847,7 +7051,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-141",
@@ -6894,7 +7099,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-142",
@@ -6941,7 +7147,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-143",
@@ -6988,7 +7195,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-144",
@@ -7035,7 +7245,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-145",
@@ -7082,7 +7293,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-146",
@@ -7129,7 +7341,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-147",
@@ -7176,7 +7389,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-148",
@@ -7223,7 +7437,11 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-149",
@@ -7270,7 +7488,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-150",
@@ -7317,7 +7536,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-151",
@@ -7364,7 +7586,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-152",
@@ -7411,7 +7634,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-153",
@@ -7458,7 +7682,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-154",
@@ -7505,7 +7732,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-155",
@@ -7552,7 +7780,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-156",
@@ -7599,7 +7828,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-157",
@@ -7646,7 +7876,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-158",
@@ -7693,7 +7924,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-159",
@@ -7740,7 +7972,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-160",
@@ -7787,7 +8020,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "GEHEM"
+    ]
   },
   {
     "id": "mdg-161",
@@ -7834,7 +8070,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-162",
@@ -7881,7 +8118,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-163",
@@ -7928,7 +8166,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-164",
@@ -7975,7 +8216,10 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": [
+      "SYMABIO"
+    ]
   },
   {
     "id": "mdg-165",
@@ -8022,7 +8266,8 @@
     "data_confidence": "Low",
     "sme_classification_note": "Placeholder — from CRS Consolidated List only",
     "last_updated": "2026-06",
-    "notes": ""
+    "notes": "",
+    "membership": []
   },
   {
     "id": "mdg-166",
@@ -8077,6 +8322,3597 @@
     "data_confidence": "Medium",
     "sme_classification_note": "Already bankable — SIDI loan confirms creditworthiness. Scale (800 producers, 2 cooperatives) puts this squarely in Tier 1-2 lending range.",
     "last_updated": "2026-06",
-    "notes": "Notable gap in the pipeline given SIDI active lending relationship. High priority to research further — no public website identified. Approach via Gabrielle Orliange (SIDI) as warm intro. Mananara sourcing geography overlaps with Mananara Biosphere Cooperatives (mdg-012) — worth checking whether the two cooperatives MVE sources from are KOMAM/COPPVM/CPVM or separate entities."
+    "notes": "Notable gap in the pipeline given SIDI active lending relationship. High priority to research further — no public website identified. Approach via Gabrielle Orliange (SIDI) as warm intro. Mananara sourcing geography overlaps with Mananara Biosphere Cooperatives (mdg-012) — worth checking whether the two cooperatives MVE sources from are KOMAM/COPPVM/CPVM or separate entities.",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-167",
+    "name": "LABS (Les Aromatiques Bio du Sambirano)",
+    "founded": "Unknown",
+    "hq_location": "Sambirano / Diana",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Spices",
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic (Bio)",
+      "Fair for Life (FFL)"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Certified Organic and Fair for Life. Vanilla and spices processor in the Sambirano region — agroforestry-aligned geography. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-168",
+    "name": "PREMIUM SPICES",
+    "founded": "Unknown",
+    "hq_location": "SAVA / Analanjirofo",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company / Procurement network",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Spices",
+      "Cloves"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic (Bio/RUE)",
+      "BioSuisse",
+      "Naturland",
+      "Fairtrade"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Heavily certified (Organic, BioSuisse, Naturland, Fairtrade). Operates in SAVA and Analanjirofo — core vanilla and spice belt. Likely linked to European buyer/processor networks (Pronatec AG relationship suspected). Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-169",
+    "name": "Sambaspices",
+    "founded": "Unknown",
+    "hq_location": "Sambirano / SAVA",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Cloves",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Vanilla and spice exporter, Sambirano region. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-170",
+    "name": "SOARARY SARL",
+    "founded": "Unknown",
+    "hq_location": "SAVA",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Exporter",
+    "primary_products": [
+      "Vanilla"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic (Bio)",
+      "Fairtrade"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Organic and Fairtrade certified vanilla exporter. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-171",
+    "name": "MAVA SA",
+    "founded": "Unknown",
+    "hq_location": "Antananarivo",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Essential Oils",
+      "Moringa",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO and GEHEM member. Multi-product processor and exporter: vanilla, essential oils, moringa, spices. Organic certified. Website: mava.mg. Added from SYMABIO cartography 2025 and GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-172",
+    "name": "MG SAKAY",
+    "founded": "Unknown",
+    "hq_location": "Sakay / Bongolava",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO and GEHEM member. Essential oils and spice processor. Website: mgsakay.com. Added from SYMABIO cartography 2025 and GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-173",
+    "name": "NR MADA",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO and GEHEM member. Added from both SYMABIO cartography 2025 and GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-174",
+    "name": "Origines (Symrise Madagascar)",
+    "founded": "Unknown",
+    "hq_location": "Antananarivo / SAVA",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Multinational subsidiary",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Cloves",
+      "Essential Oils",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic",
+      "Fairtrade"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO and GEHEM member. Local subsidiary/procurement arm of Symrise AG (Germany). Large-scale vanilla and essential oil sourcing. Added from SYMABIO cartography 2025 (listed as 'Origines / SYMRISE') and GEHEM membership list 2025. Note: multinational subsidiary — may be out of scope for SME lending facility.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-175",
+    "name": "TG AROMATICS SARLU",
+    "founded": "Unknown",
+    "hq_location": "Fianarantsoa / Haute Matsiatra",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO and GEHEM member. Essential oils processor. Listed as TG Aromatics in both lists; associated with Tozzi Green group per GEHEM contact data. Added from SYMABIO cartography 2025 and GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-176",
+    "name": "MAHENINTSOA EXPORT",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Moringa"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Vanilla and moringa exporter, organic certified. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-177",
+    "name": "HAVAMAD",
+    "founded": "Unknown",
+    "hq_location": "Diana / Antsiranana",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Fruits",
+      "Lychee"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Vanilla and fruit (lychee) exporter. Diana and Boeny regions. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-178",
+    "name": "MAROMAHAY",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Sugar",
+      "Cane-derived products"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Sugar and cane derivative producer. Limited spice overlap. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-179",
+    "name": "Coopérative TSAVANA",
+    "founded": "Unknown",
+    "hq_location": "SAVA",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Cooperative",
+    "value_chain_role": "Producer + Exporter",
+    "primary_products": [
+      "Vanilla"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Vanilla cooperative in SAVA region. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-180",
+    "name": "COOPÉRATIVE MAHASOA (Ferme Mahasoa)",
+    "founded": "Unknown",
+    "hq_location": "Atsimo Andrefana / Toliara",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Cooperative / Farm",
+    "value_chain_role": "Producer + Processor",
+    "primary_products": [
+      "Vanilla",
+      "Coffee",
+      "Cloves",
+      "Moringa",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Multi-product organic cooperative: vanilla, coffee, cloves, moringa, spices. Southern Madagascar (Toliara province). Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-181",
+    "name": "STOI (Société Trading de l'Océan Indien)",
+    "founded": "Unknown",
+    "hq_location": "Diana / Antsiranana",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Moringa"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Vanilla and moringa trader/exporter, Diana region. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-182",
+    "name": "Pink Bay Madagascar",
+    "founded": "Unknown",
+    "hq_location": "Analanjirofo / SAVA",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Vanilla and spice exporter. Analanjirofo and SAVA regions. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-183",
+    "name": "QUALITYMAD Sarl",
+    "founded": "Unknown",
+    "hq_location": "SAVA / Analanjirofo",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Spices",
+      "Lychee"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "GlobalGAP",
+      "Organic"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. GlobalGAP and Organic certified. Vanilla, spices, and lychee. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-184",
+    "name": "SAMBIRANO SA",
+    "founded": "Unknown",
+    "hq_location": "Sambirano / Diana",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Cacao",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Vanilla and cacao processor in the Sambirano valley. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-185",
+    "name": "Virginia Dare Madagascar",
+    "founded": "Unknown",
+    "hq_location": "SAVA",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Multinational subsidiary",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic",
+      "Fairtrade"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Local sourcing subsidiary of Virginia Dare (USA), a major vanilla extract manufacturer. Organic and Fairtrade certified. Note: multinational subsidiary — may be out of scope for SME lending facility. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-186",
+    "name": "LECOFRUIT",
+    "founded": "Unknown",
+    "hq_location": "Antananarivo / Vakinankaratra",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vegetables",
+      "Fruits",
+      "Preserved foods"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Vegetable and fruit processor, mainly for export. Limited direct spice relevance. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-187",
+    "name": "LYCHEELAND",
+    "founded": "Unknown",
+    "hq_location": "Analanjirofo",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Lychee",
+      "Spices",
+      "Fruits"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Organic certified. Lychee and fruit exporter, Analanjirofo. Some spice product presence. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-188",
+    "name": "MADESSENCES",
+    "founded": "Unknown",
+    "hq_location": "Fianarantsoa",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Essential oils and spice extracts processor. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-189",
+    "name": "MANARIVO AGRICULTURE BIOLOGIQUE",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Producer + Exporter",
+    "primary_products": [
+      "Organic produce"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Organic agricultural producer. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-190",
+    "name": "MORINGA WAVE",
+    "founded": "Unknown",
+    "hq_location": "Atsinanana / Analanjirofo",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Moringa"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Moringa specialist. Limited spice overlap but agroforestry-adjacent crop. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-191",
+    "name": "PHYTO AGRI",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Producer + Processor",
+    "primary_products": [
+      "Medicinal plants",
+      "Stevia"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Medicinal plants and stevia producer. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-192",
+    "name": "RTHMC EXPORT",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Vanilla and spice exporter. Minimal data available. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-193",
+    "name": "KAED",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Unknown",
+    "primary_products": [
+      "Unknown"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. No product or regional data available in SYMABIO cartography 2025. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-194",
+    "name": "LA GOUSSE DORÉE SARL",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Exporter",
+    "primary_products": [
+      "Vanilla"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Vanilla exporter. Minimal data available. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-195",
+    "name": "SAVONNERIE TROPICALE / Huilerie de Melville",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor",
+    "primary_products": [
+      "Soap",
+      "Vegetable oils",
+      "Cane derivatives"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic (BioSuisse)"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Organic (BioSuisse) certified processor of vegetable oils and soap. Limited spice relevance. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-196",
+    "name": "VELO ALEXIS Sarl",
+    "founded": "Unknown",
+    "hq_location": "SAVA",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Moringa"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Vanilla and moringa exporter. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-197",
+    "name": "VERTIGA",
+    "founded": "Unknown",
+    "hq_location": "Analanjirofo / Atsinanana",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Essential Oils",
+      "Medicinal plants",
+      "Spices",
+      "Moringa",
+      "Fruits"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Organic certified multi-product processor: vanilla, essential oils, medicinal plants, moringa, spices, fruits. Analanjirofo and Atsinanana regions. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-198",
+    "name": "RAZANAPERA (Etablissement Razanapera)",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO and GEHEM member. Essential oils and spice processor. Note: SYMABIO lists as 'RAZANAPERA'; GEHEM lists as 'ETABLISSEMENT RAZANAPERA' — treated as same entity. Added from both lists.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-199",
+    "name": "HOMEOPHARMA",
+    "founded": "Unknown",
+    "hq_location": "Antananarivo",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor",
+    "primary_products": [
+      "Medicinal plants",
+      "Essential Oils",
+      "Herbal products"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO and GEHEM member. Pharmaceutical and herbal products company. Medicinal plant processor with essential oil activities. Limited direct spice relevance. Added from SYMABIO cartography 2025 and GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM",
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-200",
+    "name": "FALY Export / FALY Hordea",
+    "founded": "Unknown",
+    "hq_location": "Atsinanana",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Exporter",
+    "primary_products": [
+      "Lychee",
+      "Essential Oils",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "SYMABIO member. Lychee and essential oil exporter, Atsinanana region. Added from SYMABIO cartography 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "SYMABIO"
+    ]
+  },
+  {
+    "id": "mdg-201",
+    "name": "AGRICO BIOINDUSTRIE (PROGRANIT)",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Plant extracts"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Essential oils and plant extract processor. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-202",
+    "name": "AGROMAN",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-203",
+    "name": "AROMABE",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Essential oils producer. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-204",
+    "name": "ARTICOM",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-205",
+    "name": "AROMEYA",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-206",
+    "name": "BONTOUX OCEAN INDIEN EXPORT",
+    "founded": "Unknown",
+    "hq_location": "Antananarivo",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Multinational subsidiary",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Natural extracts"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Local subsidiary of Bontoux SAS (France), a major natural ingredients supplier. Essential oils and extracts. Note: multinational subsidiary — may be out of scope for SME facility. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-207",
+    "name": "COEUR DE FORÊT MADAGASCAR (Fon'Ala SARLU)",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Agroforestry products"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Essential oils and agroforestry product company. Name signals strong forest/agroforestry alignment with Forest Flavors mandate. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-208",
+    "name": "EXCELSIOR SOLUTIONS SARLU",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Unknown",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Minimal data available. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-209",
+    "name": "EXTRA YLANG MADAGASCAR",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Ylang ylang essential oil"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Ylang ylang specialist. Limited spice overlap. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-210",
+    "name": "INTRAFLAVORS",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Flavors",
+      "Spice extracts"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Flavor and essential oil processor; spice extract activity likely given sector context. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-211",
+    "name": "LABEL CBD CONSULTING",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "CBD",
+      "Plant extracts",
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. CBD and plant extract company. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-212",
+    "name": "LENOSA SARL",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-213",
+    "name": "LES HUILES REMINDO",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-214",
+    "name": "MARIJI SARL",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-215",
+    "name": "MIHOBIA",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-216",
+    "name": "NAHIRI COMPANY",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-217",
+    "name": "NATEMA (Natural Extract Madagascar)",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Natural extracts",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Natural extract and essential oil processor. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-218",
+    "name": "NAT GREEN MADAGASIKARA",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Natural products"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-219",
+    "name": "OILS & SPICES",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Name suggests direct spice and essential oil activity. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-220",
+    "name": "PHYTOAROMA SARL",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Aromatic plants"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Aromatic plant and essential oil processor. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-221",
+    "name": "RC TRADING",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Trader + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-222",
+    "name": "RENALA",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Natural extracts",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Essential oils and natural extract company. Website: renalanaturals.com. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-223",
+    "name": "RIAN'ANDO IMPORT–EXPORT",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Trader + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-224",
+    "name": "SEMEOI",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-225",
+    "name": "SEVPROD SARLU",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-226",
+    "name": "SOATSIRY SARL",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-227",
+    "name": "SOCIÉTÉ MADAGASCAR LANO RESSOURCES",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Natural resources"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-228",
+    "name": "SUN RESOURCES MADAGASCAR SARL",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Spices"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-229",
+    "name": "SYMRISE Madagascar",
+    "founded": "Unknown",
+    "hq_location": "Antananarivo",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Multinational subsidiary",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Vanilla",
+      "Essential Oils",
+      "Flavors"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Listed separately from 'Origines / Symrise' (mdg-174) in the GEHEM list — may be the same entity under a different registered name. Symrise AG (Germany) subsidiary. Note: multinational — likely out of scope for SME facility. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-230",
+    "name": "TAKASAGO MADAGASCAR SA",
+    "founded": "Unknown",
+    "hq_location": "Antananarivo",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Multinational subsidiary",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Flavors",
+      "Vanilla"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Local subsidiary of Takasago International Corporation (Japan), a major flavor and fragrance company. Note: multinational subsidiary — likely out of scope for SME facility. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-231",
+    "name": "TANISA FLORES",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Aromatic plants"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-232",
+    "name": "VOKATRA'ASA",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Agricultural products"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-233",
+    "name": "EHEM",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company / Association",
+    "value_chain_role": "Unknown",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Possibly a sector association or small processor. Minimal data available. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-234",
+    "name": "AROMATIKA MALAGASY",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils",
+      "Aromatic plants"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Aromatic plant and essential oil company. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-235",
+    "name": "ESSENTIAL OILS OF MADAGASCAR (EOM)",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Processor + Exporter",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Essential oils producer and exporter. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
+  },
+  {
+    "id": "mdg-236",
+    "name": "JTF MADAGASCAR",
+    "founded": "Unknown",
+    "hq_location": "Unknown",
+    "website": "",
+    "primary_contact": "",
+    "org_type": "Private company",
+    "value_chain_role": "Unknown",
+    "primary_products": [
+      "Essential Oils"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Unknown"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": false,
+    "avsf_partner": false,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "Unknown",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Insufficient data",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "",
+    "donor_history": [],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 2,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "GEHEM member. Minimal data available. Added from GEHEM membership list 2025.",
+    "crs_consolidated_source": "",
+    "membership": [
+      "GEHEM"
+    ]
   }
 ]
