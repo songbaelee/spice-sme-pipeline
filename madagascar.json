@@ -2642,6 +2642,180 @@
     "notes": "Priority CRS relationship per colleague. 2,350 farmers / 12 cooperatives is a standout livelihoods scale. Anosy southeast adds geographic diversification from SAVA. No website found. Approach via CRS colleague to establish the existing relationship before direct outreach."
   },
   {
+    "id": "mdg-052",
+    "name": "PAACO (Produits Agricoles et Artisanaux de la Côte Orientale)",
+    "founded": "2009",
+    "hq_location": "Mangarano, Toamasina, Atsinanana",
+    "website": "https://rcce-madagascar.mg/en/paaco-cooperative/",
+    "primary_contact": "",
+    "org_type": "Producer cooperative",
+    "value_chain_role": "Producer + Exporter (via RCCE network)",
+    "primary_products": [
+      "Cinnamon",
+      "Whole Sugar",
+      "Lychee",
+      "Cloves"
+    ],
+    "farmer_network_size": "163 producers",
+    "certifications": [
+      "Organic AB",
+      "FLO Fairtrade",
+      "SPP"
+    ],
+    "export_markets": [
+      "International (via RCCE / Ethiquable)"
+    ],
+    "rcce_member": true,
+    "avsf_partner": true,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "None identified",
+    "has_audited_accounts": "Unknown — Fairtrade/SPP certification implies annual audits",
+    "capital_need_est_usd": "$25K–$150K",
+    "capital_use_of_funds": "Pre-harvest farmer financing; cinnamon and sugar purchasing; certification maintenance",
+    "capital_need_source": "Claude estimate",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "RCCE member and AVSF AgriCoop project partner. Smaller cooperative (163 producers) compared to Fanohana (551). Primary product is whole sugar, not spices — cinnamon and cloves are secondary. Sugar-first profile means less direct relevance to spice facility than MITSINJO or Fanohana, but RCCE network membership and triple certification (Organic/Fairtrade/SPP) are strong. Mangarano/Brickaville area overlaps geographically with MITSINJO.",
+    "donor_history": [
+      {
+        "donor": "AVSF (Agronomes et Vétérinaires Sans Frontières)",
+        "type": "Technical assistance / programme support — AgriCoop project",
+        "amount": "Undisclosed",
+        "year": "Ongoing"
+      },
+      {
+        "donor": "Agence Française de Développement (AFD)",
+        "type": "Project co-funder (AgriCoop)",
+        "amount": "Undisclosed",
+        "year": "Ongoing"
+      }
+    ],
+    "lending_readiness_tier": "Tier 2 — Near Ready",
+    "pipeline_status": "Prospect",
+    "livelihood_score": 4,
+    "environment_focus": "Yes",
+    "women_focus": "Unknown",
+    "data_confidence": "Medium",
+    "sme_classification_note": "",
+    "last_updated": "2026-06",
+    "notes": "Third RCCE cooperative added. Spice relevance is secondary to sugar — lower priority than MITSINJO or Fanohana for a spice facility. However, RCCE membership, triple certification, and AVSF partnership make it a natural inclusion in any RCCE-wide engagement. Confirm spice product volumes directly before advancing."
+  },
+  {
+    "id": "mdg-053",
+    "name": "KOVAPAMMINA",
+    "founded": "Unknown",
+    "hq_location": "Atsinanana / Analanjirofo region (east coast), Madagascar",
+    "website": "https://rcce-madagascar.mg/",
+    "primary_contact": "",
+    "org_type": "Producer cooperative",
+    "value_chain_role": "Producer (value chain role unconfirmed)",
+    "primary_products": [
+      "Unknown"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic AB",
+      "FLO Fairtrade",
+      "SPP"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": true,
+    "avsf_partner": true,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "None identified",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Unknown",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "Confirmed RCCE member — one of five cooperatives in the network. Also listed as AVSF AgriCoop 2.0 project partner. No standalone public profile found. Products, founding date, member count, and location all unconfirmed. Placeholder entry — requires direct outreach via RCCE or AVSF to populate.",
+    "donor_history": [
+      {
+        "donor": "AVSF (Agronomes et Vétérinaires Sans Frontières)",
+        "type": "Technical assistance — AgriCoop project",
+        "amount": "Undisclosed",
+        "year": "Ongoing"
+      }
+    ],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Placeholder",
+    "livelihood_score": 3,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "Placeholder — insufficient public data to assess",
+    "last_updated": "2026-06",
+    "notes": "Added for RCCE completeness. No meaningful profile available from public sources. Do not advance without direct engagement via RCCE network or AVSF."
+  },
+  {
+    "id": "mdg-054",
+    "name": "MAGNEVA ANTSIGNANAGNA (Union of Cooperatives)",
+    "founded": "2018",
+    "hq_location": "Atsinanana / Analanjirofo region (east coast), Madagascar",
+    "website": "https://rcce-madagascar.mg/",
+    "primary_contact": "",
+    "org_type": "Union of cooperatives",
+    "value_chain_role": "Producer federation (value chain role unconfirmed)",
+    "primary_products": [
+      "Unknown"
+    ],
+    "farmer_network_size": "Unknown",
+    "certifications": [
+      "Organic AB",
+      "FLO Fairtrade",
+      "SPP"
+    ],
+    "export_markets": [
+      "Unknown"
+    ],
+    "rcce_member": true,
+    "avsf_partner": true,
+    "revenue_usd_est": "Unknown",
+    "revenue_source": "Unknown",
+    "revenue_confidence": "Low",
+    "staff_count_est": "Unknown",
+    "staff_source": "Unknown",
+    "staff_confidence": "Low",
+    "existing_debt": "None identified",
+    "has_audited_accounts": "Unknown",
+    "capital_need_est_usd": "Unknown",
+    "capital_use_of_funds": "Unknown",
+    "capital_need_source": "Unknown",
+    "capital_need_confidence": "Low",
+    "crs_relationship": "None confirmed",
+    "crs_notes": "Union-of-cooperatives structure — the only such entity in the RCCE network. Confirmed RCCE member since network formalization in 2018. Also listed as AVSF AgriCoop 2.0 project partner. No standalone public profile found. As a union rather than a direct producer cooperative, lending structure and borrower eligibility would need separate assessment. Placeholder entry.",
+    "donor_history": [
+      {
+        "donor": "AVSF (Agronomes et Vétérinaires Sans Frontières)",
+        "type": "Technical assistance — AgriCoop project",
+        "amount": "Undisclosed",
+        "year": "Ongoing"
+      }
+    ],
+    "lending_readiness_tier": "Tier 3 — Needs TA First",
+    "pipeline_status": "Placeholder",
+    "livelihood_score": 3,
+    "environment_focus": "Unknown",
+    "women_focus": "Unknown",
+    "data_confidence": "Low",
+    "sme_classification_note": "Placeholder — union structure; insufficient public data to assess lending eligibility",
+    "last_updated": "2026-06",
+    "notes": "Added for RCCE completeness. Union-of-cooperatives structure may complicate direct lending eligibility — assess whether member cooperatives or the union itself would be the borrower. Do not advance without direct engagement via RCCE or AVSF."
+  },
+  {
     "id": "mdg-055",
     "name": "APL Vanille",
     "founded": "Unknown",
