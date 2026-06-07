@@ -69,6 +69,8 @@
     .filter-btn:hover { background: var(--bg2); color: var(--text); border-color: var(--border2); }
     .filter-btn.active { background: var(--text); color: var(--bg); border-color: var(--text); }
 
+    .nav-label { font-family: 'IBM Plex Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text3); padding: 7px 10px 7px 14px; border-right: 1px solid var(--border); background: var(--bg2); white-space: nowrap; user-select: none; }
+
     /* Table */
     .table-wrap { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; font-size: 12px; }
@@ -282,14 +284,20 @@
       </div>
       <div class="header-right" id="count-label"></div>
     </div>
-    <div style="display:flex; align-items:center; flex-wrap:wrap; gap:0; border:1px solid var(--border); border-radius:7px; overflow:hidden; width:fit-content;">
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);padding:7px 10px 7px 14px;border-right:1px solid var(--border);background:var(--bg2);white-space:nowrap;user-select:none">Countries</span>
-      <button class="country-btn active" id="country-btn-uganda" onclick="switchCountry('uganda', this)">Uganda</button>
-      <button class="country-btn" id="country-btn-tanzania" onclick="switchCountry('tanzania', this)">Tanzania</button>
-      <button class="country-btn" id="country-btn-madagascar" onclick="switchCountry('madagascar', this)">Madagascar</button>
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);padding:7px 10px 7px 14px;border-left:1px solid var(--border);border-right:1px solid var(--border);background:var(--bg2);white-space:nowrap;user-select:none">Views</span>
-      <button class="country-btn" id="about-btn" onclick="togglePanel('about', this)">About</button>
-      <button class="country-btn" id="funds-btn" onclick="togglePanel('funds', this)" style="border-right:none">Funds</button>
+    <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; width:100%">
+      <!-- Left: Countries + Funds in one pill -->
+      <div style="display:flex; align-items:center; gap:0; border:1px solid var(--border); border-radius:7px; overflow:hidden; width:fit-content;">
+        <span class="nav-label">Countries</span>
+        <button class="country-btn active" id="country-btn-uganda" onclick="switchCountry('uganda', this)">Uganda</button>
+        <button class="country-btn" id="country-btn-tanzania" onclick="switchCountry('tanzania', this)">Tanzania</button>
+        <button class="country-btn" id="country-btn-madagascar" onclick="switchCountry('madagascar', this)">Madagascar</button>
+        <span class="nav-label" style="border-left:1px solid var(--border)">Funds</span>
+        <button class="country-btn" id="fund-nav-all" onclick="switchFund('all', this)">All</button>
+        <button class="country-btn" id="fund-nav-001" onclick="switchFund('fund-001', this)">Ground Up</button>
+        <button class="country-btn" id="fund-nav-002" onclick="switchFund('fund-002', this)" style="border-right:none">SIDI</button>
+      </div>
+      <!-- Right: About -->
+      <button class="country-btn" id="about-btn" onclick="togglePanel('about', this)" style="border:1px solid var(--border); border-radius:7px;">About</button>
     </div>
   </div>
 
@@ -345,12 +353,6 @@
   <!-- ── Funds Panel ──────────────────────────────────────────────────── -->
   <div id="funds-panel" style="display:none; padding:0 0 2rem">
 
-    <!-- Fund filter bar -->
-    <div class="filters" id="funds-filters">
-      <span class="filter-label">Fund:</span>
-      <button class="filter-btn active" id="fund-btn-all" onclick="setFundFilter('all', this)">All Funds</button>
-    </div>
-
     <!-- Pipeline-match callout -->
     <div id="funds-match-note" style="display:none; background:var(--teal-bg); border:1px solid var(--teal-border); color:var(--teal-text); border-radius:6px; padding:10px 16px; margin-bottom:1rem; font-size:12px; font-family:'IBM Plex Mono',monospace; letter-spacing:0.04em;"></div>
 
@@ -371,8 +373,8 @@
         </colgroup>
         <thead>
           <tr>
-            <th class="no-sort">#</th>
-            <th class="no-sort">ID</th>
+            <th class="no-sort" style="width:22px; padding-right:4px">#</th>
+            <th class="no-sort" style="width:62px; padding-right:6px">ID</th>
             <th onclick="sortFundsBy('company')" style="cursor:pointer" id="fth-company">Company <span class="sort-icon" id="fs-company">↑</span></th>
             <th class="no-sort">Fund</th>
             <th class="no-sort">Country</th>
@@ -417,8 +419,8 @@
         </colgroup>
         <thead>
           <tr>
-            <th class="no-sort">#</th>
-            <th class="no-sort">ID</th>
+            <th class="no-sort" style="width:22px; padding-right:4px">#</th>
+            <th class="no-sort" style="width:62px; padding-right:6px">ID</th>
             <th onclick="sortBy('name')">Company <span class="sort-icon" id="s-name">⇅</span></th>
             <th onclick="sortBy('hq_location')">Location <span class="sort-icon" id="s-hq_location">⇅</span></th>
             <th>Products</th>
@@ -466,38 +468,65 @@ const TIER_COLORS = { 1: '#3b6d11', 2: '#854f0b', 3: '#a32d2d' };
 
 // ── Panel switching ────────────────────────────────────────────────────────
 function showPanel(name) {
-  // Hide all overlay panels
   document.getElementById('about-panel').style.display    = 'none';
   document.getElementById('funds-panel').style.display    = 'none';
   document.getElementById('pipeline-panel').style.display = 'none';
 
-  document.querySelectorAll('#about-btn, #funds-btn').forEach(b => b.classList.remove('active'));
+  // Clear all nav active states
+  document.getElementById('about-btn').classList.remove('active');
   document.querySelectorAll('[id^="country-btn-"]').forEach(b => b.classList.remove('active'));
+  // Fund nav buttons — don't clear here; switchFund manages them
 
   if (name === 'about') {
     document.getElementById('about-panel').style.display = '';
     document.getElementById('about-btn').classList.add('active');
     activePanel = 'about';
+    document.getElementById('count-label').textContent = '';
   } else if (name === 'funds') {
     document.getElementById('funds-panel').style.display = '';
-    document.getElementById('funds-btn').classList.add('active');
     activePanel = 'funds';
-    if (!FUNDS_DATA) loadFunds();
+    if (!FUNDS_DATA) loadFunds(); else updateFundsCountLabel();
   } else {
-    // pipeline (default)
+    // pipeline
     document.getElementById('pipeline-panel').style.display = '';
     activePanel = null;
-    // Restore active country highlight
     document.getElementById('country-btn-' + currentCountry)?.classList.add('active');
+    // Deactivate fund nav buttons
+    document.querySelectorAll('[id^="fund-nav-"]').forEach(b => b.classList.remove('active'));
   }
 }
 
 function togglePanel(name, btn) {
-  if (activePanel === name) {
-    showPanel('pipeline');
-  } else {
-    showPanel(name);
-  }
+  if (activePanel === name) showPanel('pipeline');
+  else showPanel(name);
+}
+
+// ── Fund nav (in header row) ───────────────────────────────────────────────
+function switchFund(id, btn) {
+  activeFundFilter = id;
+  // Activate the right fund nav button
+  document.querySelectorAll('[id^="fund-nav-"]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  // Deactivate country buttons; make sure funds panel is showing
+  document.querySelectorAll('[id^="country-btn-"]').forEach(b => b.classList.remove('active'));
+  document.getElementById('about-btn').classList.remove('active');
+  activePanel = 'funds';
+  document.getElementById('about-panel').style.display    = 'none';
+  document.getElementById('pipeline-panel').style.display = 'none';
+  document.getElementById('funds-panel').style.display    = '';
+  if (!FUNDS_DATA) loadFunds(); else { renderFundsTable(); updateFundsCountLabel(); }
+}
+
+function updateFundsCountLabel() {
+  if (!FUNDS_DATA) return;
+  const portfolio = FUNDS_DATA.portfolio.filter(p =>
+    activeFundFilter === 'all' || p.fund_id === activeFundFilter
+  );
+  const fundName = activeFundFilter === 'all'
+    ? 'All Funds'
+    : (FUNDS_DATA.funds.find(f => f.fund_id === activeFundFilter)?.name || activeFundFilter);
+  document.getElementById('count-label').textContent =
+    `${fundName} · ${portfolio.length} companies`;
 }
 
 // ── Filter ─────────────────────────────────────────────────────────────────
@@ -823,34 +852,14 @@ function loadFunds() {
     .then(r => { if (!r.ok) throw new Error('funds.json not found'); return r.json(); })
     .then(data => {
       FUNDS_DATA = data;
-      buildFundFilterButtons(data.funds);
       renderFundsTable();
       renderFundCards(data.funds);
+      updateFundsCountLabel();
     })
     .catch(err => {
       document.getElementById('funds-tbody').innerHTML =
         `<tr><td colspan="9" class="state-msg">Could not load funds.json — make sure the file exists in the same folder.<br><small style="opacity:0.6">${err.message}</small></td></tr>`;
     });
-}
-
-function buildFundFilterButtons(funds) {
-  const bar = document.getElementById('funds-filters');
-  bar.querySelectorAll('[data-fund-id]').forEach(b => b.remove());
-  funds.forEach(f => {
-    const btn = document.createElement('button');
-    btn.className = 'filter-btn';
-    btn.dataset.fundId = f.fund_id;
-    btn.textContent = f.name;
-    btn.onclick = () => setFundFilter(f.fund_id, btn);
-    bar.appendChild(btn);
-  });
-}
-
-function setFundFilter(id, btn) {
-  activeFundFilter = id;
-  document.querySelectorAll('#funds-filters .filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  renderFundsTable();
 }
 
 function renderFundsTable() {
@@ -912,6 +921,7 @@ function renderFundsTable() {
       <td>${pipelineCell}</td>
     </tr>`;
   }).join('');
+  updateFundsCountLabel();
 }
 
 function renderFundCards(funds) {
