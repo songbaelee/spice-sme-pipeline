@@ -296,7 +296,8 @@
         <span class="nav-label" style="border-left:1px solid var(--border)">Funds</span>
         <button class="country-btn" id="fund-nav-all" onclick="switchFund('all', this)">All</button>
         <button class="country-btn" id="fund-nav-001" onclick="switchFund('fund-001', this)">Ground Up</button>
-        <button class="country-btn" id="fund-nav-002" onclick="switchFund('fund-002', this)" style="border-right:none">SIDI</button>
+        <button class="country-btn" id="fund-nav-002" onclick="switchFund('fund-002', this)">SIDI</button>
+        <button class="country-btn" id="fund-nav-003" onclick="switchFund('fund-003', this)" style="border-right:none">Grounded</button>
       </div>
       <!-- Right: About -->
       <button class="country-btn" id="about-btn" onclick="togglePanel('about', this)" style="border:1px solid var(--border); border-radius:7px;">About</button>
@@ -581,7 +582,6 @@ function applyCountryConfig(country) {
   const cfg = COUNTRY_CONFIG[country] || COUNTRY_CONFIG.uganda;
   const isMdg = country === 'madagascar';
 
-  // Filter buttons
   document.getElementById('btn-net1').textContent = cfg.net1Label;
   document.getElementById('btn-net2').textContent = cfg.net2Label;
   document.getElementById('btn-net1').style.display    = country === 'tanzania' ? 'none' : '';
@@ -589,7 +589,6 @@ function applyCountryConfig(country) {
   document.getElementById('btn-symabio').style.display  = isMdg ? '' : 'none';
   document.getElementById('btn-gehem').style.display    = isMdg ? '' : 'none';
 
-  // Legend
   document.getElementById('legend-symabio-item').style.display = isMdg ? '' : 'none';
   document.getElementById('legend-gehem-item').style.display   = isMdg ? '' : 'none';
   document.getElementById('legend-symabio-item').innerHTML =
@@ -601,49 +600,35 @@ function applyCountryConfig(country) {
   document.getElementById('legend-net2-item').innerHTML =
     `<span class="tag ${cfg.net2TagCls}">${cfg.net2Label}</span> ${cfg.net2Legend}`;
 
-  const thOrgtype = document.getElementById('th-orgtype');
+  const thOrgtype  = document.getElementById('th-orgtype');
   const colOrgtype = document.getElementById('col-orgtype');
-  const thNet1 = document.getElementById('th-net1');
-  const thNet2 = document.getElementById('th-net2');
-  const colNet1 = document.getElementById('col-net1');
-  const colNet2 = document.getElementById('col-net2');
-  const thSym  = document.getElementById('th-symabio');
-  const thGeh  = document.getElementById('th-gehem');
-  const colSym = document.getElementById('col-symabio');
-  const colGeh = document.getElementById('col-gehem');
+  const thNet1     = document.getElementById('th-net1');
+  const thNet2     = document.getElementById('th-net2');
+  const colNet1    = document.getElementById('col-net1');
+  const colNet2    = document.getElementById('col-net2');
+  const thSym      = document.getElementById('th-symabio');
+  const thGeh      = document.getElementById('th-gehem');
+  const colSym     = document.getElementById('col-symabio');
+  const colGeh     = document.getElementById('col-gehem');
 
   if (isMdg) {
-    // Hide Org Type column
-    thOrgtype.style.display  = 'none';
-    colOrgtype.style.display = 'none';
-    // Convert net1/net2 to sortable RCCE/AVSF affil headers
+    thOrgtype.style.display  = 'none'; colOrgtype.style.display = 'none';
     thNet1.innerHTML = `RCCE <span class="sort-icon" id="s-rcce_member">⇅</span>`;
-    thNet1.classList.remove('no-sort');
-    thNet1.setAttribute('onclick', "sortBy('rcce_member')");
+    thNet1.classList.remove('no-sort'); thNet1.setAttribute('onclick', "sortBy('rcce_member')");
     colNet1.style.width = '5%';
     thNet2.innerHTML = `AVSF <span class="sort-icon" id="s-avsf_partner">⇅</span>`;
-    thNet2.classList.remove('no-sort');
-    thNet2.setAttribute('onclick', "sortBy('avsf_partner')");
+    thNet2.classList.remove('no-sort'); thNet2.setAttribute('onclick', "sortBy('avsf_partner')");
     colNet2.style.width = '5%';
-    // Show SYMABIO and GEHEM columns
-    thSym.style.display  = ''; colSym.style.display = '';
-    thGeh.style.display  = ''; colGeh.style.display = '';
+    thSym.style.display = ''; colSym.style.display = '';
+    thGeh.style.display = ''; colGeh.style.display = '';
   } else {
-    // Restore Org Type column
-    thOrgtype.style.display  = '';
-    colOrgtype.style.display = '';
-    // Restore net1/net2 as plain label headers
-    thNet1.innerHTML = cfg.net1Label;
-    thNet1.classList.add('no-sort');
-    thNet1.removeAttribute('onclick');
+    thOrgtype.style.display  = ''; colOrgtype.style.display = '';
+    thNet1.innerHTML = cfg.net1Label; thNet1.classList.add('no-sort'); thNet1.removeAttribute('onclick');
     colNet1.style.width = '6%';
-    thNet2.innerHTML = cfg.net2Label;
-    thNet2.classList.add('no-sort');
-    thNet2.removeAttribute('onclick');
+    thNet2.innerHTML = cfg.net2Label; thNet2.classList.add('no-sort'); thNet2.removeAttribute('onclick');
     colNet2.style.width = '6%';
-    // Hide SYMABIO and GEHEM columns
-    thSym.style.display  = 'none'; colSym.style.display = 'none';
-    thGeh.style.display  = 'none'; colGeh.style.display = 'none';
+    thSym.style.display = 'none'; colSym.style.display = 'none';
+    thGeh.style.display = 'none'; colGeh.style.display = 'none';
   }
 }
 
