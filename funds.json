@@ -113,6 +113,50 @@
       "notes": "Impact investment cooperative focused on African agri-processors transitioning to regenerative farming. Fund manager is Grounded (Cape Town / Utrecht). Prioritises high-value non-perishable crops: spices, coffee, herbs, cacao. Strong Tanzania spice presence via Trianon Spices. Flagged by I&P as potential strategic partner for Forest Flavors facility.",
       "portfolio_scope": "3 portfolio companies as of June 2026",
       "date_sourced": "2026-06"
+    },
+    {
+      "fund_id": "fund-004",
+      "name": "One Acre Ventures",
+      "parent_org": "One Acre Fund",
+      "hq_country": "Kenya (One Acre Fund HQ)",
+      "fund_type": "Impact SME Lending Facility",
+      "geography_focus": [
+        "Uganda",
+        "Rwanda"
+      ],
+      "instruments": [
+        "Term loans",
+        "Structured loans (revenue-sharing)"
+      ],
+      "sector_focus": [
+        "Spices (cloves, vanilla)",
+        "Coffee",
+        "Avocado",
+        "Chili",
+        "Cocoa",
+        "Cashew",
+        "Macadamia",
+        "Sesame",
+        "Chia"
+      ],
+      "impact_themes": [
+        "Smallholder income",
+        "Climate resilience",
+        "Women & gender",
+        "Youth"
+      ],
+      "typical_ticket_usd": {
+        "min": 250000,
+        "max": 750000
+      },
+      "tenor_years": {
+        "min": 1,
+        "max": 5
+      },
+      "website": "oneacrefund.org/ventures",
+      "notes": "Lending facility (not a fund) \u2014 debt instrument only, no equity. Advised by IDH Investment Management. Targets agri-SMEs working with 1,000+ smallholder farmers in Uganda or Rwanda; requires 3 years operational experience and audited financials. Provides technical assistance alongside financing. Spice and vanilla focus is strong Uganda alignment. First confirmed investment: Enimiro Uganda (uga-001, organic vanilla).",
+      "portfolio_scope": "1 confirmed portfolio company as of June 2026",
+      "date_sourced": "2026-06"
     }
   ],
   "portfolio": [
@@ -1290,6 +1334,34 @@
       "sme_id": null,
       "analyst_notes": "Tanzania geography match but cashew sector \u2014 not in spice pipeline. Women employment focus is notable.",
       "website": "mamacashew.com",
+      "date_sourced": "2026-06"
+    },
+    {
+      "portfolio_id": "port-043",
+      "fund_id": "fund-004",
+      "company": "Enimiro Uganda",
+      "sub_sector": "Vanilla Processing & Export",
+      "country": "Uganda",
+      "sourcing_country": "Uganda",
+      "sector": "Spices",
+      "value_chain_stage": "Processor + Exporter",
+      "business_model": "Vertically integrated agribusiness sourcing organic vanilla from 4,600+ smallholder farmers. Plans to diversify into coffee.",
+      "key_products": "Vanilla, Coffee (planned), Pineapple, Jackfruit",
+      "finance_type": "Loan (structured)",
+      "partner_since": "2025",
+      "beneficiaries": 4600,
+      "pct_women": null,
+      "pct_rural": null,
+      "farmer_owned": "No",
+      "farmer_owned_notes": "One Acre Ventures is debt investor",
+      "certifications": "Organic",
+      "impact_themes": "Smallholder income / Organic value chains",
+      "target_market": "International vanilla buyers",
+      "pipeline_country_match": true,
+      "sector_match": true,
+      "sme_id": "uga-001",
+      "analyst_notes": "Direct pipeline match \u2014 uga-001. One Acre Ventures' first confirmed East Africa investment. Organic vanilla; Uganda geography. Strong Forest Flavors alignment.",
+      "website": "enimiro.com",
       "date_sourced": "2026-06"
     }
   ]
